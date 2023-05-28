@@ -153,6 +153,7 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Heroku](https://www.heroku.com/) was used to deploy the website.
 * [Dall-E 2](https://openai.com/product/dall-e-2) was used to create the artwork.
 * [AI Image Enlarger](https://imglarger.com/Enhancer) was used to tidy up the contrast etc. of the artwork.
+* [Flickr](https://www.flickr.com/) was used to host some of the images.
 
 ## Deployment and Local Development
 
@@ -259,9 +260,10 @@ The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate t
 | Bug Number  | Expected behaviour | Actual behaviour | Solution |
 | ---:        |    :----:          |        :----:    | :---     |
 
+
 ### Known Bugs
 
-No known bugs
+
 
 ### Full Testing
 
@@ -332,6 +334,7 @@ Content for the website was made by Rossanne Hamilton.
 * [Google Font's Dancing Script](https://fonts.google.com/specimen/Dancing+Script?category=Handwriting&preview.text=(eponymous)&preview.text_type=custom) was used for part of the logo's font. 
 * [Google Font's Big Shoulders Stencil Text](https://fonts.google.com/specimen/Big+Shoulders+Stencil+Text?category=Handwriting&preview.text=BoscH&preview.text_type=custom) was used for part of the logo's font. 
 * [Karolina Grabowska's image](https://www.pexels.com/photo/black-and-white-photo-frame-5978717/) on Pexels was used for the background image of Relativity. (The colour was edited.)
+* [Google Font's Big Shoulders Text](https://fonts.google.com/specimen/Big+Shoulders+Text?query=Patric+King) was used for the text body.
 * [](#)
 * [](#)
 * [](#)
