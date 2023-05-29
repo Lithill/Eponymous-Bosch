@@ -261,9 +261,10 @@ The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate t
 | ---:        |    :----:          |        :----:    | :---     |
 
 
+
 ### Known Bugs
 
-
+| 1        |  When clicking on the "Image: Currently" link in the admin section of the django website, it opens a view of the image.  |  When clicking on the "Image: Currently" link in the admin section of the django website, it opens the local folder where the json file is stored  | Tried manually uploading the image but this doesn't fix it. Unsure if this is a big problem or not. In video 1 of https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/71413627006c4cac9b18a1de1e12a4ff/?child=first    |
 
 ### Full Testing
 
@@ -336,6 +337,9 @@ Content for the website was made by Rossanne Hamilton.
 * [Karolina Grabowska's image](https://www.pexels.com/photo/black-and-white-photo-frame-5978717/) on Pexels was used for the background image of Relativity. (The colour was edited.)
 * [Google Font's Big Shoulders Text](https://fonts.google.com/specimen/Big+Shoulders+Text?query=Patric+King) was used for the text body.
 * [Wikipedia](https://www.wikipedia.org/) was used for som of the text discussing the artwork, and most of the links directing the user to the original.
+* [Microsoft Excel](https://www.microsoft.com/en-gb/microsoft-365/excel) was used to create csv files.
+* [Convert CSV](https://www.convertcsv.com/csv-to-json.htm) was used to convert the csv files to json files.
+* [](#)
 * [](#)
 * [](#)
 
