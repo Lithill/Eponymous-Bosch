@@ -264,7 +264,7 @@ The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate t
 
 ### Known Bugs
 
-| 1        |  When clicking on the "Image: Currently" link in the admin section of the django website, it opens a view of the image.  |  When clicking on the "Image: Currently" link in the admin section of the django website, it opens the local folder where the json file is stored  | Tried manually uploading the image but this doesn't fix it. Unsure if this is a big problem or not. In video 1 of https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/71413627006c4cac9b18a1de1e12a4ff/?child=first    |
+
 
 ### Full Testing
 
