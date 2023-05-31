@@ -17,10 +17,11 @@
                 Prints
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=people" class="dropdown-item">People</a>
-                <a href="{% url 'products' %}?category=animals" class="dropdown-item">Animals</a>
-                <a href="{% url 'products' %}?category=landscapes" class="dropdown-item">Landscapes</a>
-                <a href="{% url 'products' %}?category=other" class="dropdown-item">Other</a>
+                <a href="{% url 'products' %}?category=prints_people,prints_animals,prints_landscapes,prints_other" class="dropdown-item">All Prints</a>
+                <a href="{% url 'products' %}?category=prints_people" class="dropdown-item">People</a>
+                <a href="{% url 'products' %}?category=prints_animals" class="dropdown-item">Animals</a>
+                <a href="{% url 'products' %}?category=prints_landscapes" class="dropdown-item">Landscapes</a>
+                <a href="{% url 'products' %}?category=prints_other" class="dropdown-item">Other</a>
             </div>
         </li>
 
@@ -29,10 +30,11 @@
                 Posters
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=people" class="dropdown-item">People</a>
-                <a href="{% url 'products' %}?category=animals" class="dropdown-item">Animals</a>
-                <a href="{% url 'products' %}?category=landscapes" class="dropdown-item">Landscapes</a>
-                <a href="{% url 'products' %}?category=other" class="dropdown-item">Other</a>
+                <a href="{% url 'products' %}?category=posters_people,posters_animals,posters_landscapes,posters_other" class="dropdown-item">All Posters</a>
+                <a href="{% url 'products' %}?category=posters_people" class="dropdown-item">People</a>
+                <a href="{% url 'products' %}?category=posters_animals" class="dropdown-item">Animals</a>
+                <a href="{% url 'products' %}?category=posters_landscapes" class="dropdown-item">Landscapes</a>
+                <a href="{% url 'products' %}?category=posters_other" class="dropdown-item">Other</a>
             </div>
         </li>
     </ul>

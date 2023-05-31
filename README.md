@@ -154,6 +154,8 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Dall-E 2](https://openai.com/product/dall-e-2) was used to create the artwork.
 * [AI Image Enlarger](https://imglarger.com/Enhancer) was used to tidy up the contrast etc. of the artwork.
 * [Flickr](https://www.flickr.com/) was used to host some of the images.
+* [Excel](https://www.microsoft.com/en-gb/microsoft-365/excel) was used to create csv files.
+* [Convert CSV](https://www.convertcsv.com/csv-to-json.htm) was used to convert csv files to json files.
 
 ## Deployment and Local Development
 
