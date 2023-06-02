@@ -6,14 +6,12 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?category=prints_people,posters_people" class="dropdown-item">All People</a>
                 <a href="{% url 'products' %}?category=prints_animals,posters_animals" class="dropdown-item">All Animals</a>
                 <a href="{% url 'products' %}?category=prints_landscapes,posters_landscapes" class="dropdown-item">All Landscapes</a>
                 <a href="{% url 'products' %}?category=prints_other,posters_others" class="dropdown-item">All Other</a>
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price (low to high)</a>
-                <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">By Price (high to low)</a>
                 <a href="{% url 'products' %}?sort=year&direction=asc" class="dropdown-item ">By Year (of original artwork)</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
             </div>
         </li>
 
