@@ -341,7 +341,8 @@ Content for the website was made by Rossanne Hamilton.
 * [Wikipedia](https://www.wikipedia.org/) was used for som of the text discussing the artwork, and most of the links directing the user to the original.
 * [Microsoft Excel](https://www.microsoft.com/en-gb/microsoft-365/excel) was used to create csv files.
 * [Convert CSV](https://www.convertcsv.com/csv-to-json.htm) was used to convert the csv files to json files.
-* [](#)
+* [9699186's image](https://pixabay.com/photos/frame-mockup-flatlay-plant-3681646/) on Pixabay was used for the background image of The Wounded Deer.
+* [Eva Bronzini's image](https://www.pexels.com/photo/photo-of-a-blank-picture-frame-7967320/) on Pixabay was used for the background image of The Lovers II.
 * [](#)
 * [](#)
 
