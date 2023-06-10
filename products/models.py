@@ -1,4 +1,6 @@
 from django.db import models
+from django.conf import settings
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -51,15 +53,40 @@ class Product(models.Model):
         null=True,
         blank=True
     )
-    type = models.TextField()
-    original_artist = models.TextField(
+    type = models.CharField(
+        max_length=50,
         null=True,
         blank=True
     )
-    style = models.TextField()
-    orientation = models.TextField()
-    imperial = models.TextField()
-    metric = models.TextField()
+    original_artist = models.CharField(
+        max_length=100,
+        null=True,
+        blank=True
+    )
+    users_wishlist = models.ManyToManyField(
+        User,
+        related_name="user_wishlist",
+        blank=True)
+    style = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True
+    )
+    orientation = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True
+    )
+    imperial = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True
+    )
+    metric = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True
+    )
     year = models.IntegerField()
     orig_url = models.URLField(
         max_length=1024,

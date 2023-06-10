@@ -314,6 +314,7 @@ Thanks are given for the following posts and tutorials:
 ### Code Used
 
 * [Code Institute's 'Boutique Ado' walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) was used as the starting point for this project.
+* [Very Academy's Python Django Ecommerce Customer Wish List](https://www.youtube.com/watch?v=OgA0TTKAtqQ) was used for the wishlist functionality
 * [](#)
 
 ### Content

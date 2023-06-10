@@ -10,7 +10,7 @@
       "category": 1,
       "rating": 4.2,
       "image_url": "",
-      "image": "mona_lisa.webp",
+      "image": "mona_lisa.jpg",
       "type": "Print",
       "original_artist": "Leonardo da Vinci",
       "style": "Renaissance",
@@ -19,7 +19,8 @@
       "metric": "228 x 355",
       "year": 1504,
       "orig_url": "https://en.wikipedia.org/wiki/Mona_Lisa#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 2,
@@ -32,7 +33,7 @@
       "category": 1,
       "rating": 4.6,
       "image_url": "",
-      "image": "ophelia.webp",
+      "image": "ophelia.jpg",
       "type": "Print",
       "original_artist": "John Everett Millais",
       "style": "Pre-Raphaelite",
@@ -41,7 +42,8 @@
       "metric": "635 x 406",
       "year": 1852,
       "orig_url": "https://en.wikipedia.org/wiki/Ophelia_(painting)#/media/File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 3,
@@ -54,7 +56,7 @@
       "category": 3,
       "rating": 3.7,
       "image_url": "",
-      "image": "starry_night.webp",
+      "image": "starry_night.jpg",
       "type": "Print",
       "original_artist": "Vincent Van Gogh",
       "style": "Post-Impressionist",
@@ -63,7 +65,8 @@
       "metric": "254 x 254",
       "year": 1889,
       "orig_url": "https://en.wikipedia.org/wiki/The_Starry_Night#/media/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 4,
@@ -76,7 +79,7 @@
       "category": 6,
       "rating": 5,
       "image_url": "",
-      "image": "le_chat_noir.webp",
+      "image": "le_chat_noir.jpg",
       "type": "Poster",
       "original_artist": "Théophile Steinlen",
       "style": "Art Nouveau",
@@ -85,7 +88,8 @@
       "metric": "406 x 559",
       "year": 1896,
       "orig_url": "https://en.wikipedia.org/wiki/Le_Chat_Noir#/media/File:Th%C3%A9ophile-Alexandre_Steinlen_-_Tourn%C3%A9e_du_Chat_Noir_de_Rodolphe_Salis_(Tour_of_Rodolphe_Salis'_Chat_Noir)_-_Google_Art_Project.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 5,
@@ -98,7 +102,7 @@
       "category": 2,
       "rating": 2.8,
       "image_url": "",
-      "image": "dogs_playing_poker.webp",
+      "image": "dogs_playing_poker.jpg",
       "type": "Print",
       "original_artist": "Cassius Marcellus Coolidge",
       "style": "Kitsch",
@@ -107,7 +111,8 @@
       "metric": "330 x 254",
       "year": 1903,
       "orig_url": "https://en.wikipedia.org/wiki/Dogs_Playing_Poker#/media/File:A_Friend_in_Need_1903_C.M.Coolidge.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 6,
@@ -120,7 +125,7 @@
       "category": 3,
       "rating": 3,
       "image_url": "",
-      "image": "water_lilies.webp",
+      "image": "water_lilies.jpg",
       "type": "Print",
       "original_artist": "Claude Monet",
       "style": "Impressionist",
@@ -129,7 +134,8 @@
       "metric": "254 x 254",
       "year": 1919,
       "orig_url": "https://en.wikipedia.org/wiki/Water_Lilies_(1919)#/media/File:WLA_metmuseum_Water_Lilies_by_Claude_Monet.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 7,
@@ -142,7 +148,7 @@
       "category": 7,
       "rating": 5,
       "image_url": "",
-      "image": "metropolis.webp",
+      "image": "metropolis.jpg",
       "type": "Poster",
       "original_artist": "Heinz Schulz-Neudamm",
       "style": "Art Deco",
@@ -151,7 +157,8 @@
       "metric": "254 x 584",
       "year": 1927,
       "orig_url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)#/media/File:Metropolis_(German_three-sheet_poster).jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 8,
@@ -164,7 +171,7 @@
       "category": 5,
       "rating": 2.3,
       "image_url": "",
-      "image": "rosie.webp",
+      "image": "rosie.jpg",
       "type": "Poster",
       "original_artist": "Norman Rockwell",
       "style": "Pop Art",
@@ -173,7 +180,8 @@
       "metric": "254 x 355",
       "year": 1943,
       "orig_url": "https://www.loc.gov/item/2021669753"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 9,
@@ -186,7 +194,7 @@
       "category": 3,
       "rating": 5,
       "image_url": "",
-      "image": "relativity.webp",
+      "image": "relativity.jpg",
       "type": "Print",
       "original_artist": "M. C. Escher",
       "style": "Surrealist",
@@ -195,7 +203,8 @@
       "metric": "533 x 533",
       "year": 1953,
       "orig_url": "https://en.wikipedia.org/wiki/Relativity_(M._C._Escher)#/media/File:Escher's_Relativity.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 10,
@@ -208,7 +217,7 @@
       "category": 6,
       "rating": 4.7,
       "image_url": "",
-      "image": "hang_in_there.webp",
+      "image": "hang_in_there.jpg",
       "type": "Poster",
       "original_artist": "Various",
       "style": "Motivational",
@@ -217,7 +226,8 @@
       "metric": "279 x 406",
       "year": 1971,
       "orig_url": "https://en.wikipedia.org/wiki/Hang_in_there,_Baby#/media/File:Hang_In_There_Victor_Baldwin.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 11,
@@ -230,7 +240,7 @@
       "category": 6,
       "rating": 3.8,
       "image_url": "",
-      "image": "jaws.webp",
+      "image": "jaws.jpg",
       "type": "Poster",
       "original_artist": "Roger Kastel",
       "style": "Movie",
@@ -239,7 +249,8 @@
       "metric": "254 x 381",
       "year": 1975,
       "orig_url": "https://cdn.musebycl.io/2018-10/jaws-key-art-1977.jpg"
-   }
+   },
+   "users_wishlist": ""
 },
  {
    "pk": 12,
@@ -252,7 +263,7 @@
       "category": 1,
       "rating": 4.6,
       "image_url": "",
-      "image": "the_scream.webp",
+      "image": "the_scream.jpg",
       "type": "Print",
       "original_artist": "Edvard Munch",
       "style": "Expressionist",
@@ -261,6 +272,53 @@
       "metric": "203 x 305",
       "year": 1893,
       "orig_url": "https://en.wikipedia.org/wiki/The_Scream#/media/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg"
-   }
+   },
+   "users_wishlist": ""
+},
+ {
+   "pk": 13,
+   "model": "products.product",
+   "fields": {
+      "sku": "lov-pri-1",
+      "name": "The Lovers II",
+      "description": "This artwork is based on \"The Lovers II\" by Rene Magritte. At the age of 14, the artist experienced the tragic loss of his mother, who took her own life by drowning. He was present during the distressing moment when her lifeless body was retrieved from the water, with her soaked nightgown concealing her face. It has been suggested that this deeply distressing event may have served as a catalyst for a series of artworks by Magritte, where he intentionally obscured the faces of his subjects.",
+      "price": 26.99,
+      "category": 1,
+      "rating": 4.2,
+      "image_url": "",
+      "image": "the_lovers.jpg",
+      "type": "Print",
+      "original_artist": "Rene Magritte",
+      "style": "Surrealist",
+      "orientation": "Landscape",
+      "imperial": "21 x 29",
+      "metric": "540  x 730",
+      "year": 1928,
+      "orig_url": "https://www.renemagritte.org/the-lovers-2.jsp#prettyPhoto[image1]/0/"
+   },
+   "users_wishlist": ""
+},
+ {
+   "pk": 14,
+   "model": "products.product",
+   "fields": {
+      "sku": "wou-pri-1",
+      "name": "The Wounded Deer",
+      "description": "This artwork is based on \"The Wounded Deer\" by Frida Kahlo. Despite facing numerous physical and emotional challenges throughout her life, she became an influential and celebrated artist. Kahlo's life was marked by pain and adversity, including a severe bus accident, multiple surgeries, and chronic health issues. However, she channeled her experiences into her artwork, creating powerful and introspective self-portraits that conveyed her physical and emotional struggles. Kahlo's unique artistic style, bold use of color, and exploration of themes such as identity, gender, and Mexican culture have made her an iconic figure in the art world, inspiring countless artists and admirers worldwide.",
+      "price": 28.99,
+      "category": 2,
+      "rating": 3.1,
+      "image_url": "",
+      "image": "wounded_deer.jpg",
+      "type": "Print",
+      "original_artist": "Frida Kahlo",
+      "style": "Naïve Art",
+      "orientation": "Landscape",
+      "imperial": "12 x 8.5",
+      "metric": "300 x 220",
+      "year": 1946,
+      "orig_url": "https://en.wikipedia.org/wiki/The_Wounded_Deer#/media/File:The_Wounded_Deer_1946.jpg"
+   },
+   "users_wishlist": ""
 }
 ]
