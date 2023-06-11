@@ -1,6 +1,6 @@
 [
     {
-        "model": "wishlist.itemwishlist",
+        "model": "wishlist.userwishlist",
         "pk": 1,
         "fields": {
             "item_name": "iPhone 14 Pro Maag",
@@ -9,7 +9,7 @@
         }
      },
      {
-        "model": "wishlist.itemwishlist",
+        "model": "wishlist.userwishlist",
         "pk": 2,
         "fields": {
             "item_name": "Round Hat",
@@ -18,7 +18,7 @@
         }
     },
     {
-        "model": "wishlist.itemwishlist",
+        "model": "wishlist.userwishlist",
         "pk": 3,
         "fields": {
             "item_name": "Folding Mattress",
