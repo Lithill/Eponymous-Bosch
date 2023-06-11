@@ -16,7 +16,7 @@
 {% block content %}
     <div class="overlay"></div>
     <h5>Name: </h5>
-    <b>{{ name }}</b>
+    <b>insert name template here</b>
 
     <table>
         <tr>
@@ -26,11 +26,9 @@
         </tr>
         {% comment %} Add the data below this line {% endcomment %}
         {% for item in list_item %}
-            <tr>
-                <th>{{ item.item_name }}</th>
-                <th>{{ item.item_price }}</th>
-                <th>{{ item.description }}</th>
-            </tr>
+            <p>User: {{ item.user.username }}</p>
+            <p>Wished Item: {{ item.wished_item }}</p>
+            <p>Added Date: {{ item.added_date }}</p>
         {% endfor %}
     </table>
 {% endblock content %}
