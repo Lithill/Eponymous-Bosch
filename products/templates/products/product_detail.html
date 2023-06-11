@@ -117,6 +117,17 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="" method='POST'>
+                                    {% csrf_token %}
+                                    {{form}}
+                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Wishlist">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
