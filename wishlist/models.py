@@ -12,9 +12,31 @@ class UserWishlist(models.Model):
 
 
 class Wishlist(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    wished_item = models.ForeignKey(Product, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    wished_item = models.ManyToManyField(
+        Product,
+        through="WishListItem",
+        related_name='product_wishlists')
     added_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.wished_item
+        return f'WishList ({self.user})'
+
+
+class WishListItem(models.Model):
+    """
+    A 'through' model, allowing users to add
+    individual products to their wishlist.
+    """
+
+    product = models.ForeignKey(Product,
+                                null=False,
+                                blank=False,
+                                on_delete=models.CASCADE)
+    wishlist = models.ForeignKey(Wishlist,
+                                 null=False,
+                                 blank=False,
+                                 on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.product.name

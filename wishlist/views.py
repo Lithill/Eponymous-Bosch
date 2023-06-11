@@ -1,7 +1,8 @@
-from django.shortcuts import render, redirect
-from wishlist.models import Wishlist
-from .forms import WishlistForm
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import Wishlist
 from django.contrib.auth.decorators import login_required
+from products.models import Product
+from django.contrib import messages
 
 
 def show_wishlist(request):
@@ -15,20 +16,19 @@ def show_wishlist(request):
 
 
 @login_required
-def add_wish_item(request):
+def add_wish_item(request, product_id):
+    """
+    Add item to wishlist for user that's logged in
+    """
 
-    if request.method == 'POST':
-        form = WishlistForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(
-                request, 'Successfully added product to wishlist!')
-        else:
-            messages.error(request, 'Failed to add product to wishlist')
-    else:
-        form = WishlistForm()
+    product = get_object_or_404(Product, pk=product_id)
 
-    # template = 'products/product_detail.html'
-    context = {'form': form}
+    # If user had no wishlist, create one
+    wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
 
-    return render(request, template, context)
+    # Add item to wishlist
+    wishlist.products.add(product)
+    messages.success(
+        request, 'Successfully added product to wishlist!')
+
+    return redirect(request.META.get('HTTP_REFERER'))
