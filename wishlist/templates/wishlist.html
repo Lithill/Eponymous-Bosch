@@ -16,7 +16,7 @@
 {% block content %}
     <div class="overlay"></div>
     <h5>Name: </h5>
-    <p>Fill me!</p>
+    <b>{{ name }}</b>
 
     <table>
         <tr>
@@ -25,5 +25,12 @@
             <th>Description</th>
         </tr>
         {% comment %} Add the data below this line {% endcomment %}
+        {% for item in list_item %}
+            <tr>
+                <th>{{ item.item_name }}</th>
+                <th>{{ item.item_price }}</th>
+                <th>{{ item.description }}</th>
+            </tr>
+        {% endfor %}
     </table>
 {% endblock content %}

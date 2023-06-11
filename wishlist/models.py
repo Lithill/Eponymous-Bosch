@@ -4,9 +4,7 @@ from products.models import Product
 
 
 class ItemWishlist(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    wished_item = models.ForeignKey(Product, on_delete=models.CASCADE)
-    added_date = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.wished_item
+    item_name = models.CharField(max_length=50, null=True)
+    item_price = models.IntegerField(null=True)
+    description = models.TextField(null=True)
