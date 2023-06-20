@@ -27,8 +27,7 @@ def add_wish_item(request, product_id):
     wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
 
     # Add item to wishlist
-    wishlist.products.add(product)
-    messages.success(
-        request, 'Successfully added product to wishlist!')
+    wishlist.wished_item.add(product)
+    messages.info(request, "You added this item to your wishlist!")
 
     return redirect(request.META.get('HTTP_REFERER'))
