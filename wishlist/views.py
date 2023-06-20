@@ -39,3 +39,18 @@ def add_wish_item(request, product_id):
     messages.info(request, "You added this item to your wishlist!")
 
     return redirect(request.META.get('HTTP_REFERER'))
+
+
+@login_required
+def remove_from_wishlist(request, product_id):
+    """
+    Remove a product from the users wishlist
+    """
+    wishlist = Wishlist.objects.get(user=request.user)
+    product = get_object_or_404(Product, pk=product_id)
+
+    # Remove product from the wishlist
+    wishlist.products.remove(product)
+    messages.info(request, "The item was removed from your wishlist")
+
+    return redirect(request.META.get('HTTP_REFERER'))

@@ -156,6 +156,7 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Flickr](https://www.flickr.com/) was used to host some of the images.
 * [Excel](https://www.microsoft.com/en-gb/microsoft-365/excel) was used to create csv files.
 * [Convert CSV](https://www.convertcsv.com/csv-to-json.htm) was used to convert csv files to json files.
+* [Font Awesome](https://fontawesome.com/) was used for the icons.
 
 ## Deployment and Local Development
 
