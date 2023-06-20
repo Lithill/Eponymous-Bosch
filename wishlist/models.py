@@ -13,7 +13,7 @@ class UserWishlist(models.Model):
 
 class Wishlist(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    wished_item = models.ManyToManyField(
+    products = models.ManyToManyField(
         Product,
         through="WishListItem",
         related_name='product_wishlists')

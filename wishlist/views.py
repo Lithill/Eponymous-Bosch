@@ -5,11 +5,19 @@ from products.models import Product
 from django.contrib import messages
 
 
+@login_required
 def show_wishlist(request):
+    """
+    A view to render the user's wishlist
+    """
+    wishlist = None
+    try:
+        wishlist = Wishlist.objects.get(user=request.user)
+    except Wishlist.DoesNotExist:
+        pass
 
-    data_wishlist_item = Wishlist.objects.all()
     context = {
-        'list_item': data_wishlist_item,
+        'wishlist': wishlist,
     }
 
     return render(request, "wishlist.html", context)
