@@ -5,11 +5,14 @@ from .models import Product, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    readonly_fields = [
+        'on_sale',
+        'discounted_price'
+    ]
     list_display = (
-        'sku',
         'name',
+        'sku',
         'category',
-        'price',
         'rating',
         'image',
         'type',
@@ -19,9 +22,13 @@ class ProductAdmin(admin.ModelAdmin):
         'imperial',
         'metric',
         'year',
+        'og_price',
+        'discount',
     )
 
-    ordering = ('sku',)
+    ordering = (
+        'name',
+    )
 
 
 class CategoryAdmin(admin.ModelAdmin):

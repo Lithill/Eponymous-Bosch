@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 class Category(models.Model):
@@ -19,6 +20,11 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+
+    name = models.CharField(
+        max_length=254
+    )
+    description = models.TextField()
     category = models.ForeignKey(
         'Category',
         null=True,
@@ -29,14 +35,6 @@ class Product(models.Model):
         max_length=254,
         null=True,
         blank=True
-    )
-    name = models.CharField(
-        max_length=254
-    )
-    description = models.TextField()
-    price = models.DecimalField(
-        max_digits=6,
-        decimal_places=2
     )
     rating = models.DecimalField(
         max_digits=6,
@@ -93,6 +91,30 @@ class Product(models.Model):
         null=True,
         blank=True
     )
+    og_price = models.DecimalField(
+        max_digits=6,
+        decimal_places=2
+    )
+    on_sale = models.BooleanField()
+    discount = models.IntegerField(
+        validators=[
+            MaxValueValidator(95),
+            MinValueValidator(0)
+        ]
+    )
+    discounted_price = models.IntegerField(
+        null=True,
+    )
+    sell_price = models.IntegerField(null=True)
 
-    def __str__(self):
-        return self.name
+    @property
+    def discounted_price(self):
+        return round(((self.og_price) * (self.discount)) / 100, 2)
+
+    @property
+    def sell_price(self):
+        return (self.og_price)-(self.discounted_price)
+
+    @property
+    def on_sale(self):
+        return (self.discount > 0)

@@ -122,6 +122,27 @@ input[name='q']::placeholder {
     padding-top: 50px;
 }
 
+.sale {
+    color: #eb0a0a;
+}
+
+.sale-padding {
+    padding-right: 5px;
+}
+
+.no-right-pad {
+    padding-right: 0px;
+}
+
+.no-left-pad {
+    padding-left: 0px;
+}
+
+.product-name {
+    padding: 15px;
+    text-decoration: underline;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
