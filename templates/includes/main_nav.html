@@ -21,6 +21,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=prints_people,prints_animals,prints_landscapes,prints_other" class="dropdown-item">All Prints</a>
+                <a href="{% url 'products' %}?product.on_sale=True" class="dropdown-item">On Sale</a>
                 <a href="{% url 'products' %}?category=prints_people" class="dropdown-item">People</a>
                 <a href="{% url 'products' %}?category=prints_animals" class="dropdown-item">Animals</a>
                 <a href="{% url 'products' %}?category=prints_landscapes" class="dropdown-item">Landscapes</a>
