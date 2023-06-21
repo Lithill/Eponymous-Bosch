@@ -17,4 +17,8 @@ urlpatterns = [
         'remove_from_wishlist/<product_id>',
         views.remove_from_wishlist,
         name='remove_from_wishlist'),
+    path(
+        'waiting_list/<int:user_id>/<int:product_id>',
+        views.waiting_list,
+        name='waiting_list'),
 ]

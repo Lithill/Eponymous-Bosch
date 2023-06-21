@@ -2,7 +2,10 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Wishlist
 from django.contrib.auth.decorators import login_required
 from products.models import Product
+from wishlist.models import WaitingList
 from django.contrib import messages
+from .forms import WaitingListForm
+from django.contrib.auth.models import User
 
 
 @login_required
@@ -54,3 +57,21 @@ def remove_from_wishlist(request, product_id):
     messages.info(request, "The item was removed from your wishlist")
 
     return redirect(request.META.get('HTTP_REFERER'))
+
+
+@login_required
+def waiting_list(request, user_id, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    user = get_object_or_404(User, pk=user_id)
+
+    if request.method == 'POST':
+        form = WaitingListForm(request.POST)
+        if form.is_valid():
+            waiting_list = WaitingList(product=product, users=user)
+            waiting_list.save()
+            messages.info(request, "You'll be emailed when this item goes on sale!")
+            return redirect(request.META.get('HTTP_REFERER'))
+    else:
+        form = WaitingListForm()
+
+    return render(request, 'wishlist.html', {'form': form})
