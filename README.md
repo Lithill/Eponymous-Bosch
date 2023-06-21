@@ -37,6 +37,7 @@ AI is currently very much in the public eye, and Dall-E 2 is no exception to thi
 * Easily recover my password in case I forget it
 * Receive an email confirmation after registering
 * Have a personalised user profile
+* Have a wishlist
 
 #### Sorting and Setting
 * Sort the list of available products
@@ -58,6 +59,7 @@ AI is currently very much in the public eye, and Dall-E 2 is no exception to thi
 * Add product
 * Edit/update a product
 * Delete a product
+* Create sale prices
 
 ## Design
 
@@ -318,6 +320,7 @@ Thanks are given for the following posts and tutorials:
 * [Code Institute's 'Boutique Ado' walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) was used as the starting point for this project.
 * [Ajmal Aamir's](https://stackoverflow.com/questions/56580696/how-to-implement-add-to-wishlist-for-a-product-in-django) model code in this Stack Overflow post was used as a basis for the wishlist model.
 * [Harry Dhillon's Nourish and Lift](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/wishlist/views.py) code was used as a basis for the wishlist.
+* [Mahammadhusain Kadiwala's](https://stackoverflow.com/questions/73813646/django-models-to-calculate-discount) code was used as a basis for the sale information in the product model.
 
 ### Content
 
