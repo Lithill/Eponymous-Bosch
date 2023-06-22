@@ -41,10 +41,7 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
 
         if 'on_sale' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(
-                on_sale__name__in=categories, on_sale=True)
-            categories = Category.objects.filter(name__in=categories)
+            products = products.filter(discount_percentage__gt=0)
 
         if 'q' in request.GET:
             query = request.GET['q']

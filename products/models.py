@@ -89,8 +89,10 @@ class Product(models.Model):
         max_digits=6,
         decimal_places=2
     )
-    on_sale = models.BooleanField()
-    discount = models.IntegerField(
+    on_sale = models.BooleanField(
+        default=False
+    )
+    discount_percentage = models.IntegerField(
         validators=[
             MaxValueValidator(95),
             MinValueValidator(0)
@@ -103,7 +105,7 @@ class Product(models.Model):
 
     @property
     def discounted_price(self):
-        return round(((self.og_price) * (self.discount)) / 100, 2)
+        return round(((self.og_price) * (self.discount_percentage)) / 100, 2)
 
     @property
     def sell_price(self):
@@ -111,4 +113,4 @@ class Product(models.Model):
 
     @property
     def on_sale(self):
-        return (self.discount > 0)
+        return (self.discount_percentage > 0)

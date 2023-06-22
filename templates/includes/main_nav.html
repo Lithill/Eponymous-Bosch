@@ -6,7 +6,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-                <a href="{% url 'products' %}?on_sale" class="dropdown-item">On Sale</a>
+                <a href="{% url 'products' %}?on_sale=True" class="dropdown-item">All On Sale</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?category=prints_people,posters_people" class="dropdown-item">All People</a>
                 <a href="{% url 'products' %}?category=prints_animals,posters_animals" class="dropdown-item">All Animals</a>
@@ -22,7 +22,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=prints_people,prints_animals,prints_landscapes,prints_other" class="dropdown-item">All Prints</a>
-                <a href="{% url 'products' %}?product.on_sale=True" class="dropdown-item">On Sale</a>
+                <a href="{% url 'products' %}?category=prints_people,prints_animals,prints_landscapes,prints_other&on_sale=True" class="dropdown-item">On Sale</a>
                 <a href="{% url 'products' %}?category=prints_people" class="dropdown-item">People</a>
                 <a href="{% url 'products' %}?category=prints_animals" class="dropdown-item">Animals</a>
                 <a href="{% url 'products' %}?category=prints_landscapes" class="dropdown-item">Landscapes</a>
@@ -36,6 +36,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=posters_people,posters_animals,posters_landscapes,posters_other" class="dropdown-item">All Posters</a>
+                <a href="{% url 'products' %}?category=posters_people,posters_animals,posters_landscapes,posters_other&on_sale=True" class="dropdown-item">On Sale</a>
                 <a href="{% url 'products' %}?category=posters_people" class="dropdown-item">People</a>
                 <a href="{% url 'products' %}?category=posters_animals" class="dropdown-item">Animals</a>
                 <a href="{% url 'products' %}?category=posters_landscapes" class="dropdown-item">Landscapes</a>

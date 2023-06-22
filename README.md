@@ -270,12 +270,15 @@ The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate t
 
 | Bug Number  | Expected behaviour | Actual behaviour | Solution |
 | ---:        |    :----:          |        :----:    | :---     |
+| 1       |  When clicking on the On Sale dropdown under All Products in the nav bar, user sees everything on sale   |  This did not happen  | The model has a property called on_sale that determines the boolean value of on_sale in the Product model. This calculates if an item is on sale based on whether the admin enters a discount or not. So instead of looking for on_sale=True, the code looks for on_sale being greater than 0. So I changed the all_product view section to "if 'on_sale' in request.GET:
+            products = products.filter(discount__gt=0)" |
+| ---:        |    :----:          |        :----:    | :---     |
 
 
 
 ### Known Bugs
 
-
+| ---:        |    :----:          |        :----:    | :---     |
 
 ### Full Testing
 
@@ -367,3 +370,4 @@ I would like to acknowledge the following people who helped me along the way in 
 - My mentor Mitko Bachvarov for helpful feedback and sharing links for further learning.
 - My tutor Robert Mclaughlin for helpful feedback and sharing links for further learning.
 - Chris Mugridge and Maya Irish for user and device testing.
+- Thomas Muat for helping me understand why the on_sale filter wasn't working in the nav bar.

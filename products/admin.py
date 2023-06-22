@@ -22,7 +22,7 @@ class ProductAdmin(admin.ModelAdmin):
         'metric',
         'year',
         'og_price',
-        'discount',
+        'discount_percentage',
     )
 
     ordering = (
