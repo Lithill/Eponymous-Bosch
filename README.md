@@ -77,6 +77,12 @@ This website was designed desktop-first.
 
 ![Add Plant Page](#)
 
+### Model Map
+
+This model was used to plan the sale alert function:
+
+![Model Map](static/images/readme/model_map.jpg)
+
 ### Colour scheme
 
 The website uses a colour palette.

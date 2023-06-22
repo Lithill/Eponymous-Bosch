@@ -13,7 +13,6 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'sku',
         'category',
-        'rating',
         'image',
         'type',
         'original_artist',
