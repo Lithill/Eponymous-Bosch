@@ -18,6 +18,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    sale_items = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -37,6 +38,12 @@ def all_products(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
+        if 'on_sale' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(
+                on_sale__name__in=categories, on_sale=True)
             categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
