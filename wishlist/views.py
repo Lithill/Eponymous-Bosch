@@ -64,12 +64,21 @@ def waiting_list(request, user_id, product_id):
     product = get_object_or_404(Product, pk=product_id)
     user = get_object_or_404(User, pk=user_id)
 
+    # Check if the product is already in the waiting list for the user
+    already_in_waiting_list = WaitingList.objects.filter(
+        product=product, users=user).exists()
+
     if request.method == 'POST':
         form = WaitingListForm(request.POST)
         if form.is_valid():
-            waiting_list = WaitingList(product=product, users=user)
-            waiting_list.save()
-            messages.info(request, "You'll be emailed when this item goes on sale!")
+            if not already_in_waiting_list:
+                waiting_list = WaitingList(product=product, users=user)
+                waiting_list.save()
+                messages.info(
+                    request, "You'll be emailed when this item goes on sale!")
+            else:
+                messages.info(
+                    request, "This product is already in your waiting list!")
             return redirect(request.META.get('HTTP_REFERER'))
     else:
         form = WaitingListForm()
