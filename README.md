@@ -79,7 +79,7 @@ This website was designed desktop-first.
 
 ### Model Map
 
-This model was used to plan the sale alert function:
+This model was used to plan the sale alert function, which ultimately failed:
 
 ![Model Map](static/images/readme/model_map.jpg)
 

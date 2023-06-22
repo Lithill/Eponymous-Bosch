@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from products.models import Product
 from wishlist.models import WaitingList
 from django.contrib import messages
-from .forms import WaitingListForm, WishListSaleItemForm
+from .forms import WaitingListForm
 from django.contrib.auth.models import User
 
 
@@ -59,49 +59,19 @@ def remove_from_wishlist(request, product_id):
     return redirect(request.META.get('HTTP_REFERER'))
 
 
-# Delete this if I don't end up using it
 @login_required
 def waiting_list(request, user_id, product_id):
     product = get_object_or_404(Product, pk=product_id)
     user = get_object_or_404(User, pk=user_id)
 
-    # Check if the product is already in the waiting list for the user
-    already_in_waiting_list = WaitingList.objects.filter(
-        product=product, users=user).exists()
-
     if request.method == 'POST':
         form = WaitingListForm(request.POST)
         if form.is_valid():
-            if not already_in_waiting_list:
-                waiting_list = WaitingList(product=product, users=user)
-                waiting_list.save()
-                messages.info(
-                    request, "You'll be emailed when this item goes on sale!")
-            else:
-                messages.info(
-                    request, "This product is already in your waiting list!")
+            waiting_list = WaitingList(product=product, users=user)
+            waiting_list.save()
+            messages.info(request, "You'll be emailed when this item goes on sale!")
             return redirect(request.META.get('HTTP_REFERER'))
     else:
         form = WaitingListForm()
-
-    return render(request, 'wishlist.html', {'form': form})
-
-
-# CURRENT - for sale alert
-def wish_list_sale_item(request):
-    if request.method == 'POST':
-        print("The POST request for wishlistemail form: ", request.POST)
-        form = WishListSaleItemForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.info(
-                    request, "You'll be emailed when these items go on sale!")
-            return redirect(request.META.get('HTTP_REFERER'))
-        else:
-            messages.info(
-                    request, "Something went wrong!")
-            return redirect(request.META.get('HTTP_REFERER'))
-    else:
-        form = WishListSaleItemForm()
 
     return render(request, 'wishlist.html', {'form': form})

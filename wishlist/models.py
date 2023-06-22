@@ -13,29 +13,18 @@ class UserWishlist(models.Model):
     description = models.TextField()
 
 
-# CURRENT
 class Wishlist(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     products = models.ManyToManyField(
         Product,
-        through='WishListItem',
+        through="WishListItem",
         related_name='product_wishlists'
     )
 
     def __str__(self):
-        return f'Wishlist ({self.user})'
+        return f'WishList ({self.user})'
 
 
-# CURRENT
-class WishListSaleItem(models.Model):
-    wishlist = models.ForeignKey(Wishlist, on_delete=models.CASCADE)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return f'{self.wishlist} - {self.product}'
-
-
-# To use if I go with the per item method
 class WaitingList(models.Model):
     product = models.OneToOneField(Product, on_delete=models.CASCADE)
     users = models.ForeignKey(User, on_delete=models.CASCADE)

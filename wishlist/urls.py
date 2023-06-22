@@ -21,8 +21,4 @@ urlpatterns = [
         'waiting_list/<int:user_id>/<int:product_id>',
         views.waiting_list,
         name='waiting_list'),
-    path(
-        'wish_list_sale_item',
-        views.wish_list_sale_item,
-        name='wish_list_sale_item'),
 ]
