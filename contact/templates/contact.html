@@ -16,10 +16,26 @@
 {% block content %}
 
 <div class="overlay"></div>
-<form method = "post" action="">
-    {{form.as_p}}
-    <input type="submit"></input>
-</form>
+<div class="container top-padding">
+    <h2 class="logo-font mb-4 top-padding">Commission Form</h2>
+    <hr>
+    <p><strong>Have something in mind, but can't see it on our site?</strong></p>
+    <p>Ask us for a commission!</p>
+    <p>You can:</p>
+    <ul>
+        <li><strong>Bosch</strong> your favourite painting</li>
+        <li>Choose another artist to imitate, or</li>
+        <li>Ask us to create something totally new, based on your description</li>
+    </ul>
+    <p><strong>Just fill in the form below, and we'll get back to you!</strong></p>
+    <br>
+    <form method = "post" action="">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit"></input>
+    </form>
+    <br>
+</div>
 
 
 {% endblock content %}
