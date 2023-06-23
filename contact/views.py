@@ -36,7 +36,7 @@ def my_commissions(request):
     """
     commissions = None
     try:
-        commissions = Commission.objects.all()
+        commissions = Commission.objects.filter(user=request.user)
     except Commission.DoesNotExist:
         pass
 
