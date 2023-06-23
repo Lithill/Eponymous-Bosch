@@ -1,8 +1,15 @@
 from django.shortcuts import render
 from .forms import CommissionForm
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
+def contact(request):
+
+    return render(request, "contact.html", context)
+
+
+@login_required
 def commission(request):
     context = {}
 
@@ -15,4 +22,10 @@ def commission(request):
                     request, "Thank you for your enquiry!")
 
     context['form'] = form
-    return render(request, "contact.html", context)
+    return render(request, "contact/commission.html", context)
+
+
+@login_required
+def my_commissions(request):
+
+    return render(request, 'contact/my_commissions.html')
