@@ -22,16 +22,39 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <br>
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2">
-                <div class="col-12 col-md-6 order-md-first">
-                    <p class="text-muted mt-3 text-center text-md-left">
-                        You have commissioned - <strong>{{ commission.last_modified.all|length }}</strong> - artworks
-                    </p>
+                <!-- Showing the user how many artworks they have commissioned -->
+                <div class="col text-center mt-3">
+                    {% if commissions.all|length == 0 %}
+                        <div class="col text-center mt-3">
+                            <h2>You haven't commissioned any artwork yet!</h2>
+                            <a href="{% url 'contact:commission' user.id %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <span class="icon">
+                                    <i class="fa-solid fa-paintbrush"></i>
+                                </span>
+                                <span class="text-uppercase">Request a Commission</span>
+                            </a>
+                        </div>
+                    {% elif commissions.all|length == 1 %}
+                        <p class="text-muted mt-3 text-center text-md-left">
+                            You have commissioned - <strong>{{ commissions.all|length }}</strong> - piece of artwork
+                        </p>
+                    {% else %}
+                        <p class="text-muted mt-3 text-center text-md-left">
+                            You have commissioned - <strong>{{ commissions.all|length }}</strong> - pieces of art
+                        </p>
+                    {% endif %}
                 </div>
             </div>
             <div class="row">
+                {% for commission in commissions %}
+                    <h2>{{ commission.name }}</h2>
+                    <p>{{ commission.email }}</p>
+                    <p>{{ commission.description }}</p>
+                {% endfor %}
                 <!-- {% if wishlist.products.all %}
                     {% for product in wishlist.products.all %}
                         

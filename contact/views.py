@@ -34,17 +34,13 @@ def my_commissions(request):
     """
     A view to render the user's commissions
     """
-    commission = None
+    commissions = None
     try:
-        commission = Commission.objects.get(user=request.user)
+        commissions = Commission.objects.all()
     except Commission.DoesNotExist:
         pass
 
-    context = {
-        'commission': commission,
-    }
-
-    return render(request, 'contact/my_commissions.html', context)
+    return render(request, 'contact/my_commissions.html', {'commissions': commissions})
 
 
 @login_required
