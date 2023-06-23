@@ -31,13 +31,17 @@ AI is currently very much in the public eye, and Dall-E 2 is no exception to thi
 * View individual product details.
 * Easily view the total of my purchases at any time.
 
+#### Contacting
+* Be able to request an art commission
+
 #### Registration and User Accounts
 * Easily register for an account
 * Easily login or logout
 * Easily recover my password in case I forget it
 * Receive an email confirmation after registering
 * Have a personalised user profile
-* Have a wishlist
+* Have a personalised wishlist
+* Be able to view my past commission requests
 
 #### Sorting and Setting
 * Sort the list of available products
