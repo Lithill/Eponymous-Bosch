@@ -40,6 +40,14 @@
                     </span> 
                 </a>
                 <br>
+                <a class="btn btn-outline-black rounded-0 mt-5" href="{% url 'contact:my_commissions' %}">
+                    <span class="text-uppercase">View My Commissions</span>
+                    <span class="icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span> 
+                </a>
+                <br>
+                <br>
                 <br>
                 <p class="text-muted">Order History</p>
                 <div class="order-history table-responsive">
@@ -79,6 +87,7 @@
                 </div>
             </div>
         </div>
+        <br>
 {% endblock %}
 
 {% block postloadjs %}
