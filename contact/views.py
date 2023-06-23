@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, HttpResponse
 from .forms import CommissionForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -18,8 +18,7 @@ def commission(request):
     if form.is_valid():
 
         form.save()
-        messages.info(
-                    request, "Thank you for your enquiry!")
+        return render(request, "contact/commission_success.html")
 
     context['form'] = form
     return render(request, "contact/commission.html", context)
@@ -29,3 +28,9 @@ def commission(request):
 def my_commissions(request):
 
     return render(request, 'contact/my_commissions.html')
+
+
+def commission_success(request):
+
+    template = 'contact/commission_success.html'
+    return render(request, template)
