@@ -16,17 +16,34 @@ class Commission(models.Model):
     dimensions = models.CharField(
         max_length=50,
         null=True,
-        blank=True)
+        blank=True,
+        default='None Chosen')
     style = models.CharField(
         max_length=50,
         null=True,
-        blank=True)
+        blank=True,
+        default='None Chosen')
     artist = models.CharField(
         max_length=50,
         null=True,
-        blank=True)
+        blank=True,
+        default='None Chosen')
     framed = models.BooleanField(
         default=False)
+    medium = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True,
+        default='None Chosen')
+    dominant_colours = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True,
+        default='None Chosen')
+    status = models.TextField(
+        null=True,
+        blank=True,
+        default='We are looking at your request and will update you soon!')
     last_modified = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

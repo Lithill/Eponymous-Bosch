@@ -82,7 +82,26 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title"><strong>Artist <i class="fa-solid fa-palette"></i></strong></h5>
+                                        <h5 class="card-title"><strong>Medium <i class="fa-solid fa-fill-drip"></i></strong></h5>
+                                        <p class="card-text">{{ commission.medium }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Dominant Colours <i class="fa-solid fa-palette"></i></strong></h5>
+                                        <p class="card-text">{{ commission.dominant_colours }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Artist <i class="fa-solid fa-chalkboard-user"></i></strong></h5>
                                         <p class="card-text">{{ commission.artist }}</p>
                                     </div>
                                 </div>
@@ -104,7 +123,8 @@
                         </div>
                     </div>
                     <div class="card-footer text-muted">
-                        <p><strong><i class="fa-regular fa-comments"></i> Status: </strong></p>
+                        <p><i class="fa-regular fa-comments"></i><strong> Status: </strong></p>
+                        <p>{{ commission.status }}</p>
                     </div>
                 </div>
                 <br>
