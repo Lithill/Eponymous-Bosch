@@ -17,17 +17,13 @@ def commission(request, user_id):
 
     form = CommissionForm(request.POST or None, request.FILES or None)
 
-    if form.is_valid():
-
-        form.save()
-
-        # If user has no commission setup, create one
-        commission, _ = Commission.objects.get_or_create(user=request.user)
-
-        # Add item to commissions
-        commission.add()
-
-        return render(request, "contact/commission_success.html")
+    if request.method == 'POST':
+        if form.is_valid():
+            commission = form.save(commit=False)
+            commission.user_id = user_id
+            commission.save()
+            messages.success(request, "Commission created successfully!")
+            return render(request, "contact/commission_success.html")
 
     context['form'] = form
     return render(request, "contact/commission.html", context)

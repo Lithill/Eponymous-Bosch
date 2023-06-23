@@ -6,4 +6,4 @@ class CommissionForm(forms.ModelForm):
 
     class Meta:
         model = Commission
-        fields = "__all__"
+        exclude = ['user']
