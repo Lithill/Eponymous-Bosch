@@ -18,7 +18,7 @@
 <div class="container top-padding">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font top-padding">{{ user.get_username }}'s Commissions</h2>
+            <h2 class="logo-font top-padding">{{ user.get_username }}'s Commissions <i class="fa-solid fa-paintbrush"></i></h2>
             <hr class="w-50 mb-1">
         </div>
     </div>
@@ -49,51 +49,67 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="row">
-                {% for commission in commissions %}
-                    <h2>{{ commission.name }}</h2>
-                    <p>{{ commission.email }}</p>
-                    <p>{{ commission.description }}</p>
-                {% endfor %}
-                <!-- {% if wishlist.products.all %}
-                    {% for product in wishlist.products.all %}
-                        
-
-
-                        {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}                        
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                    {% else %}
-                    <div class="col text-center mt-3">
-                        <h2>You don't have anything in your wishlist!<i class="fa-regular fa-face-worried"></i></h2>
-                        <p>Add things here by clicking the "Add to Wishlist" button on individual product pages</p>
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">View products</span>
-                        </a>
+            <!-- List users commissions -->
+            {% for commission in commissions %}
+                <div class="card text-center">
+                    <div class="card-header">
+                        <strong>Date: </strong>{{ commission.last_modified|date:"F d, Y" }}
                     </div>
-                {% endif %} -->
-            </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Description</strong></h5>
+                        <h5 class="card-title">{{ commission.description }}</h5>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Dimensions <i class="fa-solid fa-ruler-combined"></i></strong></h5>
+                                        <p class="card-text">{{ commission.dimensions }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Style <i class="fa-solid fa-image"></i></strong></h5>
+                                        <p class="card-text">{{ commission.style }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Artist <i class="fa-solid fa-palette"></i></strong></h5>
+                                        <p class="card-text">{{ commission.artist }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Framed? <i class="fa-regular fa-square"></i></strong></h5>
+                                        <p class="card-text">
+                                            {% if commission.framed %}
+                                                Yes
+                                            {% else %}
+                                                No
+                                            {% endif %}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p><strong><i class="fa-regular fa-comments"></i> Status: </strong></p>
+                    </div>
+                </div>
+                <br>
+                <br>
+            {% endfor %}
         </div>
     </div>
     
