@@ -287,6 +287,7 @@ The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate t
 ### Known Bugs
 
 | ---:        |    :----:          |        :----:    | :---     |
+| ---:        | Subtotal in checkout page shows subtotal of items | It does not  | This piece of code in checkout.html does not work - {{ item.product.price | calc_subtotal:item.quantity }}  |
 
 ### Full Testing
 
