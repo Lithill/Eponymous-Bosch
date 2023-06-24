@@ -87,6 +87,10 @@ This model was used to plan the sale alert function, which ultimately failed:
 
 ![Model Map](static/images/readme/model_map.jpg)
 
+This represents my current models:
+
+![Model Map](static/images/readme/model_map_current.jpg)
+
 ### Colour scheme
 
 The website uses a colour palette.
