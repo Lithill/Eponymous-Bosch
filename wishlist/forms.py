@@ -13,11 +13,3 @@ class WishlistForm(forms.ModelForm):
     class Meta:
         model = Wishlist
         fields = ['sale_alert_consent']
-
-
-# Delete this if get the other one working
-class WaitingListForm(forms.Form):
-    sale_alert = forms.BooleanField(
-        required=False,
-        widget=forms.CheckboxInput(attrs={'class': 'custom-checkbox'}),
-    )
