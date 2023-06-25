@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils import timezone
 from datetime import timedelta
+from django.core.exceptions import ValidationError
 
 
 class Category(models.Model):
@@ -125,6 +126,21 @@ class Product(models.Model):
     def on_sale(self):
         return (self.discount_percentage > 0)
 
+    def clean(self):
+        # Stop admin entering dates without giving a discount
+        if (
+            self.on_sale_start
+            and self.on_sale_end
+            and not self.discount_percentage
+        ):
+            raise ValidationError("Please enter the discount percentage.")
+
+        # Stop user making the end date earlier than the sale start date
+        if self.on_sale_start and self.on_sale_end:
+            if self.on_sale_end < self.on_sale_start:
+                raise ValidationError(
+                    "The sale end date cannot be before the sale start date.")
+
     def save(self, *args, **kwargs):
         # If user does not add a sale date when adding discount
         # todays date is auto added
@@ -143,5 +159,3 @@ class Product(models.Model):
             self.on_sale_end = None
 
         super().save(*args, **kwargs)
-
-    # Stop user making the end date earlier than the sale start date

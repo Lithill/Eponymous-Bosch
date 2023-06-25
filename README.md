@@ -333,6 +333,8 @@ Thanks are given for the following posts and tutorials:
 * [Platform-based Programming's Asignment Walkthrough](https://pbp-fasilkom-ui.github.io/ganjil-2023/en/assignments/tutorial/tutorial-1/) was used for the base code for setting up the wishlist.
 * [Funda Web Of It's tutorial on Insert data into database in Django](https://www.fundaofwebit.com/django/insert-data-into-database-in-django#:~:text=To%20insert%20data%2C%20using%20forms,the%20classname%20as%20shown%20below.&text=Open%20the%20views.py%20file,given%20in%20the%20path%20above.&text=%23%20Create%20your%20views%20here.) was used to understand how to create a wishlist button to send the data to the database.
 * [Coding Ninja's Django Model Form tutorial](https://www.codingninjas.com/codestudio/library/django-model-form) was used for the basis of the contact / commission form.
+* [Geeks for Geeks tutorial on Overriding the save method in django models](https://www.geeksforgeeks.org/overriding-the-save-method-django-models/) helped me understand how to create the save function in the product model for when products are on sale.
+* [Monkut's reply in Stack Overflow post about showing custom model validation exceptions in the Django admin site](https://stackoverflow.com/questions/2177720/showing-custom-model-validation-exceptions-in-the-django-admin-site) helped me understand how to raise validation exceptions for my product model when writing the sale functions. 
 
 ### Code Used
 
