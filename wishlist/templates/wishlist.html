@@ -33,7 +33,7 @@
                 </div>
                 <!-- Consent form for contacting re ALL items in wishlist -->
                 {% if wishlist.sale_alert_consent %}
-                    <p><strong>You signed up</strong> to an automatic email to let you know when your wishlist products go on sale.</p>
+                    <p><strong>You signed up</strong> to an automatic email to let you know when the art you want goes on sale.</p>
                     <p><strong>Don't want this?</strong> Please click below</p>
                     <form method="post" action="{% url 'wishlist:sale_alert_consent' wishlist.user.id %}">
                         {% csrf_token %}

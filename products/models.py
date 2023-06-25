@@ -1,10 +1,13 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils import timezone
 from datetime import timedelta
 from django.core.exceptions import ValidationError
+from django.core.mail import send_mail
+from wishlist.email import send_sale_alert_email
 
 
 class Category(models.Model):
@@ -60,7 +63,7 @@ class Product(models.Model):
     )
     users_wishlist = models.ManyToManyField(
         User,
-        related_name="user_wishlist",
+        related_name="users_wishlist",
         blank=True)
     style = models.CharField(
         max_length=50,
@@ -159,3 +162,12 @@ class Product(models.Model):
             self.on_sale_end = None
 
         super().save(*args, **kwargs)
+
+        if self.on_sale:
+            # Create array of users
+            users_with_product = self.product_wishlists.filter(
+                sale_alert_consent=True).values_list('user', flat=True)
+
+            for user_id in users_with_product:
+                user = User.objects.get(id=user_id)
+                send_sale_alert_email(user, self)
