@@ -2,6 +2,8 @@ from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.utils import timezone
+from datetime import timedelta
 
 
 class Category(models.Model):
@@ -92,6 +94,14 @@ class Product(models.Model):
     on_sale = models.BooleanField(
         default=False
     )
+    on_sale_start = models.DateField(
+        null=True,
+        blank=True
+    )
+    on_sale_end = models.DateField(
+        null=True,
+        blank=True
+    )
     discount_percentage = models.IntegerField(
         validators=[
             MaxValueValidator(95),
@@ -114,3 +124,24 @@ class Product(models.Model):
     @property
     def on_sale(self):
         return (self.discount_percentage > 0)
+
+    def save(self, *args, **kwargs):
+        # If user does not add a sale date when adding discount
+        # todays date is auto added
+        if self.on_sale and not self.on_sale_start:
+            self.on_sale_start = timezone.now().date()
+
+        # If user does not add an end date
+        # a week is auto added
+        if self.on_sale_start and not self.on_sale_end:
+            self.on_sale_end = self.on_sale_start + timedelta(days=7)
+
+        # When sale ends, automatically turn off sale and discount
+        if self.on_sale_end and self.on_sale_end < timezone.now().date():
+            self.discount_percentage = 0
+            self.on_sale_start = None
+            self.on_sale_end = None
+
+        super().save(*args, **kwargs)
+
+    # Stop user making the end date earlier than the sale start date
