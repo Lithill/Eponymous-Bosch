@@ -15,6 +15,7 @@ class WishlistForm(forms.ModelForm):
         fields = ['sale_alert_consent']
 
 
+# Delete this if get the other one working
 class WaitingListForm(forms.Form):
     sale_alert = forms.BooleanField(
         required=False,

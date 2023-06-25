@@ -22,7 +22,7 @@ urlpatterns = [
         views.waiting_list,
         name='waiting_list'),
     path(
-        'sale_alert_consent/',
+        'sale_alert_consent/<int:user_id>/',
         views.sale_alert_consent,
         name='sale_alert_consent'),
 ]

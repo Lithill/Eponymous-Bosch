@@ -28,6 +28,7 @@ class Wishlist(models.Model):
         return f'WishList ({self.user})'
 
 
+# Delete this if get the other one working
 class WaitingList(models.Model):
     product = models.OneToOneField(Product, on_delete=models.CASCADE)
     users = models.ForeignKey(User, on_delete=models.CASCADE)

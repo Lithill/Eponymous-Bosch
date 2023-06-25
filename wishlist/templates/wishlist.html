@@ -32,17 +32,23 @@
                     </div>
                 </div>
                 <!-- Consent form for contacting re ALL items in wishlist -->
-                <form method="post" action="{% url 'wishlist:sale_alert_consent' %}">
-                    {% csrf_token %}
-                    <input type="checkbox", name="sale_alert_consent">
-                    Email when any products are on sale?
-                    <button type="submit">Submit</button>
-                </form>
-                <!-- <form method="POST" action="{% url 'wishlist:sale_alert_consent' %}" name="sale_alert_consent">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit">Click here to be emailed when wishlist items go on sale</button>
-                </form> -->
+                {% if wishlist.sale_alert_consent %}
+                    <p><strong>You signed up</strong> to an automatic email to let you know when your wishlist products go on sale.</p>
+                    <p><strong>Don't want this?</strong> Please click below</p>
+                    <form method="post" action="{% url 'wishlist:sale_alert_consent' wishlist.user.id %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="sale_alert_consent" value="False">
+                        <button type="submit">Don't email me</button>
+                    </form>
+                {% else %}
+                    <form method="post" action="{% url 'wishlist:sale_alert_consent' wishlist.user.id %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="sale_alert_consent" value="True">
+                        <input type="checkbox" name="sale_alert_consent">
+                        Email me when wishlist products go on sale
+                        <button type="submit">Submit</button>
+                    </form>
+                {% endif %}
                 <br>
                 <!-- Populate all items in wishlist -->
                 <div class="row">

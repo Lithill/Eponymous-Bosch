@@ -86,7 +86,7 @@ def waiting_list(request, user_id, product_id):
     return render(request, 'wishlist.html', {'form': form})
 
 
-def sale_alert_consent(request):
+def sale_alert_consent(request, user_id):
     """
     So user can give consent to be emailed,
     if one of their wishlist items goes on sale.
@@ -97,7 +97,7 @@ def sale_alert_consent(request):
         if form.is_valid():
             form.save()
             messages.info(
-                request, "We'll send an email if they go on sale!")
+                request, "You updated your preference!")
             return redirect(request.META.get('HTTP_REFERER'))
         else:
             messages.info(
