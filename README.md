@@ -33,6 +33,7 @@ AI is currently very much in the public eye, and Dall-E 2 is no exception to thi
 
 #### Contacting
 * Be able to request an art commission
+* Choice of being emailed if an item on my wishlsit goes on sale
 
 #### Registration and User Accounts
 * Easily register for an account
@@ -49,6 +50,7 @@ AI is currently very much in the public eye, and Dall-E 2 is no exception to thi
 * Sort multiple categories of products simultaneously
 * Search for a product by name or description
 * Easily see what I've searched for and the number of results
+* Sort based on what is currently on sale
 
 #### Purchasing and Checkout
 * Easily select the quantity of a product when purchasing it
@@ -63,7 +65,7 @@ AI is currently very much in the public eye, and Dall-E 2 is no exception to thi
 * Add product
 * Edit/update a product
 * Delete a product
-* Create sale prices
+* Create sale prices, start dates and end dates
 
 ## Design
 
@@ -83,13 +85,9 @@ This website was designed desktop-first.
 
 ### Model Map
 
-This model was used to plan the sale alert function, which ultimately failed:
+This map represents my current models. Those in yellow have not been modified from the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. (Products was heavily modified, Commission and Wishlit are new.):
 
-![Model Map](static/images/readme/model_map.jpg)
-
-This represents my current models:
-
-![Model Map](static/images/readme/model_map_current.jpg)
+![Model Map](static/images/readme/model_map.jpeg)
 
 ### Colour scheme
 
@@ -173,6 +171,7 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Excel](https://www.microsoft.com/en-gb/microsoft-365/excel) was used to create csv files.
 * [Convert CSV](https://www.convertcsv.com/csv-to-json.htm) was used to convert csv files to json files.
 * [Font Awesome](https://fontawesome.com/) was used for the icons.
+* [Lucid](https://lucid.app/) was used to map the models
 
 ## Deployment and Local Development
 
