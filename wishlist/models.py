@@ -20,6 +20,9 @@ class Wishlist(models.Model):
         through="WishListItem",
         related_name='product_wishlists'
     )
+    sale_alert_consent = models.BooleanField(
+        default=False
+    )
 
     def __str__(self):
         return f'WishList ({self.user})'

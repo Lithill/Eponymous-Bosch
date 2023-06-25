@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from products.models import Product
 from wishlist.models import WaitingList
 from django.contrib import messages
-from .forms import WaitingListForm
+from .forms import WaitingListForm, WishlistForm
 from django.contrib.auth.models import User
 
 
@@ -83,4 +83,25 @@ def waiting_list(request, user_id, product_id):
     else:
         form = WaitingListForm()
 
+    return render(request, 'wishlist.html', {'form': form})
+
+
+def sale_alert_consent(request):
+    """
+    So user can give consent to be emailed,
+    if one of their wishlist items goes on sale.
+    """
+    wishlist = Wishlist.objects.get(user=request.user)
+    if request.method == 'POST':
+        form = WishlistForm(request.POST, instance=wishlist)
+        if form.is_valid():
+            form.save()
+            messages.info(
+                request, "We'll send an email if they go on sale!")
+            return redirect(request.META.get('HTTP_REFERER'))
+        else:
+            messages.info(
+                request, "Sorry there was an error!")
+    else:
+        form = WishlistForm(instance=wishlist)
     return render(request, 'wishlist.html', {'form': form})

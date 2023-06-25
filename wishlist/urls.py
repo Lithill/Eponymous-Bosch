@@ -21,4 +21,8 @@ urlpatterns = [
         'waiting_list/<int:user_id>/<int:product_id>',
         views.waiting_list,
         name='waiting_list'),
+    path(
+        'sale_alert_consent/',
+        views.sale_alert_consent,
+        name='sale_alert_consent'),
 ]

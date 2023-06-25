@@ -31,6 +31,20 @@
                         </p>
                     </div>
                 </div>
+                <!-- Consent form for contacting re ALL items in wishlist -->
+                <form method="post" action="{% url 'wishlist:sale_alert_consent' %}">
+                    {% csrf_token %}
+                    <input type="checkbox", name="sale_alert_consent">
+                    Email when any products are on sale?
+                    <button type="submit">Submit</button>
+                </form>
+                <!-- <form method="POST" action="{% url 'wishlist:sale_alert_consent' %}" name="sale_alert_consent">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Click here to be emailed when wishlist items go on sale</button>
+                </form> -->
+                <br>
+                <!-- Populate all items in wishlist -->
                 <div class="row">
                     {% if wishlist.products.all %}
                         {% for product in wishlist.products.all %}
