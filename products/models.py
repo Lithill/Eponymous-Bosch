@@ -130,11 +130,15 @@ class Product(models.Model):
         return (self.discount_percentage > 0)
 
     def clean(self):
+        discount_condition = (
+            self.discount_percentage is None or self.discount_percentage > 0
+        )
+
         # Stop admin entering dates without giving a discount
         if (
             self.on_sale_start
             and self.on_sale_end
-            and not self.discount_percentage
+            and discount_condition
         ):
             raise ValidationError("Please enter the discount percentage.")
 
@@ -154,6 +158,12 @@ class Product(models.Model):
         # a week is auto added
         if self.on_sale_start and not self.on_sale_end:
             self.on_sale_end = self.on_sale_start + timedelta(days=7)
+
+        # If user tries to end the sale early by only changing discount to 0
+        # automatically set the dates to none
+        if self.discount_percentage == 0:
+            self.on_sale_start = None
+            self.on_sale_end = None
 
         # When sale ends, automatically turn off sale and discount
         if self.on_sale_end and self.on_sale_end < timezone.now().date():

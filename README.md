@@ -271,6 +271,7 @@ The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate t
 | ---:        |    :----:          |        :----:    | :---     |
 | 1       |  When clicking on the On Sale dropdown under All Products in the nav bar, user sees everything on sale   |  This did not happen  | The model has a property called on_sale that determines the boolean value of on_sale in the Product model. This calculates if an item is on sale based on whether the admin enters a discount or not. So instead of looking for on_sale=True, the code looks for on_sale being greater than 0. So I changed the all_product view section to "if 'on_sale' in request.GET: products = products.filter(discount__gt=0)" |
 | 2       | Commissions shown on the my_commissions page should only be those of the user  | Currently showing all user's commissions  | Change part of the my_commissions view code from this -> commissions = Commission.objects.all() to this -> commissions = Commission.objects.filter(user=request.user) |
+| 3 | When marking the discount percentage or a product as '0' in admin, the user should be able to turn off the sale |        Marking the discount percentage as '0' returned a form error, requesting the user enter a discount percentage | Added the discount condition to the Product model |
 | ---:        |    :----:          |        :----:    | :---     |
 
 
@@ -278,7 +279,7 @@ The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate t
 ### Known Bugs
 
 | ---:        |    :----:          |        :----:    | :---     |
-| ---:        | Subtotal in checkout page shows subtotal of items | It does not  | This piece of code in checkout.html does not work - {{ item.product.price | calc_subtotal:item.quantity }}  |
+
 
 ### Full Testing
 
