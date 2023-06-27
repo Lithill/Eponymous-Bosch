@@ -28,11 +28,37 @@
     </ul>
     <p><strong>Just fill in the form below, and we'll get back to you!</strong></p>
     <br>
-    <form method = "post" action="{% url 'contact:commission' user.id %}">
+    <div class="col-12 col-lg-6">
+        <form method = "post" action="{% url 'contact:commission' user.id %}" id="commission-form">
+            {% csrf_token %}
+            <fieldset class="rounded px-3 mb-5">
+                {{ commission_form.name | as_crispy_field }}
+                {{ commission_form.email | as_crispy_field }}
+                {{ commission_form.description | as_crispy_field }}
+                {{ commission_form.dimensions | as_crispy_field }}
+                {{ commission_form.style | as_crispy_field }}
+                {{ commission_form.artist | as_crispy_field }}
+                {{ commission_form.framed | as_crispy_field }}
+                {{ commission_form.medium | as_crispy_field }}
+                {{ commission_form.dominant_colours | as_crispy_field }}
+            </fieldset>
+            <div class="submit-button text-right mt-5 mb-2">                    
+                <button id="submit-button" class="btn btn-black rounded-0">
+                    <span class="font-weight-bold">Submit</span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- <form method = "post" action="{% url 'contact:commission' user.id %}">
         {% csrf_token %}
         {{form.as_p}}
         <input type="submit"></input>
-    </form>
+    </form> -->
     <br>
 </div>
 

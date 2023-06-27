@@ -85,15 +85,13 @@ This website was designed desktop-first.
 
 ### Model Map
 
-This map represents my current models. Those in yellow have not been modified from the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. (Products was heavily modified, Commission and Wishlit are new.):
+This map represents the current models in the relational database. Those in yellow have not been modified from the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. (Products was heavily modified, Commission and Wishlit are new.):
 
 ![Model Map](static/images/readme/model_map.jpeg)
 
 ### Colour scheme
 
-The website uses a colour palette.
-
-![Colour Scheme](#)
+The website is intentionally black and white, because it was felt that this would be a cleaner look against the colour of the artwork.
 
 ### Typography
 
@@ -101,12 +99,6 @@ Google Fonts was used to import the following fonts:
 
 *  is a serif font. This is used for the navigation bar and headings.
 *  is a sans-serif font. This is used for all other text. 
-
-### Database Schema
-
-It was felt that a relational database was required, as there was a need for the user and art data to be related. 
-
-![Schema](#)
 
 ## Features
 

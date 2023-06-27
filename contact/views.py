@@ -15,17 +15,19 @@ def contact(request):
 def commission(request, user_id):
     context = {}
 
-    form = CommissionForm(request.POST or None, request.FILES or None)
+    commission_form = CommissionForm(request.POST or None, request.FILES or None)
 
     if request.method == 'POST':
-        if form.is_valid():
-            commission = form.save(commit=False)
+        if commission_form.is_valid():
+            commission = commission_form.save(commit=False)
             commission.user_id = user_id
             commission.save()
             messages.success(request, "Commission created successfully!")
             return render(request, "contact/commission_success.html")
 
-    context['form'] = form
+    context = {
+        'commission_form': commission_form
+    }
     return render(request, "contact/commission.html", context)
 
 

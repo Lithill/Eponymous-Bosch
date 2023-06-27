@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     '8000-lithill-eponymousbosch-vy527951xyj.ws-eu98.gitpod.io',
     '8000-lithill-eponymousbosch-vy527951xyj.ws-eu99.gitpod.io',
     '8000-lithill-eponymousbosch-vy527951xyj.ws-eu100.gitpod.io',
+    '8000-lithill-eponymousbosch-vy527951xyj.ws-eu101.gitpod.io',
     'localhost',
 ]
 
