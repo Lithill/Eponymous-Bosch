@@ -83,11 +83,26 @@ This website was designed desktop-first.
 
 ![Add Plant Page](#)
 
-### Model Map
+### Models
 
-This map represents the current models in the relational database. Those in yellow have not been modified from the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. (Products was heavily modified, Commission and Wishlit are new.):
+#### Maps
+
+This map represents the current models in the relational database, apart from the models that were not changed from the Boutique Ado walkthrough, and are not referenced by the new code. Those in yellow have not been modified from the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. (Products was heavily modified, Commission and Wishlit are new.):
 
 ![Model Map](static/images/readme/model_map.jpeg)
+
+#### Features
+
+##### Product Model
+
+* The discounted price of a product is automatically calculated based on the users input in the admin page. When the user inputs the discount percentage, this:
+* * Changes the sell price of the product, based on the percentage added
+* * Changes the 'on sale' variable to 'True', which in turn changes the html in the product and product detail pages
+* * If the user neglects to enter a sale start and end date, these are automatically added. The sale start date in this case will be the current date, and the end sale date will be a week from the current date
+* * If the user adds dates but no discount, they are shown a customised validation error explaining this
+* * If the user adds a sale end date which is earlier than the start sale dale, they are shown a customised validation error
+* * If the user ends the sale early by changing the discount percentage to zero without changing the sale start and end dates, the dates are automatically removed
+* * When the sale ends, the dates are automatically removed, as is the discount. Therefore reseting the product to the original price and setting 'on sale' to False
 
 ### Colour scheme
 
@@ -102,7 +117,7 @@ Google Fonts was used to import the following fonts:
 
 ## Features
 
-The website is made up of 9 pages:
+The website is made up of # pages:
 
 * 
 
