@@ -95,14 +95,15 @@ This map represents the current models in the relational database, apart from th
 
 ##### Product Model
 
-* The discounted price of a product is automatically calculated based on the users input in the admin page. When the user inputs the discount percentage, this:
-* * Changes the sell price of the product, based on the percentage added
-* * Changes the 'on sale' variable to 'True', which in turn changes the html in the product and product detail pages
-* * If the user neglects to enter a sale start and end date, these are automatically added. The sale start date in this case will be the current date, and the end sale date will be a week from the current date
-* * If the user adds dates but no discount, they are shown a customised validation error explaining this
-* * If the user adds a sale end date which is earlier than the start sale dale, they are shown a customised validation error
-* * If the user ends the sale early by changing the discount percentage to zero without changing the sale start and end dates, the dates are automatically removed
-* * When the sale ends, the dates are automatically removed, as is the discount. Therefore reseting the product to the original price and setting 'on sale' to False
+The discounted price of a product is automatically calculated based on the users input in the admin page. When the user inputs the discount percentage, this:
+
+* Changes the sell price of the product, based on the percentage added
+* Changes the 'on sale' variable to 'True', which in turn changes the html in the product and product detail pages
+* If the user neglects to enter a sale start and end date, these are automatically added. The sale start date in this case will be the current date, and the end sale date will be a week from the current date
+* If the user adds dates but no discount, they are shown a customised validation error explaining this
+* If the user adds a sale end date which is earlier than the start sale dale, they are shown a customised validation error
+* If the user ends the sale early by changing the discount percentage to zero without changing the sale start and end dates, the dates are automatically removed
+* When the sale ends, the dates are automatically removed, as is the discount. Therefore reseting the product to the original price and setting 'on sale' to False
 
 ### Colour scheme
 
@@ -139,7 +140,8 @@ The index page has the following features:
 
 ### Future Features
 
-* 
+* The commission form to automatically fill in the name and email of the logged in user
+* The checkout form to automatically fill the name of the logged in user
 
 ## Accessibility
 
@@ -253,6 +255,12 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 * Automatic testing is conducted by automation frameworks, or another kind of tool or piece of software. 
 
 I personally tested the page and had 3 people also manually test it on their own devices. For automated testing, I used W3C validator, CSS validator, Python Checker and Lighthouse. 
+
+### Manual Testing
+
+#### Product Sale
+
+* If the user is looking at a product that is on sale, and the product is then taken off sale, if the user adds it to their cart without refreshing the page, the product will revert to the original price.
 
 ### W3C Validator
 
