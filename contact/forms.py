@@ -8,6 +8,8 @@ class CommissionForm(forms.ModelForm):
         model = Commission
         exclude = ['user', 'status']
 
+    # The first few lines taken from:
+    # https://stackoverflow.com/questions/16277997/field-labels-crispy-forms-django
     def __init__(self, *args, **kwargs):
         super(CommissionForm, self).__init__(*args, **kwargs)
         self.fields['name'].label = "Enter your name"
@@ -19,3 +21,10 @@ class CommissionForm(forms.ModelForm):
         self.fields['framed'].label = "Tick if you'd like it to be framed"
         self.fields['medium'].label = "What medium would you like? (E.g. watercolour / oil on canvas)"
         self.fields['dominant_colours'].label = "Do you have any particular colour-palette or dominant colours in mind?"
+
+        # Set the initial values of the form fields to empty strings
+        self.initial['dimensions'] = ''
+        self.initial['style'] = ''
+        self.initial['artist'] = ''
+        self.initial['medium'] = ''
+        self.initial['dominant_colours'] = ''
