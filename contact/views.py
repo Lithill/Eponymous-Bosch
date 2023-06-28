@@ -38,11 +38,13 @@ def my_commissions(request):
     """
     commissions = None
     try:
-        commissions = Commission.objects.filter(user=request.user)
+        commissions = Commission.objects.filter(
+            user=request.user).order_by('-last_modified')
     except Commission.DoesNotExist:
         pass
 
-    return render(request, 'contact/my_commissions.html', {'commissions': commissions})
+    return render(
+        request, 'contact/my_commissions.html', {'commissions': commissions})
 
 
 @login_required
