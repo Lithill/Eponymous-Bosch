@@ -1,5 +1,4 @@
 from django import forms
-from .models import WaitingList
 from .models import Wishlist
 from django.forms.widgets import CheckboxInput
 

@@ -5,14 +5,6 @@ from products.models import Product
 users = models.ForeignKey(User, on_delete=models.CASCADE)
 
 
-# Delete the model below eventually and json / everything associated with it
-class UserWishlist(models.Model):
-
-    item_name = models.CharField(max_length=50,)
-    item_price = models.IntegerField()
-    description = models.TextField()
-
-
 class Wishlist(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     products = models.ManyToManyField(
@@ -28,16 +20,6 @@ class Wishlist(models.Model):
         return f'WishList ({self.user})'
 
 
-# Delete this if get the other one working
-class WaitingList(models.Model):
-    product = models.OneToOneField(Product, on_delete=models.CASCADE)
-    users = models.ForeignKey(User, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.product.name
-
-
-# Delete the model below eventually
 class WishListItem(models.Model):
     """
     A 'through' model, allowing users to add
