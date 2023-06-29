@@ -3,6 +3,8 @@ from .models import Wishlist
 from django.contrib.auth.decorators import login_required
 from products.models import Product
 from django.contrib.auth.models import User
+from .forms import WishlistForm
+from django.contrib import messages
 
 
 @login_required
