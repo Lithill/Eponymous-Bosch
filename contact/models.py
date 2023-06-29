@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MaxValueValidator
 
 
 class Commission(models.Model):
@@ -13,11 +14,18 @@ class Commission(models.Model):
     email = models.EmailField(
         max_length=100)
     description = models.TextField()
-    dimensions = models.CharField(
-        max_length=50,
+    width_in_mm = models.IntegerField(
         null=True,
         blank=True,
-        default='None Chosen')
+        default=None,
+        validators=[MaxValueValidator(1189)]
+    )
+    height_in_mm = models.IntegerField(
+        null=True,
+        blank=True,
+        default=None,
+        validators=[MaxValueValidator(1189)]
+    )
     style = models.CharField(
         max_length=50,
         null=True,
@@ -31,11 +39,6 @@ class Commission(models.Model):
     framed = models.BooleanField(
         default=False)
     medium = models.CharField(
-        max_length=50,
-        null=True,
-        blank=True,
-        default='None Chosen')
-    dominant_colours = models.CharField(
         max_length=50,
         null=True,
         blank=True,

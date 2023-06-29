@@ -35,12 +35,12 @@
                 {{ commission_form.name | as_crispy_field }}
                 {{ commission_form.email | as_crispy_field }}
                 {{ commission_form.description | as_crispy_field }}
-                {{ commission_form.dimensions | as_crispy_field }}
+                {{ commission_form.width_in_mm | as_crispy_field }}
+                {{ commission_form.height_in_mm | as_crispy_field }}
                 {{ commission_form.style | as_crispy_field }}
                 {{ commission_form.artist | as_crispy_field }}
                 {{ commission_form.framed | as_crispy_field }}
                 {{ commission_form.medium | as_crispy_field }}
-                {{ commission_form.dominant_colours | as_crispy_field }}
             </fieldset>
             <div class="submit-button text-right mt-5 mb-2">                    
                 <button id="submit-button" class="btn btn-black rounded-0">
