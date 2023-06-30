@@ -1,12 +1,14 @@
-# Eponymous Bosch
+# **Eponymous Bosch**
 
 This website has been created to sell AI generated art prints. It has been designed with a range of different screen sizes in mind. 
 
-!["Am I Responsive" image](#)
+!["Am I Responsive" image](static/images/readme/amiresponsive.jpg)
 
 [View the live project here](#)
 
-## Table of Contents
+---
+
+## **Table of Contents**
 
 1. [User Experience](#user-experience)
 3. [Design](#design)
@@ -16,84 +18,355 @@ This website has been created to sell AI generated art prints. It has been desig
 8. [Deployment and Local Development](#deployment-and-local-development)
 9. [Testing](#testing)
 10. [Credits](#credits)
+
+---
     
-## User Experience
+## **User Experience**
 
-### Initial Discussion
+### **Initial Discussion**
 
-AI is currently very much in the public eye, and Dall-E 2 is no exception to this. With this in mind, it was felt that it may be an interesting venutre to use Dall-E 2 to reimagine various artwork and posters in the style of Hieronymus Bosch; a 15th Century Dutch/Netherlandish painter, most noted for his work 'The Garden of Earthly Delights'.
+AI is currently very much in the public eye, and Open AI's Dall-E 2 is no exception to this. With this in mind, it was felt that it may be an interesting venture to use Dall-E 2 to reimagine various artwork and posters in the style of Hieronymus Bosch; a 15th Century Dutch/Netherlandish painter, most noted for his work 'The Garden of Earthly Delights'.
 
-### User Stories
+### **User Stories**
 
-#### Viewing and Navigation
+#### **Viewing and Navigation**
 * View the site on a range of device sizes.
 * View a list of art prints. 
 * View individual product details.
 * Easily view the total of my purchases at any time.
+* View only the products I would like to buy in the future.
+* View my past commission requests and their status.
 
-#### Contacting
-* Be able to request an art commission
-* Choice of being emailed if an item on my wishlsit goes on sale
+#### **Contacting**
+* Be able to request an art commission.
+* Have a choice of being emailed if an item on my wishlist goes on sale.
 
-#### Registration and User Accounts
-* Easily register for an account
-* Easily login or logout
-* Easily recover my password in case I forget it
-* Receive an email confirmation after registering
-* Have a personalised user profile
-* Have a personalised wishlist
-* Be able to view my past commission requests
+#### **Registration and User Accounts**
+* Easily register for an account.
+* Easily login or logout.
+* Easily recover my password in case I forget it.
+* Receive an email confirmation after registering.
+* Have a personalised user profile.
+* Have a personalised wishlist.
+* Be able to view my past commission requests.
 
-#### Sorting and Setting
-* Sort the list of available products
-* Sort a specific category of product
-* Sort multiple categories of products simultaneously
-* Search for a product by name or description
-* Easily see what I've searched for and the number of results
-* Sort based on what is currently on sale
+#### **Sorting and Setting**
+* Sort the list of available products.
+* Sort a specific category of product.
+* Sort multiple categories of products simultaneously.
+* Search for a product by name or description.
+* Easily see what I've searched for and the number of results.
+* Sort based on what is currently on sale.
 
-#### Purchasing and Checkout
-* Easily select the quantity of a product when purchasing it
-* View items in my bag to be purchased
-* Adjust the quantity of individual items in my bag
-* Easily enter my payment information
-* Feel my personal and payment information is safe and secure
-* View an order confirmation after checkout
-* Receive an email confirmation after checking out
+#### **Purchasing and Checkout**
+* Easily select the quantity of a product when purchasing it.
+* View items in my bag to be purchased.
+* Adjust the quantity of individual items in my bag.
+* Easily enter my payment information.
+* Feel my personal and payment information is safe and secure.
+* View an order confirmation after checkout.
+* Receive an email confirmation after checking out.
 
-#### Admin and Store Management
-* Add product
-* Edit/update a product
-* Delete a product
-* Create sale prices, start dates and end dates
+#### **Admin and Store Management**
+* Add product.
+* Edit/update a product.
+* Delete a product.
+* Create sale items including prices, start dates and end dates (in the django admin page)
 
-## Design
+---
 
-### Early Design Phases / Wireframes
+## **Design**
 
-The Wireframes were made via [Paint.net](#).
+### **Early Design Phases**
+
+Since the building of this website was based on the Ado Boutique walkthrough, there are no wireframes. This is because the layout has been kept the same, but reskinned via images and font.
+
+### **Colour Scheme**
 
 Due to the colourful nature of the artwork itself, a minimalist design and colour palet was sought, so that it would not clash with any of the artwork displayed. 
 
-![Index Page](#)
+### **Typography**
 
-This website was designed desktop-first.
+Google Fonts was used to import the following fonts:
 
-![Login Page](#)
+*  is a serif font. This is used for the navigation bar and headings.
+*  is a sans-serif font. This is used for all other text. 
 
-![Add Plant Page](#)
+### **Models**
 
-### Models
-
-#### Maps
-
-This map represents the current models in the relational database, apart from the models that were not changed from the Boutique Ado walkthrough, and are not referenced by the new code. Those in yellow have not been modified from the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. (Products was heavily modified, Commission and Wishlit are new.):
+This map represents the current models in the relational database, apart from the models that were not changed from the Boutique Ado walkthrough, and are not referenced by the new code. Those in yellow have not been modified since the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. ('Products' was heavily modified, Commission and Wishlit are new.):
 
 ![Model Map](static/images/readme/model_map.jpeg)
 
-#### Features
+---
 
-##### Product Model
+## **Features**
+
+The website is made up of 15 pages:
+
+* Index
+* Products
+* Product Detail
+* Commissions
+* Product Management
+* My Profile
+* Wishlist
+* My Commissions
+* Commission Success
+* Logout
+* Register
+* Sign-in
+* Shopping Bag
+* Checkout
+* Checkout Success
+
+### **Index**
+
+The index page has:
+
+  * A "Shop Now" button, which takes the user to the "All Products" page
+
+   ![Shop Now Button](static/images/readme/shop_now.jpg)
+
+### **Products**
+
+The Products page has the following features:
+
+   * A list of products, which, when clicked, take the user to the detail page of that specific product. If the product is on sale, the price is updated and the text is red, with additional text labeling it as on sale.
+
+   ![Products](static/images/readme/products.jpg)
+
+   * If the user is a superuser, then at the bottom of each product are links to either edit or delete the product.
+
+   ![Edit or Delete](static/images/readme/edit_delete.jpg)
+
+   * Text which lets the user know how many products there are in the category they are browsing. When the user is filtering products, this also shows a link to "Products Home"
+
+   ![Product Amount & Link](static/images/readme/product_amount.jpg)
+
+   * A dropdown box with the ability to sort by price (low to high), price (high to low), name (a-z), name (z-a), year of original (past-present), year of original (present - past). Year of original denotes the year that the artwork was made that the piece was based on.
+
+   ![Sort Dropdown](static/images/readme/sort_dropdown.jpg)
+
+   * Category boxes appear when you are seeing the product page in any view other than 'all products'. They show the user which categories they are currently viewing, and can be clicked on to take the use to a specific category.
+
+   ![Category Boxes](static/images/readme/categories.jpg)
+   
+   * A scroll-up button on the bottom-right-hand-side of the page, which when clicked, will automatically scroll the page up to the top.
+
+   ![Scroll Up](static/images/readme/scroll.jpg)
+
+### **Product Detail**
+
+The Product Detail page has the following features:
+
+   * When clicking on the product image, it opens in a new tab for a clearer view.
+
+   ![Product Image](static/images/readme/product.jpg)
+
+   * If the product is on sale, the price is updated, and the text turns red. Red text also appears to the right to say that the product is on sale.
+
+   ![Sale information](static/images/readme/sale.jpg)
+
+   * If the user is a superuser, two links appear giving the user the ability to edit or delete the product.
+
+   ![Edit and Delete](static/images/readme/edit_delete_detail.jpg)
+
+   * If the user would like more than one of the product, they can adjust the quantity. The maximum quantity is 3.
+
+   ![Quantity Adjuster](static/images/readme/quantity.jpg)
+
+   * A keep shopping button which takes the user back to the products page to view all products.
+
+   ![Keep Shopping Button](static/images/readme/keep_shopping.jpg)
+
+   * A button that will add the desired quantity of the product to the users checkout cart.
+   
+   ![Add to Bag Button](static/images/readme/add.jpg)
+
+   * A button that will add the product to the logged in users wishlist. This button is only shown if the user is logged in.
+   
+   ![Add to Wishlist Button](static/images/readme/add_wishlist.jpg)
+
+### **Commissions**
+
+The Commissions page has a form that the user can fill in to request a commission.
+   
+   ![Commission Form](static/images/readme/commission.jpg)
+
+### **Commission Success**
+
+   * This page is shown when the user successfully submits a commission form. It includes links to their commission page, their wishlist, and the all products page. It should be noted that the commission form is only available to logged in users. 
+
+   ![Commission Success Message](static/images/readme/commission_success.jpg)
+
+### **Product Management** 
+
+The Product Management page is only available to logged in superusers and has a form that will allow the user to add a product.
+
+   ![Add Product Form](static/images/readme/add_product.jpg)
+
+### **My Profile**
+
+The My Profile page has the following features:
+
+   * A form where the user can update their personal information, which is then auto-filled on the checkout form.
+
+   ![User Information Form](static/images/readme/user_info.jpg)
+
+   * A button that takes the user to their wishlist.
+
+   ![View Wishlist Button](static/images/readme/view_wishlist.jpg)
+
+   * A button that takes the user to their commissions.
+
+   ![View Commissions Button](static/images/readme/view_commissions.jpg)
+
+   * A section which shows the user their order history.
+
+   ![Order History](static/images/readme/order_history.jpg)
+
+### **Wishlist**
+
+The Wishlist page has the following features:
+
+   * A section which tells the user how many items they have in their wishlist.
+
+   ![](static/images/readme/wishlist_amount.jpg)
+
+   * A small form the user can submit consent to be automatically emailed when one of their wished-for items goes on sale. This changes to remove consent as an option if they have given consent previously.
+
+   ![With no sale consent](static/images/readme/sale_consent_off.jpg)
+   ![With sale consent](static/images/readme/sale_consent_on.jpg)
+
+   * A list of wishlist items that the user has saved. Each item is clickable, and takes the user to the specific product detail page.
+
+   ![Wishlist Items](static/images/readme/wishlist_items.jpg)
+
+   * A button underneath each item, allowing the user to remove it from their wishlist.
+
+   ![Remove From Wishlist Button](static/images/readme/remove_wishlist.jpg)
+
+
+### **My Commissions**
+
+The My Commissions page has the following features:
+
+   * A section which shows the user how many pieces of art they have commissioned.
+
+   ![Commission Amount](static/images/readme/commission_amount.png)
+
+   * Each commission the user has requested has it's own section. This includes a status which can be updated by the administrator on the Django Admin page to let the user know where they are in the commission process. These are ordered by the most recent date.
+
+   ![User's Commissions](static/images/readme/commissions.jpg)
+
+### **Logout**
+
+The Logout page has a cancel button which takes the user back to the product page, and a sign out button, which sign the user out.
+
+   ![Sign Out](static/images/readme/sign_out.jpg)
+
+### **Register**
+
+The Sign Up page has the following features:
+
+   * A link to take the user to the sign in page if they already have an account. 
+   * A form for the user to sign up if they don't already have an account. 
+   * This page is only seen if the user is not signed in.
+
+   ![Register](static/images/readme/register.jpg)
+
+### **Sign In** 
+
+The Sign In page has the following features:
+
+   * A log in button that takes the user to the log in page in case they already have an account.
+   * A form for the user to input the neccessary details in order to create an account.
+
+   ![Sign In](static/images/readme/sign_in.jpg)
+
+### **Shopping Bag***
+
+The Shopping bag page has the following features:
+
+   * The details of the products being bought, with an option to update the amount or remove each product. 
+
+   ![Shopping Bag](static/images/readme/shopping_bag.jpg)
+
+   * The details of the total and delivery price, as well as information on how much extra the user should spend to get free postage.
+   * A button to return the user to the products page
+   * A button to continue to the checkout
+
+   ![Shopping Buttons](static/images/readme/shopping_buttons.jpg)
+
+### **Checkout**
+
+The Checkout page has the following features:
+
+   * A form for the user details needed to check out.
+
+   ![Checkout Form](static/images/readme/checkout_form.jpg)
+
+   * The order summary
+   * A button to send the user back to be able to adjust their bag
+   * A button to submit their order
+
+   ![Order Summary](static/images/readme/order_summary.jpg)
+
+### **Checkout Success**
+
+The Checkout success page has the following features:
+
+   * Information about the users order
+
+   ![Checkout Success](static/images/readme/checkout_success.jpg)
+
+### **All pages have the following features**
+
+   * A logo which when clicked takes the user back to the index page.
+
+   ![Logo](static/images/readme/logo.jpg)
+
+   * A search function
+
+   ![Search bar](static/images/readme/search.jpg)
+
+   * Links to three versions of the products page - all products / prints / posters, which themselves have dropdowns to further filter those pages.
+
+   * A link to the commissions page, which is only shown when the user is logged in.
+
+   ![Menu links](static/images/readme/menu_links.jpg)
+
+   * A drop-down menu for the user account. Which only shows 'log in' and 'register' if the user is not logged in, but shows 'product management', 'my profile', 'my wishlist', 'my commissions' and 'logout'.
+   * A link to the users shopping cart
+
+   ![My Account](static/images/readme/my_account.jpg)
+
+### **Toasts & Messages**
+
+Many messages are included to alert the user that they have successfully accomplished an action. Such as:
+
+   * When adding a product to their checkout bag.
+
+   ![Add Product to Bag](static/images/readme/add_product_toast.jpg)
+
+   * Successfully placing an order.
+
+   ![Order Success](static/images/readme/order_success_toast.jpg)
+
+   * Adding an item to their wishlist.
+
+   ![Add to wishlist toast](static/images/readme/add_wishlist_toast.jpg)
+
+   * Removing an item from their wishlist.
+
+   ![Remove from wishlist toast](static/images/readme/remove_wishlist_toast.jpg)
+
+   * Updating their consent preferences for being emailed when an item on their wishlist goes on sale.
+
+   ![Update Preferences](static/images/readme/preferences.jpg)
+
+### **Product Model**
 
 The discounted price of a product is automatically calculated based on the users input in the admin page. When the user inputs the discount percentage, this:
 
@@ -105,45 +378,15 @@ The discounted price of a product is automatically calculated based on the users
 * If the user ends the sale early by changing the discount percentage to zero without changing the sale start and end dates, the dates are automatically removed
 * When the sale ends, the dates are automatically removed, as is the discount. Therefore reseting the product to the original price and setting 'on sale' to False
 
-### Colour scheme
-
-The website is intentionally black and white, because it was felt that this would be a cleaner look against the colour of the artwork.
-
-### Typography
-
-Google Fonts was used to import the following fonts:
-
-*  is a serif font. This is used for the navigation bar and headings.
-*  is a sans-serif font. This is used for all other text. 
-
-## Features
-
-The website is made up of # pages:
-
-* 
-
-### Index
-
-The index page has the following features:
-
-
-
-   ![](#)
-
-   * 
-
-### All pages have the following features
-
-* 
-
-   ![](#)
-
-### Future Features
+### **Future Features**
 
 * The commission form to automatically fill in the name and email of the logged in user
-* The checkout form to automatically fill the name of the logged in user
+* The checkout form to show and automatically fill in the name of the logged in user
+* Improve responsiveness of a few of the pages in mobile view 
 
-## Accessibility
+---
+
+## **Accessibility**
 
 I have been mindful during coding to ensure that the website is as accessible as possible. I have achieved this by:
 
@@ -152,13 +395,15 @@ I have been mindful during coding to ensure that the website is as accessible as
 * Supplying information for screen readers where there are icons used and no text, such as footer icons.
 * Guaranteeing adequate colour contrast throughout the site.
 
-## Technologies Used
+---
 
-### Languages Used
+## **Technologies Used**
+
+### **Languages Used**
 
 HTML5, CSS3, Python, and JavaScript were used to create this website.
 
-### Frameworks, Libraries & Programs Used
+### **Frameworks, Libraries & Programs Used**
 
 * [Google Fonts](https://fonts.google.com/) was used to import Merriweather and Arimo.
 * [Git](https://git-scm.com/) was used for version control by using the Gitpod terminal to commit to Git and Push to GitHub.
@@ -182,13 +427,15 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Font Awesome](https://fontawesome.com/) was used for the icons.
 * [Lucid](https://lucid.app/) was used to map the models
 
-## Deployment and Local Development
+---
 
-### Deployment
+## **Deployment and Local Development**
+
+### **Deployment**
 
 This project was deployed to Heroku using the following steps:
 
-#### ElephantSQL
+#### **ElephantSQL**
 
 1. Navigate to ElephantSQL.com and create a user account, using log in with GitHub.
 2. Click “Create New Instance”.
@@ -201,7 +448,7 @@ This project was deployed to Heroku using the following steps:
 9. In the URL section, clicking the copy icon will copy the database URL to your clipboard
 10. Leave this tab open, we will come back here later
 
-#### Heroku
+#### **Heroku**
 
 1. Log into Heroku.com and click “New” and then “Create a new app”.
 2. Choose a unique name for your app, select the region closest to you and click “Create app”.
@@ -222,32 +469,30 @@ This project was deployed to Heroku using the following steps:
 17. Exit the Python terminal, by typing exit() and hitting enter, and close the console. Our Heroku database should now have the tables and columns created from our models.py file.
 18. The app should be up and running now, so click the “Open app” button
 
-### Local Deployment
+### **Local Deployment**
 
-#### How to Fork
+#### **How to Fork**
 
 To fork the Eponymous Bosch repository:
 
 1) Log in (or sign up) to GitHub.
-2) Go to the repository for this project, at [GitHub Repository](#).
+2) Go to the repository for this project, at [GitHub Repository](https://github.com/Lithill/Eponymous-Bosch).
 3) Click the Fork button in the top right corner.
 
-#### How to Clone
+#### **How to Clone**
 
 To clone the Eponymous Bosch repository:
 
 1) Log in (or sign up) to GitHub.
-2) Go to the repository for this project, at [GitHub Repository](#).
+2) Go to the repository for this project, at [GitHub Repository](https://github.com/Lithill/Eponymous-Bosch).
 3) Above the list of files, click "Code".
 4) Click "Open with GitHub Desktop" to clone and open the repository with GitHub Desktop.
 5) Click "Choose..." and, using Windows Explorer, navigate to a local path where you want to clone the repository.
 6) Click "Clone".
-   
-### How to run the server to see the website in the browser:
-   In the terminal, type:
-      - python3 manage.py runserver
 
-## Testing
+---
+
+## **Testing**
 
 Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along. Both manual and automated testing was employed. The difference between these two types of tests is that:
 
@@ -256,39 +501,39 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 I personally tested the page and had 3 people also manually test it on their own devices. For automated testing, I used W3C validator, CSS validator, Python Checker and Lighthouse. 
 
-### Manual Testing
+### **Manual Testing**
 
-#### Product Sale
+#### **Product Sale**
 
 * If the user is looking at a product that is on sale, and the product is then taken off sale, if the user adds it to their cart without refreshing the page, the product will revert to the original price.
 
-### W3C Validator
+### **W3C Validator**
 
 The [W3C HTML Validator](https://validator.w3.org/) was used to validate the HTML on all pages of the website. 
 
 * Results from the [](#) page check.
 * Results from the [](#) page check.
 
-### CSS Validator
+### **CSS Validator**
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS in the style.css file.
 
 Results from the [](#).
 
-### JSHint Validator
+### **JSHint Validator**
 
 The [JSHint Validator](https://jshint.com/) was used to validate the JavaScript in the script.js file.
 
 Results from the [check](#).
 
-### Pep8 Validator
+### **Pep8 Validator**
 
 The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code.
 
 * Results from the [](#) check.
 * Results from the [](#) check.
 
-### Solved Bugs
+### **Solved Bugs**
 
 | Bug Number  | Expected behaviour | Actual behaviour | Solution |
 | ---:        |    :----:          |        :----:    | :---     |
@@ -299,31 +544,31 @@ The [the CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate t
 
 
 
-### Known Bugs
+### **Known Bugs**
 
 | ---:        |    :----:          |        :----:    | :---     |
 
 
-### Full Testing
+### **Full Testing**
 
 To fully test my website, I used Google Chrome Developer Tools to ensure that the page was responsive on all available screen sizes. Testing was performed on a variety of browsers (Chrome, Microsoft Edge, and Firefox) and devices (Gigabyte gaming laptop, iPhone SE, Android one+ 9 mobile, Fair Phone).
 
-#### Links:
+#### **Links:**
 
 Tested each link on every page. Each link worked as expected. 
 
-#### Buttons:
+#### **Buttons:**
 
 Tested each button on every page. Each button worked as expected. 
 
-#### Forms:
+#### **Forms:**
 
 Checked that all forms behaved as expected in terms of:
    * Not submitting when required fields are left blank.
    * Returning success messages when the user successfully submits a form.
    * Not allowing users to enter strings that are too long.
 
-#### Authentication:
+#### **Authentication:**
 
 The following was tested and found to be working as expected:
 
@@ -331,7 +576,7 @@ The following was tested and found to be working as expected:
    * 
 * Users cannot view private information about other users, such as user account details. 
 
-#### Database:
+#### **Database:**
 
 The following was tested and found to be working as expected:
 
@@ -341,7 +586,9 @@ The following was tested and found to be working as expected:
 * User data can be edited and deleted from the database.
 * On deletion of the user, the order history data associated with that user is also deleted.
 
-## Credits
+---
+
+## **Credits**
 
 Thanks are given for the following posts and tutorials:
 
@@ -354,7 +601,7 @@ Thanks are given for the following posts and tutorials:
 * [Alasdair's post on Stack Overflow](https://stackoverflow.com/questions/37205793/django-values-list-vs-values) helped point me in the write direction of using flat=True on values_list(), so that I can loop the output.
 * [Arie's code on Stack Overflow](https://stackoverflow.com/questions/16277997/field-labels-crispy-forms-django) was used to edit the field names on the commission form.
 
-### Code Used
+### **Code Used**
 
 * [Code Institute's 'Boutique Ado' walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) was used as the starting point for this project.
 * [Ajmal Aamir's](https://stackoverflow.com/questions/56580696/how-to-implement-add-to-wishlist-for-a-product-in-django) model code in this Stack Overflow post was used as a basis for the wishlist model.
@@ -362,11 +609,11 @@ Thanks are given for the following posts and tutorials:
 * [Mahammadhusain Kadiwala's](https://stackoverflow.com/questions/73813646/django-models-to-calculate-discount) code was used as a basis for the sale information in the product model.
 * [Timmy O'Mahony's](https://stackoverflow.com/questions/6195424/how-to-insert-a-checkbox-in-a-django-form) code was used and edited for the wishlist sales alert checkbox.
 
-### Content
+### **Content**
 
 Content for the website was made by Rossanne Hamilton.
 
-### Media Used
+### **Media Used**
 
 * [StockSnap's image](https://pixabay.com/photos/wall-picture-frame-display-interior-2558279/) on Pixabay was used for the background image of Starry Night and Water Lillies. 
 * [Uroburos's image](https://pixabay.com/photos/image-painting-art-gallery-painter-1053852/) on Pixabay was used for the background image of the Mona Lisa. 
@@ -393,11 +640,10 @@ Content for the website was made by Rossanne Hamilton.
 * [](#)
 
 
-### Acknowledgements
+### **Acknowledgements**
 
 I would like to acknowledge the following people who helped me along the way in completing my fourth milestone project:
 
 - My mentor Mitko Bachvarov for helpful feedback and sharing links for further learning.
-- My tutor Robert Mclaughlin for helpful feedback and sharing links for further learning.
 - Chris Mugridge and Maya Irish for user and device testing.
 - Thomas Muat for helping me understand why the on_sale filter wasn't working in the nav bar.
