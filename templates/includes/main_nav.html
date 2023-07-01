@@ -7,7 +7,7 @@
         <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
             <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             <a href="{% url 'products' %}?on_sale=True" class="dropdown-item">All On Sale</a>
-            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+            <a href="{% url 'products' %}?sort=sell_price&direction=asc" class="dropdown-item">By Price</a>
             <a href="{% url 'products' %}?category=prints_people,posters_people" class="dropdown-item">All People</a>
             <a href="{% url 'products' %}?category=prints_animals,posters_animals" class="dropdown-item">All Animals</a>
             <a href="{% url 'products' %}?category=prints_landscapes,posters_landscapes" class="dropdown-item">All Landscapes</a>

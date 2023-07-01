@@ -7,7 +7,8 @@ from .models import Product, Category
 class ProductAdmin(admin.ModelAdmin):
     readonly_fields = [
         'on_sale',
-        'discounted_price'
+        'discounted_price',
+        'sell_price'
     ]
     list_display = (
         'name',

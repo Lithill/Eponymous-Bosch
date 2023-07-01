@@ -115,15 +115,16 @@ class Product(models.Model):
     discounted_price = models.IntegerField(
         null=True,
     )
-    sell_price = models.IntegerField(null=True)
+    sell_price = models.DecimalField(
+        max_digits=6,
+        decimal_places=2,
+        null=True,
+        blank=True,
+    )
 
     @property
     def discounted_price(self):
         return round(((self.og_price) * (self.discount_percentage)) / 100, 2)
-
-    @property
-    def sell_price(self):
-        return (self.og_price)-(self.discounted_price)
 
     @property
     def on_sale(self):
@@ -149,6 +150,8 @@ class Product(models.Model):
                     "The sale end date cannot be before the sale start date.")
 
     def save(self, *args, **kwargs):
+        self.sell_price = self.og_price - self.discounted_price
+
         # If user does not add a sale date when adding discount
         # todays date is auto added
         if self.on_sale and not self.on_sale_start:
