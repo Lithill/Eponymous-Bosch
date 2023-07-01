@@ -23,6 +23,7 @@ class ProductForm(forms.ModelForm):
             'year',
             'orig_url',
             'og_price',
+            'discount_percentage',
         ]
 
     image = forms.ImageField(
