@@ -1,6 +1,7 @@
 # **Eponymous Bosch**
 
-This website has been created to sell AI-generated art prints. It has been designed with a range of different screen sizes in mind. 
+This website has been created to sell AI-generated art prints for a european target group. Therefore, metric sizes have been focused on when the user requests a commission. It has been designed with a range of different screen sizes in mind. 
+
 
 !["Am I Responsive" image](static/images/readme/amiresponsive.jpg)
 
