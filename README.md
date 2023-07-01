@@ -508,20 +508,42 @@ I tested the page and had 2 people also manually test it on their own devices. F
 
 The [W3C HTML Validator](https://validator.w3.org/) was used to validate the HTML on all pages of the website. 
 
-* Results from the [bag](#) page check.
-* Results from the [](#) page check.
+* Results from the [bag](static/images/readme/validation/html/bag.jpg) page check.
+* Results from the [checkout](static/images/readme/validation/html/checkout.jpg) page check.
+* Results from the [checkout success](static/images/readme/validation/html/checkout_success.jpg) page check.
+* Results from the [commission](static/images/readme/validation/html/commission.jpg) page check.
+* Results from the [commission success](static/images/readme/validation/html/commission_success.jpg) page check.
+* Results from the [my commission](static/images/readme/validation/html/my_commissions.jpg) page check.
+* Results from the [index](static/images/readme/validation/html/index.jpg) page check.
+* Results from the [products](static/images/readme/validation/html/products.jpg) page check.
+* Results from the [product detail](static/images/readme/validation/html/product_detail.jpg) page check.
+* Results from the [profile](static/images/readme/validation/html/my_profile.jpg) page check.
+* Results from the [sign up](static/images/readme/register.jpg) page check.
+* Results from the [log out](static/images/readme/validation/html/logout.jpg) page check.
+* Results from the [log in](templates/allauth/account/login.html) page check.
+* Results from the [email confirm](static/images/readme/validation/html/email_confirm.jpg) page check.
+* Results from the [wishlist](static/images/readme/validation/html/wishlist.jpg) page check.
 
 #### **CSS Validator**
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS in the style.css file.
 
-Results from the [](#).
+* Results from the [checkout](static/images/readme/validation/css/checkout_css.jpg) css.
+* Results from the [profile](static/images/readme/validation/css/profile_css.jpg) css.
+* Results from the [base](static/images/readme/validation/css/base.jpg) css.
 
 #### **JSHint Validator**
 
-The [JSHint Validator](https://jshint.com/) was used to validate the JavaScript in the script.js file.
+The [JSHint Validator](https://jshint.com/) was used to validate the JavaScript in the script.js file. I needed to use the following code at the top for the proper validation to be shown:   
 
-Results from the [check](#).
+`/*jshint esversion: 6 */`
+      
+I also needed to add the following code so that the use of jquery did not show $ as an undefined variable:
+
+ `/*globals $:false */`
+
+* Results from the [checkout](static/images/readme/validation/js/stripe_elements.jpg) js. This shows 'Stripe' as being an undefined variable, but as it is coming from another script, it can be safely ignored.
+* Results from the [profiles](static/images/readme/validation/js/countryfield.jpg) js.
 
 #### **Pep8 Validator**
 
