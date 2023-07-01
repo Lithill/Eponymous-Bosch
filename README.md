@@ -126,7 +126,7 @@ The index page has:
 
   * A "Shop Now" button, which takes the user to the "All Products" page
 
-   ![Shop Now Button](static/images/readme/shop_now.jpg)
+      ![Shop Now Button](static/images/readme/shop_now.jpg)
 
 ### **Products**
 
@@ -134,27 +134,27 @@ The Products page has the following features:
 
    * A list of products, which, when clicked, takes the user to the detail page of that specific product. If the product is on sale, the price is updated and the text is red, with additional text labeling it as on sale.
 
-   ![Products](static/images/readme/products.jpg)
+      ![Products](static/images/readme/products.jpg)
 
    * If the user is a superuser, then at the bottom of each product are links to either edit or delete the product.
 
-   ![Edit or Delete](static/images/readme/edit_delete.jpg)
+      ![Edit or Delete](static/images/readme/edit_delete.jpg)
 
    * Text which lets the user know how many products there are in the category they are browsing. When the user is filtering products, this also shows a link to "Products Home"
 
-   ![Product Amount & Link](static/images/readme/product_amount.jpg)
+      ![Product Amount & Link](static/images/readme/product_amount.jpg)
 
    * A dropdown box with the ability to sort by price (low to high), price (high to low), name (a-z), name (z-a), year of original (past-present), year of original (present - past). The year of the original denotes the year that the artwork was made that the piece was based on.
 
-   ![Sort Dropdown](static/images/readme/sort_dropdown.jpg)
+      ![Sort Dropdown](static/images/readme/sort_dropdown.jpg)
 
    * Category boxes appear when you are seeing the product page in any view other than 'all products'. They show the user which categories they are currently viewing and can be clicked on to take the user to a specific category.
 
-   ![Category Boxes](static/images/readme/categories.jpg)
+      ![Category Boxes](static/images/readme/categories.jpg)
    
    * A scroll-up button on the bottom-right-hand-side of the page, which when clicked, will automatically scroll the page up to the top.
 
-   ![Scroll Up](static/images/readme/scroll.jpg)
+      ![Scroll Up](static/images/readme/scroll.jpg)
 
 ### **Product Detail**
 
@@ -162,43 +162,43 @@ The Product Detail page has the following features:
 
    * When clicking on the product image, it opens in a new tab for a clearer view.
 
-   ![Product Image](static/images/readme/product.jpg)
+      ![Product Image](static/images/readme/product.jpg)
 
    * If the product is on sale, the price is updated, and the text turns red. The red text also appears to the right to say that the product is on sale.
 
-   ![Sale information](static/images/readme/sale.jpg)
+      ![Sale information](static/images/readme/sale.jpg)
 
    * If the user is a superuser, two links appear giving the user the ability to edit or delete the product.
 
-   ![Edit and Delete](static/images/readme/edit_delete_detail.jpg)
+      ![Edit and Delete](static/images/readme/edit_delete_detail.jpg)
 
    * If the user would like more than one of the products, they can adjust the quantity. The maximum quantity is 3.
 
-   ![Quantity Adjuster](static/images/readme/quantity.jpg)
+      ![Quantity Adjuster](static/images/readme/quantity.jpg)
 
    * A keep shopping button that takes the user back to the products page to view all products.
 
-   ![Keep Shopping Button](static/images/readme/keep_shopping.jpg)
+      ![Keep Shopping Button](static/images/readme/keep_shopping.jpg)
 
    * A button that will add the desired quantity of the product to the user’s checkout cart.
    
-   ![Add to Bag Button](static/images/readme/add.jpg)
+      ![Add to Bag Button](static/images/readme/add.jpg)
 
    * A button that will add the product to the logged-in user’s wishlist. This button is only shown if the user is logged in.
    
-   ![Add to Wishlist Button](static/images/readme/add_wishlist.jpg)
+      ![Add to Wishlist Button](static/images/readme/add_wishlist.jpg)
 
 ### **Commissions**
 
 The Commissions page has a form that the user can fill in to request a commission.
    
-   ![Commission Form](static/images/readme/commission.jpg)
+      ![Commission Form](static/images/readme/commission.jpg)
 
 ### **Commission Success**
 
    * This page is shown when the user successfully submits a commission form. It includes links to their commission page, their wishlist, and the all-products page. It should be noted that the commission form is only available to logged-in users. 
 
-   ![Commission Success Message](static/images/readme/commission_success.jpg)
+      ![Commission Success Message](static/images/readme/commission_success.jpg)
 
 ### **Product Management** 
 
@@ -212,19 +212,19 @@ The My Profile page has the following features:
 
    * A form where the user can update their personal information, which is then auto-filled on the checkout form.
 
-   ![User Information Form](static/images/readme/user_info.jpg)
+      ![User Information Form](static/images/readme/user_info.jpg)
 
    * A button that takes the user to their wishlist.
 
-   ![View Wishlist Button](static/images/readme/view_wishlist.jpg)
+      ![View Wishlist Button](static/images/readme/view_wishlist.jpg)
 
    * A button that takes the user to their commissions.
 
-   ![View Commissions Button](static/images/readme/view_commissions.jpg)
+      ![View Commissions Button](static/images/readme/view_commissions.jpg)
 
    * A section that shows the user their order history.
 
-   ![Order History](static/images/readme/order_history.jpg)
+      ![Order History](static/images/readme/order_history.jpg)
 
 ### **Wishlist**
 
@@ -232,20 +232,20 @@ The Wishlist page has the following features:
 
    * A section that tells the user how many items they have on their wishlist.
 
-   ![](static/images/readme/wishlist_amount.jpg)
+      ![Wishlist Amount](static/images/readme/wishlist_amount.jpg)
 
    * A small form the user can submit consent to be automatically emailed when one of their wished-for items goes on sale. This changes to remove consent as an option if they have given consent previously.
 
-   ![With no sale consent](static/images/readme/sale_consent_off.jpg)
-   ![With sale consent](static/images/readme/sale_consent_on.jpg)
+      ![With no sale consent](static/images/readme/sale_consent_off.jpg)
+      ![With sale consent](static/images/readme/sale_consent_on.jpg)
 
    * A list of wishlist items that the user has saved. Each item is clickable and takes the user to the specific product detail page.
 
-   ![Wishlist Items](static/images/readme/wishlist_items.jpg)
+      ![Wishlist Items](static/images/readme/wishlist_items.jpg)
 
    * A button underneath each item, allowing the user to remove it from their wishlist.
 
-   ![Remove From Wishlist Button](static/images/readme/remove_wishlist.jpg)
+      ![Remove From Wishlist Button](static/images/readme/remove_wishlist.jpg)
 
 ### **My Commissions**
 
@@ -253,11 +253,11 @@ The My Commissions page has the following features:
 
    * A section that shows the user how many pieces of art they have commissioned.
 
-   ![Commission Amount](static/images/readme/commission_amount.png)
+      ![Commission Amount](static/images/readme/commission_amount.png)
 
    * Each commission the user has requested has its own section. This includes a status that can be updated by the administrator on the Django Admin page to let the user know where they are in the commission process. These are ordered by the most recent date.
 
-   ![User's Commissions](static/images/readme/commissions.jpg)
+      ![User's Commissions](static/images/readme/commissions.jpg)
 
 ### **Logout**
 
@@ -273,7 +273,7 @@ The Sign Up page has the following features:
    * A form for the user to sign up if they don't already have an account. 
    * This page is only seen if the user is not signed in.
 
-   ![Register](static/images/readme/register.jpg)
+      ![Register](static/images/readme/register.jpg)
 
 ### **Sign In** 
 
@@ -282,7 +282,7 @@ The Sign In page has the following features:
    * A login button that takes the user to the login page in case they already have an account.
    * A form for the user to input the necessary details to create an account.
 
-   ![Sign In](static/images/readme/sign_in.jpg)
+      ![Sign In](static/images/readme/sign_in.jpg)
 
 ### **Shopping Bag***
 
@@ -290,13 +290,13 @@ The Shopping bag page has the following features:
 
    * The details of the products being bought, with an option to update the amount or remove each product. 
 
-   ![Shopping Bag](static/images/readme/shopping_bag.jpg)
+      ![Shopping Bag](static/images/readme/shopping_bag.jpg)
 
    * The details of the total and delivery price, as well as information on how much extra the user should spend to get free postage.
    * A button to return the user to the products page
    * A button to continue to the checkout
 
-   ![Shopping Buttons](static/images/readme/shopping_buttons.jpg)
+      ![Shopping Buttons](static/images/readme/shopping_buttons.jpg)
 
 ### **Checkout**
 
@@ -304,13 +304,13 @@ The Checkout page has the following features:
 
    * A form for the user details needed to check out.
 
-   ![Checkout Form](static/images/readme/checkout_form.jpg)
+      ![Checkout Form](static/images/readme/checkout_form.jpg)
 
    * The order summary
    * A button to send the user back to be able to adjust their bag
    * A button to submit their order
 
-   ![Order Summary](static/images/readme/order_summary.jpg)
+      ![Order Summary](static/images/readme/order_summary.jpg)
 
 ### **Checkout Success**
 
@@ -318,28 +318,28 @@ The Checkout success page has the following features:
 
    * Information about the user order
 
-   ![Checkout Success](static/images/readme/checkout_success.jpg)
+      ![Checkout Success](static/images/readme/checkout_success.jpg)
 
 ### **All pages have the following features**
 
    * A logo that when clicked takes the user back to the index page.
 
-   ![Logo](static/images/readme/logo.jpg)
+      ![Logo](static/images/readme/logo.jpg)
 
    * A search function
 
-   ![Search bar](static/images/readme/search.jpg)
+      ![Search bar](static/images/readme/search.jpg)
 
    * Links to three versions of the products page - all products/prints/posters, which themselves have dropdowns to further filter those pages.
 
    * A link to the commission’s page, which is only shown when the user is logged in.
 
-   ![Menu links](static/images/readme/menu_links.jpg)
+      ![Menu links](static/images/readme/menu_links.jpg)
 
    * A drop-down menu for the user account. Which only shows 'log in' and 'register' if the user is not logged in, but shows 'product management', 'my profile', 'my wishlist', 'my commissions' and 'logout'.
    * A link to the user’s shopping cart
 
-   ![My Account](static/images/readme/my_account.jpg)
+      ![My Account](static/images/readme/my_account.jpg)
 
 ### **Toasts & Messages**
 
@@ -347,23 +347,23 @@ Many messages are included to alert the user that they have accomplished an acti
 
    * When adding a product to their checkout bag.
 
-   ![Add Product to Bag](static/images/readme/add_product_toast.jpg)
+      ![Add Product to Bag](static/images/readme/add_product_toast.jpg)
 
    * Successfully placing an order.
 
-   ![Order Success](static/images/readme/order_success_toast.jpg)
+      ![Order Success](static/images/readme/order_success_toast.jpg)
 
    * Adding an item to their wishlist.
 
-   ![Add to wishlist toast](static/images/readme/add_wishlist_toast.jpg)
+      ![Add to wishlist toast](static/images/readme/add_wishlist_toast.jpg)
 
    * Removing an item from their wishlist.
 
-   ![Remove from wishlist toast](static/images/readme/remove_wishlist_toast.jpg)
+      ![Remove from wishlist toast](static/images/readme/remove_wishlist_toast.jpg)
 
    * Updating their consent preferences for being emailed when an item on their wishlist goes on sale.
 
-   ![Update Preferences](static/images/readme/preferences.jpg)
+      ![Update Preferences](static/images/readme/preferences.jpg)
 
 ### **Product Model**
 
@@ -501,49 +501,35 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 I tested the page and had 2 people also manually test it on their own devices. For automated testing, I used the W3C validator, CSS validator, Python Linter, JSHint validator, and Lighthouse. 
 
-### **Manual Testing**
+### **Automatic Testing**
 
-### **W3C Validator**
+#### **W3C Validator**
 
 The [W3C HTML Validator](https://validator.w3.org/) was used to validate the HTML on all pages of the website. 
 
-* Results from the [](#) page check.
+* Results from the [bag](#) page check.
 * Results from the [](#) page check.
 
-### **CSS Validator**
+#### **CSS Validator**
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS in the style.css file.
 
 Results from the [](#).
 
-### **JSHint Validator**
+#### **JSHint Validator**
 
 The [JSHint Validator](https://jshint.com/) was used to validate the JavaScript in the script.js file.
 
 Results from the [check](#).
 
-### **Pep8 Validator**
+#### **Pep8 Validator**
 
 The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code.
 
 * Results from the [](#) check.
 * Results from the [](#) check.
 
-### **Solved Bugs**
-
-| Bug Number  | Expected behaviour | Actual behaviour | Solution |
-| ---:        |    :----:          |        :----:    | :---     |
-| 1       |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees everything on sale   |  This did not happen  | The model has a property called on_sale that determines the boolean value of on_sale in the Product model. This calculates if an item is on sale based on whether the admin enters a discount or not. So instead of looking for on_sale=True, the code looks for on_sale being greater than 0. So I changed the all_product view section to "if 'on_sale' in request.GET: products = products.filter(discount__gt=0)" |
-| 2       | Commissions shown on the my_commissions page should only be those of the user  | Currently showing all user's commissions  | Change part of the my_commissions view code from this -> commissions = Commission.objects.all() to this -> commissions = Commission.objects.filter(user=request.user) |
-| 3 | When marking the discount percentage or a product as '0' in admin, the user should be able to turn off the sale |        Marking the discount percentage as '0' returned a form error, requesting the user enter a discount percentage | Added the discount condition to the Product model |
-| 4 | When checking out, after submitting the form, the user gets the error - "AttributeError at /checkout/ 'Product' object has no attribute 'price'" | Expected form to go through, user payment to be processed by Stripe, and the user is sent an automatic email confirmation | This was because the checkout model save function was not updated when product.price was changed to product.sell_price in the Product model. |
-
-
-### **Known Bugs**
-
-| ---:        |    :----:          |        :----:    | :---     |
-
-### **Full Testing**
+### **Manual Testing**
 
 To fully test my website, I used Google Chrome Developer Tools to ensure that the pages were responsive enough on all available screen sizes. Testing was performed on a variety of browsers (Chrome, Microsoft Edge, and Firefox) and devices (Gigabyte gaming laptop, iPhone SE, Android one+ 9 mobile, Fair Phone).
 
@@ -618,6 +604,19 @@ The following was tested and found to be working as expected:
 
 * Shows the user’s editable details.
 * Shows the users order history
+
+### **Solved Bugs**
+
+| Bug Number  | Expected behaviour | Actual behaviour | Solution |
+| ---:        |    :----:          |        :----:    | :---     |
+| 1       |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees everything on sale   |  This did not happen  | The model has a property called on_sale that determines the boolean value of on_sale in the Product model. This calculates if an item is on sale based on whether the admin enters a discount or not. So instead of looking for on_sale=True, the code looks for on_sale being greater than 0. So I changed the all_product view section to "if 'on_sale' in request.GET: products = products.filter(discount__gt=0)" |
+| 2       | Commissions shown on the my_commissions page should only be those of the user  | Currently showing all user's commissions  | Change part of the my_commissions view code from this -> commissions = Commission.objects.all() to this -> commissions = Commission.objects.filter(user=request.user) |
+| 3 | When marking the discount percentage or a product as '0' in admin, the user should be able to turn off the sale |        Marking the discount percentage as '0' returned a form error, requesting the user enter a discount percentage | Added the discount condition to the Product model |
+| 4 | When checking out, after submitting the form, the user gets the error - "AttributeError at /checkout/ 'Product' object has no attribute 'price'" | Expected form to go through, user payment to be processed by Stripe, and the user is sent an automatic email confirmation | This was because the checkout model save function was not updated when product.price was changed to product.sell_price in the Product model. |
+
+### **Known Bugs**
+
+There are no known bugs.
 
 ---
 
