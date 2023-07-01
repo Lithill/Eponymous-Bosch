@@ -547,10 +547,81 @@ I also needed to add the following code so that the use of jquery did not show $
 
 #### **Pep8 Validator**
 
-The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code.
+The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code. As there are so many files, I will order them by app.
 
-* Results from the [](#) check.
-* Results from the [](#) check.
+**Bag**
+
+* Results from the [apps.py](static/images/readme/validation/py/bag_apps.jpg) check.
+* Results from the [contexts.py](static/images/readme/validation/py/bag_contexts.jpg) check.
+* Results from the [urls.py](static/images/readme/validation/py/bag_urls.jpg) check.
+* Results from the [views.py](static/images/readme/validation/py/bag_views.jpg) check.
+
+**Checkout**
+
+* Results from the [init.py](static/images/readme/validation/py/checkout_init.jpg) check.
+* Results from the [admin.py](static/images/readme/validation/py/checkout_admin.jpg) check.
+* Results from the [apps.py](static/images/readme/validation/py/checkout_apps.jpg) check.
+* Results from the [forms.py](static/images/readme/validation/py/checkout_forms.jpg) check.
+* Results from the [models.py](static/images/readme/validation/py/checkout_models.jpg) check.
+* Results from the [signals.py](static/images/readme/validation/py/checkout_signals.jpg) check.
+* Results from the [urls.py](static/images/readme/validation/py/checkout_urls.jpg) check.
+* Results from the [views.py](static/images/readme/validation/py/checkout_views.jpg) check.
+* Results from the [webhook_handler.py](static/images/readme/validation/py/checkout_webhook_handler.jpg) check.
+* Results from the [webhooks](static/images/readme/validation/py/checkout_webhooks.jpg) check.
+
+**Contact**
+
+* Results from the [admin](static/images/readme/validation/py/contact_admin.jpg) check.
+* Results from the [apps](static/images/readme/validation/py/contact_apps.jpg) check.
+* Results from the [forms](static/images/readme/validation/py/contact_forms.jpg) check.
+* Results from the [models](static/images/readme/validation/py/contact_models.jpg) check.
+* Results from the [urls](static/images/readme/validation/py/contact_urls.jpg) check.
+* Results from the [views](static/images/readme/validation/py/contact_views.jpg) check.
+
+**Eponymous Bosch**
+
+* Results from the [asgi](static/images/readme/validation/py/base_asgi.jpg) check.
+* Results from the [settings](static/images/readme/validation/py/base_settings.jpg) check.
+* Results from the [urls](static/images/readme/validation/py/base_urls.jpg) check.
+* Results from the [wsgi](static/images/readme/validation/py/base_wsgi.jpg) check.
+
+**Home**
+
+* Results from the [apps](static/images/readme/validation/py/home_apps.jpg) check.
+* Results from the [urls](static/images/readme/validation/py/home_urls.jpg) check.
+* Results from the [views](static/images/readme/validation/py/home_views.jpg) check.
+
+**Products**
+
+* Results from the [admin](static/images/readme/validation/py/products_admin.jpg) check.
+* Results from the [apps](static/images/readme/validation/py/products_apps.jpg) check.
+* Results from the [forms](static/images/readme/validation/py/products_forms.jpg) check.
+* Results from the [models](static/images/readme/validation/py/products_models.jpg) check.
+* Results from the [urls](static/images/readme/validation/py/products_urls.jpg) check.
+* Results from the [views](static/images/readme/validation/py/products_views.jpg) check.
+* Results from the [widgets](static/images/readme/validation/py/products_widgets.jpg) check.
+
+**Profiles**
+
+* Results from the [apps](static/images/readme/validation/py/profiles_apps.jpg) check.
+* Results from the [forms](static/images/readme/validation/py/profiles_forms.jpg) check.
+* Results from the [models](static/images/readme/validation/py/profiles_models.jpg) check.
+* Results from the [urls](static/images/readme/validation/py/profiles_urls.jpg) check.
+* Results from the [views](static/images/readme/validation/py/profiles_views.jpg) check.
+
+**Wishlist**
+
+* Results from the [admin](static/images/readme/validation/py/wishlist_admin.jpg) check.
+* Results from the [apps](static/images/readme/validation/py/wishlist_apps.jpg) check.
+* Results from the [email](static/images/readme/validation/py/wishlist_email.jpg) check.
+* Results from the [forms](static/images/readme/validation/py/wishlilst_forms.jpg) check.
+* Results from the [models](static/images/readme/validation/py/wishlist_models.jpg) check.
+* Results from the [urls](static/images/readme/validation/py/wishlist_urls.jpg) check.
+* Results from the [views](static/images/readme/validation/py/wishlist_views.jpg) check.
+
+And finally:
+
+* Results from the [manage.py](static/images/readme/validation/py/manage.jpg) check.
 
 ### **Manual Testing**
 

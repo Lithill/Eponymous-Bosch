@@ -15,7 +15,10 @@ def contact(request):
 def commission(request, user_id):
     context = {}
 
-    commission_form = CommissionForm(request.POST or None, request.FILES or None)
+    commission_form = CommissionForm(
+        request.POST or None,
+        request.FILES or None
+    )
 
     if request.method == 'POST':
         if commission_form.is_valid():
