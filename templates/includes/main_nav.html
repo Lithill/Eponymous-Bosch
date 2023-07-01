@@ -1,53 +1,51 @@
-<div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <!-- All Products -->
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-                <a href="{% url 'products' %}?on_sale=True" class="dropdown-item">All On Sale</a>
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?category=prints_people,posters_people" class="dropdown-item">All People</a>
-                <a href="{% url 'products' %}?category=prints_animals,posters_animals" class="dropdown-item">All Animals</a>
-                <a href="{% url 'products' %}?category=prints_landscapes,posters_landscapes" class="dropdown-item">All Landscapes</a>
-                <a href="{% url 'products' %}?category=prints_other,posters_others" class="dropdown-item">All Other</a>
-                <a href="{% url 'products' %}?sort=year&direction=asc" class="dropdown-item ">By Year (of original artwork)</a>
-            </div>
-        </li>
-        <!-- Prints -->
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Prints
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=prints_people,prints_animals,prints_landscapes,prints_other" class="dropdown-item">All Prints</a>
-                <a href="{% url 'products' %}?category=prints_people,prints_animals,prints_landscapes,prints_other&on_sale=True" class="dropdown-item">On Sale</a>
-                <a href="{% url 'products' %}?category=prints_people" class="dropdown-item">People</a>
-                <a href="{% url 'products' %}?category=prints_animals" class="dropdown-item">Animals</a>
-                <a href="{% url 'products' %}?category=prints_landscapes" class="dropdown-item">Landscapes</a>
-                <a href="{% url 'products' %}?category=prints_other" class="dropdown-item">Other</a>
-            </div>
-        </li>
-        <!-- Posters -->
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Posters
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=posters_people,posters_animals,posters_landscapes,posters_other" class="dropdown-item">All Posters</a>
-                <a href="{% url 'products' %}?category=posters_people,posters_animals,posters_landscapes,posters_other&on_sale=True" class="dropdown-item">On Sale</a>
-                <a href="{% url 'products' %}?category=posters_people" class="dropdown-item">People</a>
-                <a href="{% url 'products' %}?category=posters_animals" class="dropdown-item">Animals</a>
-                <a href="{% url 'products' %}?category=posters_landscapes" class="dropdown-item">Landscapes</a>
-                <a href="{% url 'products' %}?category=posters_other" class="dropdown-item">Other</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact:commission' user.id %}">
-                Commissions
-            </a>
-        </li>
-    </ul>
-</div>
+<ul class="navbar-nav w-auto mx-auto collapse navbar-collapse" id="main-nav">
+    <!-- All Products -->
+    <li class="nav-item dropdown">
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All Products
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            <a href="{% url 'products' %}?on_sale=True" class="dropdown-item">All On Sale</a>
+            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+            <a href="{% url 'products' %}?category=prints_people,posters_people" class="dropdown-item">All People</a>
+            <a href="{% url 'products' %}?category=prints_animals,posters_animals" class="dropdown-item">All Animals</a>
+            <a href="{% url 'products' %}?category=prints_landscapes,posters_landscapes" class="dropdown-item">All Landscapes</a>
+            <a href="{% url 'products' %}?category=prints_other,posters_others" class="dropdown-item">All Other</a>
+            <a href="{% url 'products' %}?sort=year&direction=asc" class="dropdown-item ">By Year (of original artwork)</a>
+        </div>
+    </li>
+    <!-- Prints -->
+    <li class="nav-item dropdown">
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Prints
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <a href="{% url 'products' %}?category=prints_people,prints_animals,prints_landscapes,prints_other" class="dropdown-item">All Prints</a>
+            <a href="{% url 'products' %}?category=prints_people,prints_animals,prints_landscapes,prints_other&on_sale=True" class="dropdown-item">On Sale</a>
+            <a href="{% url 'products' %}?category=prints_people" class="dropdown-item">People</a>
+            <a href="{% url 'products' %}?category=prints_animals" class="dropdown-item">Animals</a>
+            <a href="{% url 'products' %}?category=prints_landscapes" class="dropdown-item">Landscapes</a>
+            <a href="{% url 'products' %}?category=prints_other" class="dropdown-item">Other</a>
+        </div>
+    </li>
+    <!-- Posters -->
+    <li class="nav-item dropdown">
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Posters
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <a href="{% url 'products' %}?category=posters_people,posters_animals,posters_landscapes,posters_other" class="dropdown-item">All Posters</a>
+            <a href="{% url 'products' %}?category=posters_people,posters_animals,posters_landscapes,posters_other&on_sale=True" class="dropdown-item">On Sale</a>
+            <a href="{% url 'products' %}?category=posters_people" class="dropdown-item">People</a>
+            <a href="{% url 'products' %}?category=posters_animals" class="dropdown-item">Animals</a>
+            <a href="{% url 'products' %}?category=posters_landscapes" class="dropdown-item">Landscapes</a>
+            <a href="{% url 'products' %}?category=posters_other" class="dropdown-item">Other</a>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact:commission' user.id %}">
+            Commissions
+        </a>
+    </li>
+</ul>
