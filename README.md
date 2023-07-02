@@ -715,7 +715,10 @@ Cannot resolve keyword 'sell' into field. Choices are: category, category_id, de
 
 ### **Known Bugs**
 
-There are no known bugs.
+| Bug Number  | Expected behaviour | Actual behaviour | Solution |
+| 9 | When user clicks on "My Wishlist", will take them to a rendered page | If user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist, and does not happen if they have put something on their wishlist and then takes it off again. Theory - this happens because I have not set sale_alert as default=False for the user, because sale_alert_consent is in the wishlist model, not the user model |
+| 10 | When manually adding sale start ad end date in the admin, no error should occur | Instead, it throws a validation error and requests that the user enter the discount percentage, even though there is one already there  | :---     |
+| ---:        |    :----:          |        :----:    | :---     |
 
 ---
 
