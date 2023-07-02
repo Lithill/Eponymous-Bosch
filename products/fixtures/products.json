@@ -1,282 +1,296 @@
 [
- {
-   "pk": 1,
-   "model": "products.product",
-   "fields": {
-      "sku": "mon-pri-1",
-      "name": "Mona Lisa",
-      "description": "This artwork is based on \"Mona Lisa\" by Leonardo da Vinci. It has been described as \"the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world\".",
-      "og_price": 39.99,
-      "category": 1,
-      "image": "mona_lisa.jpg",
-      "type": "Print",
-      "original_artist": "Leonardo da Vinci",
-      "style": "Renaissance",
-      "orientation": "Portrait",
-      "imperial": "9 x 14",
-      "metric": "228 x 355",
-      "year": 1504,
-      "orig_url": "https://en.wikipedia.org/wiki/Mona_Lisa#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"
-   }
-},
- {
-   "pk": 2,
-   "model": "products.product",
-   "fields": {
-      "sku": "oph-pri-1",
-      "name": "Ophelia",
-      "description": "This artwork is based on \"Ophelia\" by John Everett Millais. The original subject of the painting almost died while posing in a bathtub for him. ",
-      "og_price": 37.99,
-      "category": 1,
-      "image": "ophelia.jpg",
-      "type": "Print",
-      "original_artist": "John Everett Millais",
-      "style": "Pre-Raphaelite",
-      "orientation": "Landscape",
-      "imperial": "25 x 16",
-      "metric": "635 x 406",
-      "year": 1852,
-      "orig_url": "https://en.wikipedia.org/wiki/Ophelia_(painting)#/media/File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg"
-   }
-},
- {
-   "pk": 3,
-   "model": "products.product",
-   "fields": {
-      "sku": "sta-pri-1",
-      "name": "Starry Night",
-      "description": "This artwork is based on \"Starry Night\" by Vincent Van Gogh. The original depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village. These prints are sold as a set of four prints, each sized 10\" x 10\".",
-      "og_price": 45.99,
-      "category": 3,
-      "image": "starry_night.jpg",
-      "type": "Print",
-      "original_artist": "Vincent Van Gogh",
-      "style": "Post-Impressionist",
-      "orientation": "Square",
-      "imperial": "10 x 10",
-      "metric": "254 x 254",
-      "year": 1889,
-      "orig_url": "https://en.wikipedia.org/wiki/The_Starry_Night#/media/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
-   }
-},
- {
-   "pk": 4,
-   "model": "products.product",
-   "fields": {
-      "sku": "cha-pos-1",
-      "name": "Le Chat Noir",
-      "description": "This artwork is based on the \"Le Chat Noir\" poster by Théophile Steinlen. It was a poster advertising a tour to other cities (\"coming soon\") of Le Chat Noir's troupe of cabaret entertainers.",
-      "og_price": 30.99,
-      "category": 6,
-      "image": "le_chat_noir.jpg",
-      "type": "Poster",
-      "original_artist": "Théophile Steinlen",
-      "style": "Art Nouveau",
-      "orientation": "Portrait",
-      "imperial": "16 x 22",
-      "metric": "406 x 559",
-      "year": 1896,
-      "orig_url": "https://en.wikipedia.org/wiki/Le_Chat_Noir#/media/File:Th%C3%A9ophile-Alexandre_Steinlen_-_Tourn%C3%A9e_du_Chat_Noir_de_Rodolphe_Salis_(Tour_of_Rodolphe_Salis'_Chat_Noir)_-_Google_Art_Project.jpg"
-   }
-},
- {
-   "pk": 5,
-   "model": "products.product",
-   "fields": {
-      "sku": "dog-pri-1",
-      "name": "Dogs Playing Poker",
-      "description": "This artwork is based on \"A Friend in Need\", part of a collection called \"Dogs Playing Poker\" by Cassius Marcellus Coolidge. Originally a series of sixteen oil paintings commissioned by Brown & Bigelow to advertise cigars",
-      "og_price": 35.99,
-      "category": 2,
-      "image": "dogs_playing_poker.jpg",
-      "type": "Print",
-      "original_artist": "Cassius Marcellus Coolidge",
-      "style": "Kitsch",
-      "orientation": "Landscape",
-      "imperial": "13 x 10",
-      "metric": "330 x 254",
-      "year": 1903,
-      "orig_url": "https://en.wikipedia.org/wiki/Dogs_Playing_Poker#/media/File:A_Friend_in_Need_1903_C.M.Coolidge.jpg"
-   }
-},
- {
-   "pk": 6,
-   "model": "products.product",
-   "fields": {
-      "sku": "wat-pri-1",
-      "name": "Water Lilies",
-      "description": "This artwork is based on \"Water Lilies\" by Claude Monet. The series of paintings of his garden were his very personal response to the First World War. Many of the inhabitants of Giverny fled to safety but Monet stayed behind: “…if those savages must kill me, it will be in the middle of my canvases, in front of all my life’s work.” ",
-      "og_price": 46.99,
-      "category": 3,
-      "image": "water_lilies.jpg",
-      "type": "Print",
-      "original_artist": "Claude Monet",
-      "style": "Impressionist",
-      "orientation": "Square",
-      "imperial": "10 x 10",
-      "metric": "254 x 254",
-      "year": 1919,
-      "orig_url": "https://en.wikipedia.org/wiki/Water_Lilies_(1919)#/media/File:WLA_metmuseum_Water_Lilies_by_Claude_Monet.jpg"
-   }
-},
- {
-   "pk": 7,
-   "model": "products.product",
-   "fields": {
-      "sku": "met-pos-1",
-      "name": "Metropolis",
-      "description": "This artwork is based on the \"Metropolis\" poster by Heinz Schulz-Neudamm. Advertising the German expressionist science-fiction film by the same name, now widely regarded as one of the greatest and most influential films ever made.",
-      "og_price": 37.99,
-      "category": 7,
-      "image": "metropolis.jpg",
-      "type": "Poster",
-      "original_artist": "Heinz Schulz-Neudamm",
-      "style": "Art Deco",
-      "orientation": "Portrait",
-      "imperial": "10 x 23",
-      "metric": "254 x 584",
-      "year": 1927,
-      "orig_url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)#/media/File:Metropolis_(German_three-sheet_poster).jpg"
-   }
-},
- {
-   "pk": 8,
-   "model": "products.product",
-   "fields": {
-      "sku": "ros-pos-1",
-      "name": "We Can Do It! Rosie the Riveter",
-      "description": "This artwork is based on the \"We Can Do It! Rosie The Riveter\" poster by Norman Rockwell. The original poster was produced by Westinghouse during World War II for the War Production Co-Ordinating Committee, as part of the national campaign in the United States to enlist women in the workforce.",
-      "og_price": 24.99,
-      "category": 5,
-      "image": "rosie.jpg",
-      "type": "Poster",
-      "original_artist": "Norman Rockwell",
-      "style": "Pop Art",
-      "orientation": "Portrait",
-      "imperial": "10 x 14",
-      "metric": "254 x 355",
-      "year": 1943,
-      "orig_url": "https://www.loc.gov/item/2021669753"
-   }
-},
- {
-   "pk": 9,
-   "model": "products.product",
-   "fields": {
-      "sku": "rel-pri-1",
-      "name": "Relativity",
-      "description": "This artwork is based on \"Relativity\", a lithograph print by M. C. Escher. Whist his works were fantastical, and now incredibly well-known, it is thought that he was too boring as a person to get much recognition as an artist during his lifetime. ",
-      "og_price": 39.99,
-      "category": 3,
-      "image": "relativity.jpg",
-      "type": "Print",
-      "original_artist": "M. C. Escher",
-      "style": "Surrealist",
-      "orientation": "Square",
-      "imperial": "21 x 21",
-      "metric": "533 x 533",
-      "year": 1953,
-      "orig_url": "https://en.wikipedia.org/wiki/Relativity_(M._C._Escher)#/media/File:Escher's_Relativity.jpg"
-   }
-},
- {
-   "pk": 10,
-   "model": "products.product",
-   "fields": {
-      "sku": "han-pos-1",
-      "name": "Hang in There",
-      "description": "Hang in there, Baby is a popular catchphrase and motivational poster. There were several versions of the \"Hang in There, Baby\" poster, featuring a picture of a cat or kitten, hanging onto a stick, tree branch, pole or rope. The original poster featured a black and white photograph of a Siamese kitten clinging to a bamboo pole and was first published in late 1971 as a poster by Los Angeles photographer Victor Baldwin. It has since become a popular relic of the 1970s.",
-      "og_price": 17.99,
-      "category": 6,
-      "image": "hang_in_there.jpg",
-      "type": "Poster",
-      "original_artist": "Various",
-      "style": "Motivational",
-      "orientation": "Portrait",
-      "imperial": "11 x 16",
-      "metric": "279 x 406",
-      "year": 1971,
-      "orig_url": "https://en.wikipedia.org/wiki/Hang_in_there,_Baby#/media/File:Hang_In_There_Victor_Baldwin.jpg"
-   }
-},
- {
-   "pk": 11,
-   "model": "products.product",
-   "fields": {
-      "sku": "jaw-pos-1",
-      "name": "Jaws",
-      "description": "This artwork is based on the \"Jaws\" film poster by Roger Kastel, who also designed the poster for \"The Empire Strikes Back\". ",
-      "og_price": 27.99,
-      "category": 6,
-      "image": "jaws.jpg",
-      "type": "Poster",
-      "original_artist": "Roger Kastel",
-      "style": "Movie",
-      "orientation": "Portrait",
-      "imperial": "15 x 10",
-      "metric": "254 x 381",
-      "year": 1975,
-      "orig_url": "https://cdn.musebycl.io/2018-10/jaws-key-art-1977.jpg"
-   }
-},
- {
-   "pk": 12,
-   "model": "products.product",
-   "fields": {
-      "sku": "scr-pri-1",
-      "name": "The Scream",
-      "description": "This artwork is based on \"The Scream\" by Edvard Munch. Munch recalled that he had been out for a walk at sunset when suddenly the setting sun's light turned the clouds \"a blood red\". He sensed an \"infinite scream passing through nature\". Scholars have located the spot to a fjord overlooking Oslo[3] and have suggested other explanations for the unnaturally orange sky, ranging from the effects of a volcanic eruption to a psychological reaction by Munch to his sister's commitment at a nearby lunatic asylum.",
-      "og_price": 32.99,
-      "category": 1,
-      "image": "the_scream.jpg",
-      "type": "Print",
-      "original_artist": "Edvard Munch",
-      "style": "Expressionist",
-      "orientation": "Portrait",
-      "imperial": "8 x 12",
-      "metric": "203 x 305",
-      "year": 1893,
-      "orig_url": "https://en.wikipedia.org/wiki/The_Scream#/media/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg"
-   }
-},
- {
-   "pk": 13,
-   "model": "products.product",
-   "fields": {
-      "sku": "lov-pri-1",
-      "name": "The Lovers II",
-      "description": "This artwork is based on \"The Lovers II\" by Rene Magritte. At the age of 14, the artist experienced the tragic loss of his mother, who took her own life by drowning. He was present during the distressing moment when her lifeless body was retrieved from the water, with her soaked nightgown concealing her face. It has been suggested that this deeply distressing event may have served as a catalyst for a series of artworks by Magritte, where he intentionally obscured the faces of his subjects.",
-      "og_price": 26.99,
-      "category": 1,
-      "image": "the_lovers.jpg",
-      "type": "Print",
-      "original_artist": "Rene Magritte",
-      "style": "Surrealist",
-      "orientation": "Landscape",
-      "imperial": "21 x 29",
-      "metric": "540  x 730",
-      "year": 1928,
-      "orig_url": "https://www.renemagritte.org/the-lovers-2.jsp#prettyPhoto[image1]/0/"
-   }
-},
- {
-   "pk": 14,
-   "model": "products.product",
-   "fields": {
-      "sku": "wou-pri-1",
-      "name": "The Wounded Deer",
-      "description": "This artwork is based on \"The Wounded Deer\" by Frida Kahlo. Despite facing numerous physical and emotional challenges throughout her life, she became an influential and celebrated artist. Kahlo's life was marked by pain and adversity, including a severe bus accident, multiple surgeries, and chronic health issues. However, she channeled her experiences into her artwork, creating powerful and introspective self-portraits that conveyed her physical and emotional struggles. Kahlo's unique artistic style, bold use of color, and exploration of themes such as identity, gender, and Mexican culture have made her an iconic figure in the art world, inspiring countless artists and admirers worldwide.",
-      "og_price": 28.99,
-      "category": 2,
-      "image": "wounded_deer.jpg",
-      "type": "Print",
-      "original_artist": "Frida Kahlo",
-      "style": "Naïve Art",
-      "orientation": "Landscape",
-      "imperial": "12 x 8.5",
-      "metric": "300 x 220",
-      "year": 1946,
-      "orig_url": "https://en.wikipedia.org/wiki/The_Wounded_Deer#/media/File:The_Wounded_Deer_1946.jpg"
-   }
-}
-]
+   {
+     "pk": 1,
+     "model": "products.product",
+     "fields": {
+        "sku": "mon-pri-1",
+        "name": "Mona Lisa",
+        "description": "This artwork is based on \"Mona Lisa\" by Leonardo da Vinci. It has been described as \"the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world\".",
+        "og_price": 39.99,
+        "discount_percentage": 0,
+        "category": 1,
+        "image": "mona_lisa.jpg",
+        "type": "Print",
+        "original_artist": "Leonardo da Vinci",
+        "style": "Renaissance",
+        "orientation": "Portrait",
+        "imperial": "9 x 14",
+        "metric": "228 x 355",
+        "year": 1504,
+        "orig_url": "https://en.wikipedia.org/wiki/Mona_Lisa#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"
+     }
+  },
+   {
+     "pk": 2,
+     "model": "products.product",
+     "fields": {
+        "sku": "oph-pri-1",
+        "name": "Ophelia",
+        "description": "This artwork is based on \"Ophelia\" by John Everett Millais. The original subject of the painting almost died while posing in a bathtub for him. ",
+        "og_price": 37.99,
+        "discount_percentage": 0,
+        "category": 1,
+        "image": "ophelia.jpg",
+        "type": "Print",
+        "original_artist": "John Everett Millais",
+        "style": "Pre-Raphaelite",
+        "orientation": "Landscape",
+        "imperial": "25 x 16",
+        "metric": "635 x 406",
+        "year": 1852,
+        "orig_url": "https://en.wikipedia.org/wiki/Ophelia_(painting)#/media/File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg"
+     }
+  },
+   {
+     "pk": 3,
+     "model": "products.product",
+     "fields": {
+        "sku": "sta-pri-1",
+        "name": "Starry Night",
+        "description": "This artwork is based on \"Starry Night\" by Vincent Van Gogh. The original depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village. These prints are sold as a set of four prints, each sized 10\" x 10\".",
+        "og_price": 45.99,
+        "discount_percentage": 0,
+        "category": 3,
+        "image": "starry_night.jpg",
+        "type": "Print",
+        "original_artist": "Vincent Van Gogh",
+        "style": "Post-Impressionist",
+        "orientation": "Square",
+        "imperial": "10 x 10",
+        "metric": "254 x 254",
+        "year": 1889,
+        "orig_url": "https://en.wikipedia.org/wiki/The_Starry_Night#/media/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+     }
+  },
+   {
+     "pk": 4,
+     "model": "products.product",
+     "fields": {
+        "sku": "cha-pos-1",
+        "name": "Le Chat Noir",
+        "description": "This artwork is based on the \"Le Chat Noir\" poster by Théophile Steinlen. It was a poster advertising a tour to other cities (\"coming soon\") of Le Chat Noir's troupe of cabaret entertainers.",
+        "og_price": 30.99,
+        "discount_percentage": 0,
+        "category": 6,
+        "image": "le_chat_noir.jpg",
+        "type": "Poster",
+        "original_artist": "Théophile Steinlen",
+        "style": "Art Nouveau",
+        "orientation": "Portrait",
+        "imperial": "16 x 22",
+        "metric": "406 x 559",
+        "year": 1896,
+        "orig_url": "https://en.wikipedia.org/wiki/Le_Chat_Noir#/media/File:Th%C3%A9ophile-Alexandre_Steinlen_-_Tourn%C3%A9e_du_Chat_Noir_de_Rodolphe_Salis_(Tour_of_Rodolphe_Salis'_Chat_Noir)_-_Google_Art_Project.jpg"
+     }
+  },
+   {
+     "pk": 5,
+     "model": "products.product",
+     "fields": {
+        "sku": "dog-pri-1",
+        "name": "Dogs Playing Poker",
+        "description": "This artwork is based on \"A Friend in Need\", part of a collection called \"Dogs Playing Poker\" by Cassius Marcellus Coolidge. Originally a series of sixteen oil paintings commissioned by Brown & Bigelow to advertise cigars",
+        "og_price": 35.99,
+        "discount_percentage": 0,
+        "category": 2,
+        "image": "dogs_playing_poker.jpg",
+        "type": "Print",
+        "original_artist": "Cassius Marcellus Coolidge",
+        "style": "Kitsch",
+        "orientation": "Landscape",
+        "imperial": "13 x 10",
+        "metric": "330 x 254",
+        "year": 1903,
+        "orig_url": "https://en.wikipedia.org/wiki/Dogs_Playing_Poker#/media/File:A_Friend_in_Need_1903_C.M.Coolidge.jpg"
+     }
+  },
+   {
+     "pk": 6,
+     "model": "products.product",
+     "fields": {
+        "sku": "wat-pri-1",
+        "name": "Water Lilies",
+        "description": "This artwork is based on \"Water Lilies\" by Claude Monet. The series of paintings of his garden were his very personal response to the First World War. Many of the inhabitants of Giverny fled to safety but Monet stayed behind: “…if those savages must kill me, it will be in the middle of my canvases, in front of all my life’s work.” ",
+        "og_price": 46.99,
+        "discount_percentage": 0,
+        "category": 3,
+        "image": "water_lilies.jpg",
+        "type": "Print",
+        "original_artist": "Claude Monet",
+        "style": "Impressionist",
+        "orientation": "Square",
+        "imperial": "10 x 10",
+        "metric": "254 x 254",
+        "year": 1919,
+        "orig_url": "https://en.wikipedia.org/wiki/Water_Lilies_(1919)#/media/File:WLA_metmuseum_Water_Lilies_by_Claude_Monet.jpg"
+     }
+  },
+   {
+     "pk": 7,
+     "model": "products.product",
+     "fields": {
+        "sku": "met-pos-1",
+        "name": "Metropolis",
+        "description": "This artwork is based on the \"Metropolis\" poster by Heinz Schulz-Neudamm. Advertising the German expressionist science-fiction film by the same name, now widely regarded as one of the greatest and most influential films ever made.",
+        "og_price": 37.99,
+        "discount_percentage": 0,
+        "category": 7,
+        "image": "metropolis.jpg",
+        "type": "Poster",
+        "original_artist": "Heinz Schulz-Neudamm",
+        "style": "Art Deco",
+        "orientation": "Portrait",
+        "imperial": "10 x 23",
+        "metric": "254 x 584",
+        "year": 1927,
+        "orig_url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)#/media/File:Metropolis_(German_three-sheet_poster).jpg"
+     }
+  },
+   {
+     "pk": 8,
+     "model": "products.product",
+     "fields": {
+        "sku": "ros-pos-1",
+        "name": "We Can Do It! Rosie the Riveter",
+        "description": "This artwork is based on the \"We Can Do It! Rosie The Riveter\" poster by Norman Rockwell. The original poster was produced by Westinghouse during World War II for the War Production Co-Ordinating Committee, as part of the national campaign in the United States to enlist women in the workforce.",
+        "og_price": 24.99,
+        "discount_percentage": 0,
+        "category": 5,
+        "image": "rosie.jpg",
+        "type": "Poster",
+        "original_artist": "Norman Rockwell",
+        "style": "Pop Art",
+        "orientation": "Portrait",
+        "imperial": "10 x 14",
+        "metric": "254 x 355",
+        "year": 1943,
+        "orig_url": "https://www.loc.gov/item/2021669753"
+     }
+  },
+   {
+     "pk": 9,
+     "model": "products.product",
+     "fields": {
+        "sku": "rel-pri-1",
+        "name": "Relativity",
+        "description": "This artwork is based on \"Relativity\", a lithograph print by M. C. Escher. Whist his works were fantastical, and now incredibly well-known, it is thought that he was too boring as a person to get much recognition as an artist during his lifetime. ",
+        "og_price": 39.99,
+        "discount_percentage": 0,
+        "category": 3,
+        "image": "relativity.jpg",
+        "type": "Print",
+        "original_artist": "M. C. Escher",
+        "style": "Surrealist",
+        "orientation": "Square",
+        "imperial": "21 x 21",
+        "metric": "533 x 533",
+        "year": 1953,
+        "orig_url": "https://en.wikipedia.org/wiki/Relativity_(M._C._Escher)#/media/File:Escher's_Relativity.jpg"
+     }
+  },
+   {
+     "pk": 10,
+     "model": "products.product",
+     "fields": {
+        "sku": "han-pos-1",
+        "name": "Hang in There",
+        "description": "Hang in there, Baby is a popular catchphrase and motivational poster. There were several versions of the \"Hang in There, Baby\" poster, featuring a picture of a cat or kitten, hanging onto a stick, tree branch, pole or rope. The original poster featured a black and white photograph of a Siamese kitten clinging to a bamboo pole and was first published in late 1971 as a poster by Los Angeles photographer Victor Baldwin. It has since become a popular relic of the 1970s.",
+        "og_price": 17.99,
+        "discount_percentage": 0,
+        "category": 6,
+        "image": "hang_in_there.jpg",
+        "type": "Poster",
+        "original_artist": "Various",
+        "style": "Motivational",
+        "orientation": "Portrait",
+        "imperial": "11 x 16",
+        "metric": "279 x 406",
+        "year": 1971,
+        "orig_url": "https://en.wikipedia.org/wiki/Hang_in_there,_Baby#/media/File:Hang_In_There_Victor_Baldwin.jpg"
+     }
+  },
+   {
+     "pk": 11,
+     "model": "products.product",
+     "fields": {
+        "sku": "jaw-pos-1",
+        "name": "Jaws",
+        "description": "This artwork is based on the \"Jaws\" film poster by Roger Kastel, who also designed the poster for \"The Empire Strikes Back\". ",
+        "og_price": 27.99,
+        "discount_percentage": 0,
+        "category": 6,
+        "image": "jaws.jpg",
+        "type": "Poster",
+        "original_artist": "Roger Kastel",
+        "style": "Movie",
+        "orientation": "Portrait",
+        "imperial": "15 x 10",
+        "metric": "254 x 381",
+        "year": 1975,
+        "orig_url": "https://cdn.musebycl.io/2018-10/jaws-key-art-1977.jpg"
+     }
+  },
+   {
+     "pk": 12,
+     "model": "products.product",
+     "fields": {
+        "sku": "scr-pri-1",
+        "name": "The Scream",
+        "description": "This artwork is based on \"The Scream\" by Edvard Munch. Munch recalled that he had been out for a walk at sunset when suddenly the setting sun's light turned the clouds \"a blood red\". He sensed an \"infinite scream passing through nature\". Scholars have located the spot to a fjord overlooking Oslo[3] and have suggested other explanations for the unnaturally orange sky, ranging from the effects of a volcanic eruption to a psychological reaction by Munch to his sister's commitment at a nearby lunatic asylum.",
+        "og_price": 32.99,
+        "discount_percentage": 0,
+        "category": 1,
+        "image": "the_scream.jpg",
+        "type": "Print",
+        "original_artist": "Edvard Munch",
+        "style": "Expressionist",
+        "orientation": "Portrait",
+        "imperial": "8 x 12",
+        "metric": "203 x 305",
+        "year": 1893,
+        "orig_url": "https://en.wikipedia.org/wiki/The_Scream#/media/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg"
+     }
+  },
+   {
+     "pk": 13,
+     "model": "products.product",
+     "fields": {
+        "sku": "lov-pri-1",
+        "name": "The Lovers II",
+        "description": "This artwork is based on \"The Lovers II\" by Rene Magritte. At the age of 14, the artist experienced the tragic loss of his mother, who took her own life by drowning. He was present during the distressing moment when her lifeless body was retrieved from the water, with her soaked nightgown concealing her face. It has been suggested that this deeply distressing event may have served as a catalyst for a series of artworks by Magritte, where he intentionally obscured the faces of his subjects.",
+        "og_price": 26.99,
+        "discount_percentage": 0,
+        "category": 1,
+        "image": "the_lovers.jpg",
+        "type": "Print",
+        "original_artist": "Rene Magritte",
+        "style": "Surrealist",
+        "orientation": "Landscape",
+        "imperial": "21 x 29",
+        "metric": "540  x 730",
+        "year": 1928,
+        "orig_url": "https://www.renemagritte.org/the-lovers-2.jsp#prettyPhoto[image1]/0/"
+     }
+  },
+   {
+     "pk": 14,
+     "model": "products.product",
+     "fields": {
+        "sku": "wou-pri-1",
+        "name": "The Wounded Deer",
+        "description": "This artwork is based on \"The Wounded Deer\" by Frida Kahlo. Despite facing numerous physical and emotional challenges throughout her life, she became an influential and celebrated artist. Kahlo's life was marked by pain and adversity, including a severe bus accident, multiple surgeries, and chronic health issues. However, she channeled her experiences into her artwork, creating powerful and introspective self-portraits that conveyed her physical and emotional struggles. Kahlo's unique artistic style, bold use of color, and exploration of themes such as identity, gender, and Mexican culture have made her an iconic figure in the art world, inspiring countless artists and admirers worldwide.",
+        "og_price": 28.99,
+        "discount_percentage": 0,
+        "category": 2,
+        "image": "wounded_deer.jpg",
+        "type": "Print",
+        "original_artist": "Frida Kahlo",
+        "style": "Naïve Art",
+        "orientation": "Landscape",
+        "imperial": "12 x 8.5",
+        "metric": "300 x 220",
+        "year": 1946,
+        "orig_url": "https://en.wikipedia.org/wiki/The_Wounded_Deer#/media/File:The_Wounded_Deer_1946.jpg"
+     }
+  }
+  ]
