@@ -1,1 +1,1 @@
-web: gunicorn eponymous-bosch.wsgi:application
+web: gunicorn eponymous_bosch.wsgi:application

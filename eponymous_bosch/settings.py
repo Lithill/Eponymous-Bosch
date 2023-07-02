@@ -36,6 +36,7 @@ ALLOWED_HOSTS = [
     '8000-lithill-eponymousbosch-vy527951xyj.ws-eu100.gitpod.io',
     '8000-lithill-eponymousbosch-vy527951xyj.ws-eu101.gitpod.io',
     'localhost',
+    'eponymous-bosch-b9b71a6bff59.herokuapp.com'
 ]
 
 
