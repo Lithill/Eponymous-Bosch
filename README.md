@@ -711,7 +711,7 @@ The following was tested and found to be working as expected:
 | 6 | When asking to sort products by price in the dropdown bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "FieldError at /products/
 Cannot resolve keyword 'sell' into field. Choices are: category, category_id, description, discount_percentage, id, image, image_url, imperial, metric, name, og_price, on_sale_end, on_sale_start, orderlineitem, orientation, orig_url, original_artist, product_wishlists, sell_price, sku, style, type, users_wishlist, wishlistitem, year" | This issue arose because the sortkey used had an underscore in it. Fixing the view to remove this made the page render again, and the sorting function work. |
 | 7 | User is able to add product via add product page. | Instead, on form submisstion, this error is displayed - "TypeError at /products/add/ unsupported operand type(s) for *: 'decimal.Decimal' and 'NoneType'" | This was because I had removed the discount_percentage field, which made the sell_price incalculable. |
-| 8 | Heroku-hosted page renders when visited | Page doesn't render and shows this error - "SuspiciousOperation at / Attempted access to '/images/logo.webp' denied." | Attempted to change file path to correct this |
+| 8 | Heroku-hosted page renders when visited | Page doesn't render and shows this error - "SuspiciousOperation at / Attempted access to '/images/logo.webp' denied." | I changed the file path to correct this |
 
 ### **Known Bugs**
 
@@ -731,6 +731,7 @@ Thanks are given for the following posts and tutorials:
 * [w3school's Django Queryset explanation](https://www.w3schools.com/django/django_queryset_get.php) helped me understand how .values_list() helps to return only certain data. This helped me write the wishlist auto-emailing function.
 * [Alasdair's post on Stack Overflow](https://stackoverflow.com/questions/37205793/django-values-list-vs-values) helped point me in the write direction of using flat=True on values_list(), so that I can loop the output.
 * [Arie's code on Stack Overflow](https://stackoverflow.com/questions/16277997/field-labels-crispy-forms-django) was used to edit the field names on the commission form.
+* [Bipul Jain](https://stackoverflow.com/questions/52107184/suspiciousoperation-when-loading-image-in-django) for explaining how to fix a SeriousOperation error.
 
 ### **Code Used**
 
