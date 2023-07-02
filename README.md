@@ -1,11 +1,10 @@
 # **Eponymous Bosch**
 
-This website has been created to sell AI-generated art prints for a european target group. Therefore, metric sizes have been focused on when the user requests a commission. It has been designed with a range of different screen sizes in mind. 
-
+This website has been created to sell AI-generated art prints for a European target group. Therefore, metric sizes have been focused on when the user requests a commission. It has been designed with a range of different screen sizes in mind. 
 
 !["Am I Responsive" image](static/images/readme/amiresponsive.jpg)
 
-[View the live project here](#)
+[View the live project here](https://eponymous-bosch-b9b71a6bff59.herokuapp.com/)
 
 ---
 
@@ -708,16 +707,16 @@ The following was tested and found to be working as expected:
 | 3 | When marking the discount percentage or a product as '0' in admin, the user should be able to turn off the sale |        Marking the discount percentage as '0' returned a form error, requesting the user enter a discount percentage | Added the discount condition to the Product model |
 | 4 | When checking out, after submitting the form, the user gets the error - "AttributeError at /checkout/ 'Product' object has no attribute 'price'" | Expected form to go through, user payment to be processed by Stripe, and the user is sent an automatic email confirmation | This was because the checkout model save function was not updated when product.price was changed to product.sell_price in the Product model. |
 | 5 | When asking to sort products by price in the navigation bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "Cannot resolve keyword 'sell_price' into field." | This issue arose because the field 'sell_price' was not defined in the Product model as a database field, but rather as a property with a getter method |
-| 6 | When asking to sort products by price in the dropdown bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "FieldError at /products/
-Cannot resolve keyword 'sell' into field. Choices are: category, category_id, description, discount_percentage, id, image, image_url, imperial, metric, name, og_price, on_sale_end, on_sale_start, orderlineitem, orientation, orig_url, original_artist, product_wishlists, sell_price, sku, style, type, users_wishlist, wishlistitem, year" | This issue arose because the sortkey used had an underscore in it. Fixing the view to remove this made the page render again, and the sorting function work. |
-| 7 | User is able to add product via add product page. | Instead, on form submisstion, this error is displayed - "TypeError at /products/add/ unsupported operand type(s) for *: 'decimal.Decimal' and 'NoneType'" | This was because I had removed the discount_percentage field, which made the sell_price incalculable. |
+| 6 | When asking to sort products by price in the dropdown bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "FieldError at /products/ Cannot resolve keyword 'sell' into field. Choices are: category, category_id, description, discount_percentage, id, image, image_url, imperial, metric, name, og_price, on_sale_end, on_sale_start, orderlineitem, orientation, orig_url, original_artist, product_wishlists, sell_price, sku, style, type, users_wishlist, wishlistitem, year" | This issue arose because the sortkey used had an underscore in it. Fixing the view to remove this made the page render again, and the sorting function work. |
+| 7 | User can add product via add_product page. | Instead, on form submission, this error is displayed - "TypeError at /products/add/ unsupported operand type(s) for *: 'decimal.Decimal' and 'NoneType'" | This was because I had removed the discount_percentage field, which made the sell_price incalculable. |
 | 8 | Heroku-hosted page renders when visited | Page doesn't render and shows this error - "SuspiciousOperation at / Attempted access to '/images/logo.webp' denied." | I changed the file path to correct this |
 
 ### **Known Bugs**
 
 | Bug Number  | Expected behaviour | Actual behaviour | Solution |
-| 9 | When user clicks on "My Wishlist", will take them to a rendered page | If user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist, and does not happen if they have put something on their wishlist and then takes it off again. Theory - this happens because I have not set sale_alert as default=False for the user, because sale_alert_consent is in the wishlist model, not the user model |
-| 10 | When manually adding sale start ad end date in the admin, no error should occur | Instead, it throws a validation error and requests that the user enter the discount percentage, even though there is one already there  | :---     |
+| ---:        |    :----:          |        :----:    | :---     |
+| 9 | When a user clicks on "My Wishlist", will take them to a rendered page | If a user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist, and does not happen if they have put something on their wishlist and then take it off again. Theory - this happens because I have not set sale_alert as default=False for the user, because sale_alert_consent is in the wishlist model, not the user model |
+| 10 | When manually adding the sale start ad end date in the admin, no error should occur | Instead, it throws a validation error and requests that the user enter the discount percentage, even though there is one already there  | :---     |
 | ---:        |    :----:          |        :----:    | :---     |
 
 ---
@@ -766,9 +765,6 @@ Content for the website was made by Rossanne Hamilton.
 * [Google Font's Big Shoulders Stencil Text](https://fonts.google.com/specimen/Big+Shoulders+Stencil+Text?category=Handwriting&preview.text=BoscH&preview.text_type=custom) was used for part of the logo's font. 
 * [Karolina Grabowska's image](https://www.pexels.com/photo/black-and-white-photo-frame-5978717/) on Pexels was used for the background image of Relativity. (The colour was edited.)
 * [Google Font's Big Shoulders Text](https://fonts.google.com/specimen/Big+Shoulders+Text?query=Patric+King) was used for the text body.
-* [Wikipedia](https://www.wikipedia.org/) was used for some of the text discussing the artwork, and most of the links directing the user to the original.
-* [Microsoft Excel](https://www.microsoft.com/en-gb/microsoft-365/excel) was used to create csv files.
-* [Convert CSV](https://www.convertcsv.com/csv-to-json.htm) was used to convert the CSV files to JSON files.
 * [9699186's image](https://pixabay.com/photos/frame-mockup-flatlay-plant-3681646/) on Pixabay was used for the background image of The Wounded Deer.
 * [Eva Bronzini's image](https://www.pexels.com/photo/photo-of-a-blank-picture-frame-7967320/) on Pixabay was used for the background image of The Lovers II.
 
