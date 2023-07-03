@@ -16,7 +16,11 @@ def show_wishlist(request):
     try:
         wishlist = Wishlist.objects.get(user=request.user)
     except Wishlist.DoesNotExist:
-        pass
+        # If user has no wishlist, create one
+        wishlist = Wishlist.objects.create(user=request.user)
+        # Set sale_alert_consent to False for the user's wishlist
+        wishlist.sale_alert_consent = False
+        wishlist.save(update_fields=['sale_alert_consent'])
 
     context = {
         'wishlist': wishlist,
