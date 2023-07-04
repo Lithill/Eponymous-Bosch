@@ -425,7 +425,8 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Excel](https://www.microsoft.com/en-gb/microsoft-365/excel) was used to create CSV files.
 * [Convert CSV](https://www.convertcsv.com/csv-to-json.htm) was used to convert CSV files to JSON files.
 * [Font Awesome](https://fontawesome.com/) was used for the icons.
-* [Lucid](https://lucid.app/) was used to map the models
+* [Lucid](https://lucid.app/) was used to map the models.
+* [Amazon Web Services](https://aws.amazon.com/) was used to host the images for the Heroku-hosted site.
 
 ---
 
