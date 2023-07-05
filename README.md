@@ -7,6 +7,7 @@ This website has been created to sell AI-generated art prints for a European tar
 [View the live project here](https://eponymous-bosch-b9b71a6bff59.herokuapp.com/)
 
 ---
+<br/>
 
 ## **Table of Contents**
 
@@ -19,13 +20,17 @@ This website has been created to sell AI-generated art prints for a European tar
 9. [Testing](#testing)
 10. [Credits](#credits)
 
+
 ---
+<br/>
     
 ## **User Experience**
+<br/>
 
 ### **Initial Discussion**
 
 AI is currently very much in the public eye, and Open AI's Dall-E 2 is no exception to this. With this in mind, it was felt that it may be an interesting venture to use Dall-E 2 to reimagine various artwork and posters in the style of Hieronymus Bosch; a 15th Century Dutch/Netherlandish painter, most noted for his work 'The Garden of Earthly Delights'.
+<br/><br/>
 
 ### **User Stories**
 
@@ -37,9 +42,13 @@ AI is currently very much in the public eye, and Open AI's Dall-E 2 is no except
 * View only the products I would like to buy in the future.
 * View my past commission requests and their status.
 
+<br/>
+
 #### **Contacting**
 * Be able to request an art commission.
 * Have a choice of being emailed if an item on my wishlist goes on sale.
+
+<br/>
 
 #### **Registration and User Accounts**
 * Easily register for an account.
@@ -50,6 +59,8 @@ AI is currently very much in the public eye, and Open AI's Dall-E 2 is no except
 * Have a personalised wishlist.
 * Be able to view my past commission requests.
 
+<br/>
+
 #### **Sorting and Setting**
 * Sort the list of available products.
 * Sort a specific category of product.
@@ -57,6 +68,8 @@ AI is currently very much in the public eye, and Open AI's Dall-E 2 is no except
 * Search for a product by name or description.
 * Easily see what I've searched for and the number of results.
 * Sort based on what is currently on sale.
+
+<br/>
 
 #### **Purchasing and Checkout**
 * Easily select the quantity of a product when purchasing it.
@@ -67,6 +80,8 @@ AI is currently very much in the public eye, and Open AI's Dall-E 2 is no except
 * View an order confirmation after checkout.
 * Receive an email confirmation after checking out.
 
+<br/>
+
 #### **Admin and Store Management**
 * Add product.
 * Edit/update a product.
@@ -74,16 +89,22 @@ AI is currently very much in the public eye, and Open AI's Dall-E 2 is no except
 * Create sale items including prices, start dates, and end dates (on the Django admin page)
 
 ---
+<br/>
 
 ## **Design**
+<br/>
 
 ### **Early Design Phases**
 
 Since the building of this website was based on the Ado Boutique walkthrough, there are no wireframes. This is because the layout has been kept the same, but reskinned via images and font.
 
+<br/>
+
 ### **Colour Scheme**
 
 Due to the colourful nature of the artwork itself, a minimalist design and colour palette were sought, so that it would not clash with any of the artwork displayed. 
+
+<br/>
 
 ### **Typography**
 
@@ -92,6 +113,8 @@ Google Fonts was used to import the following fonts:
 *  is a serif font. This is used for the navigation bar and headings.
 *  is a sans-serif font. This is used for all other text. 
 
+<br/>
+
 ### **Models**
 
 This map represents the current models in the relational database, apart from the models that were not changed from the Boutique Ado walkthrough and are not referenced by the new code. Those in yellow have not been modified since the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. ('Products' was heavily modified, Commission and Wishlit are new.):
@@ -99,6 +122,7 @@ This map represents the current models in the relational database, apart from th
 ![Model Map](static/images/readme/model_map.jpeg)
 
 ---
+<br/>
 
 ## **Features**
 
@@ -120,6 +144,8 @@ The website is made up of 15 pages:
 * Checkout
 * Checkout Success
 
+<br/>
+
 ### **Index**
 
 The index page has:
@@ -127,6 +153,8 @@ The index page has:
   * A "Shop Now" button, which takes the user to the "All Products" page
 
       ![Shop Now Button](static/images/readme/shop_now.jpg)
+
+<br/>
 
 ### **Products**
 
@@ -155,6 +183,8 @@ The Products page has the following features:
    * A scroll-up button on the bottom-right-hand-side of the page, which when clicked, will automatically scroll the page up to the top.
 
       ![Scroll Up](static/images/readme/scroll.jpg)
+
+<br/>
 
 ### **Product Detail**
 
@@ -188,6 +218,8 @@ The Product Detail page has the following features:
    
       ![Add to Wishlist Button](static/images/readme/add_wishlist.jpg)
 
+<br/>
+
 ### **Commissions**
 
 The Commissions page has a form that the user can fill in to request a commission.
@@ -200,11 +232,15 @@ The Commissions page has a form that the user can fill in to request a commissio
 
       ![Commission Success Message](static/images/readme/commission_success.jpg)
 
+<br/>
+
 ### **Product Management** 
 
 The Product Management page is only available to logged-in superusers and has a form that will allow the user to add a product.
 
    ![Add Product Form](static/images/readme/add_product.jpg)
+
+<br/>
 
 ### **My Profile**
 
@@ -225,6 +261,8 @@ The My Profile page has the following features:
    * A section that shows the user their order history.
 
       ![Order History](static/images/readme/order_history.jpg)
+
+<br/>
 
 ### **Wishlist**
 
@@ -247,6 +285,8 @@ The Wishlist page has the following features:
 
       ![Remove From Wishlist Button](static/images/readme/remove_wishlist.jpg)
 
+<br/>
+
 ### **My Commissions**
 
 The My Commissions page has the following features:
@@ -259,11 +299,15 @@ The My Commissions page has the following features:
 
       ![User's Commissions](static/images/readme/commissions.jpg)
 
+<br/>
+
 ### **Logout**
 
 The Logout page has a cancel button which takes the user back to the product page, and a sign-out button, which signs the user out.
 
    ![Sign Out](static/images/readme/sign_out.jpg)
+
+<br/>
 
 ### **Register**
 
@@ -275,6 +319,8 @@ The Sign Up page has the following features:
 
       ![Register](static/images/readme/register.jpg)
 
+<br/>
+
 ### **Sign In** 
 
 The Sign In page has the following features:
@@ -283,6 +329,8 @@ The Sign In page has the following features:
    * A form for the user to input the necessary details to create an account.
 
       ![Sign In](static/images/readme/sign_in.jpg)
+
+<br/>
 
 ### **Shopping Bag***
 
@@ -298,6 +346,8 @@ The Shopping bag page has the following features:
 
       ![Shopping Buttons](static/images/readme/shopping_buttons.jpg)
 
+<br/>
+
 ### **Checkout**
 
 The Checkout page has the following features:
@@ -312,6 +362,8 @@ The Checkout page has the following features:
 
       ![Order Summary](static/images/readme/order_summary.jpg)
 
+<br/>
+
 ### **Checkout Success**
 
 The Checkout success page has the following features:
@@ -319,6 +371,8 @@ The Checkout success page has the following features:
    * Information about the user order
 
       ![Checkout Success](static/images/readme/checkout_success.jpg)
+
+<br/>
 
 ### **All pages have the following features**
 
@@ -340,6 +394,8 @@ The Checkout success page has the following features:
    * A link to the user’s shopping cart
 
       ![My Account](static/images/readme/my_account.jpg)
+
+<br/>
 
 ### **Toasts & Messages**
 
@@ -365,6 +421,8 @@ Many messages are included to alert the user that they have accomplished an acti
 
       ![Update Preferences](static/images/readme/preferences.jpg)
 
+<br/>
+
 ### **Product Model**
 
 The discounted price of a product is automatically calculated based on the user’s input on the admin page. When the user inputs the discount percentage, this:
@@ -377,6 +435,8 @@ The discounted price of a product is automatically calculated based on the user�
 * If the user ends the sale early by changing the discount percentage to zero without changing the sale start and end dates, the dates are automatically removed
 * When the sale ends, the dates are automatically removed, as is the discount. Therefore resetting the product to the original price and setting 'on sale' to False
 
+<br/>
+
 ### **Future Features**
 
 * The commission form to automatically fill in the name and email of the logged-in user
@@ -385,6 +445,8 @@ The discounted price of a product is automatically calculated based on the user�
 * Email to be a real email, not just be printed in the terminal
 
 ---
+
+<br/>
 
 ## **Accessibility**
 
@@ -396,12 +458,17 @@ I have been mindful during coding to ensure that the website is as accessible as
 * Guaranteeing adequate colour contrast throughout the site.
 
 ---
+<br/>
 
 ## **Technologies Used**
+
+<br/>
 
 ### **Languages Used**
 
 HTML5, CSS3, Python, and JavaScript were used to create this website.
+
+<br/>
 
 ### **Frameworks, Libraries & Programs Used**
 
@@ -430,11 +497,17 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 
 ---
 
+<br/>
+
 ## **Deployment and Local Development**
+
+<br/>
 
 ### **Deployment**
 
 This project was deployed to Heroku using the following steps:
+
+<br/>
 
 #### **ElephantSQL**
 
@@ -448,6 +521,8 @@ This project was deployed to Heroku using the following steps:
 8. Return to the ElephantSQL dashboard and click on the database instance name for this project
 9. In the URL section, clicking the copy icon will copy the database URL to your clipboard
 10. Leave this tab open, we will come back here later
+
+<br/>
 
 #### **Heroku**
 
@@ -470,7 +545,11 @@ This project was deployed to Heroku using the following steps:
 17. Exit the Python terminal, by typing exit() and hitting enter, and close the console. Our Heroku database should now have the tables and columns created from our models.py file.
 18. The app should be up and running now, so click the “Open app” button
 
+<br/>
+
 ### **Local Deployment**
+
+<br/>
 
 #### **How to Fork**
 
@@ -479,6 +558,8 @@ To fork the Eponymous Bosch repository:
 1) Login (or sign up) to GitHub.
 2) Go to the repository for this project, at [GitHub Repository](https://github.com/Lithill/Eponymous-Bosch).
 3) Click the Fork button in the top right corner.
+
+<br/>
 
 #### **How to Clone**
 
@@ -493,6 +574,8 @@ To clone the Eponymous Bosch repository:
 
 ---
 
+<br/>
+
 ## **Testing**
 
 Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along. Both manual and automated testing was employed. The difference between these two types of tests is that:
@@ -502,7 +585,11 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 I tested the page and had 2 people also manually test it on their own devices. For automated testing, I used the W3C validator, CSS validator, Python Linter, JSHint validator, and Lighthouse. 
 
+<br/>
+
 ### **Automatic Testing**
+
+<br/>
 
 #### **W3C Validator**
 
@@ -524,6 +611,8 @@ The [W3C HTML Validator](https://validator.w3.org/) was used to validate the HTM
 * Results from the [email confirm](static/images/readme/validation/html/email_confirm.jpg) page check.
 * Results from the [wishlist](static/images/readme/validation/html/wishlist.jpg) page check.
 
+<br/>
+
 #### **CSS Validator**
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS in the style.css file.
@@ -531,6 +620,8 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to valida
 * Results from the [checkout](static/images/readme/validation/css/checkout_css.jpg) css.
 * Results from the [profile](static/images/readme/validation/css/profile_css.jpg) css.
 * Results from the [base](static/images/readme/validation/css/base.jpg) css.
+
+<br/>
 
 #### **JSHint Validator**
 
@@ -545,9 +636,13 @@ I also needed to add the following code so that the use of jquery did not show $
 * Results from the [checkout](static/images/readme/validation/js/stripe_elements.jpg) js. This shows 'Stripe' as being an undefined variable, but as it is coming from another script, it can be safely ignored.
 * Results from the [profiles](static/images/readme/validation/js/countryfield.jpg) js.
 
+<br/>
+
 #### **Pep8 Validator**
 
 The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code. As there are so many files, I will order them by app.
+
+<br/>
 
 **Bag**
 
@@ -555,6 +650,8 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the P
 * Results from the [contexts.py](static/images/readme/validation/py/bag_contexts.jpg) check.
 * Results from the [urls.py](static/images/readme/validation/py/bag_urls.jpg) check.
 * Results from the [views.py](static/images/readme/validation/py/bag_views.jpg) check.
+
+<br/>
 
 **Checkout**
 
@@ -569,6 +666,8 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the P
 * Results from the [webhook_handler.py](static/images/readme/validation/py/checkout_webhook_handler.jpg) check.
 * Results from the [webhooks](static/images/readme/validation/py/checkout_webhooks.jpg) check.
 
+<br/>
+
 **Contact**
 
 * Results from the [admin](static/images/readme/validation/py/contact_admin.jpg) check.
@@ -578,6 +677,8 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the P
 * Results from the [urls](static/images/readme/validation/py/contact_urls.jpg) check.
 * Results from the [views](static/images/readme/validation/py/contact_views.jpg) check.
 
+<br/>
+
 **Eponymous Bosch**
 
 * Results from the [asgi](static/images/readme/validation/py/base_asgi.jpg) check.
@@ -585,11 +686,15 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the P
 * Results from the [urls](static/images/readme/validation/py/base_urls.jpg) check.
 * Results from the [wsgi](static/images/readme/validation/py/base_wsgi.jpg) check.
 
+<br/>
+
 **Home**
 
 * Results from the [apps](static/images/readme/validation/py/home_apps.jpg) check.
 * Results from the [urls](static/images/readme/validation/py/home_urls.jpg) check.
 * Results from the [views](static/images/readme/validation/py/home_views.jpg) check.
+
+<br/>
 
 **Products**
 
@@ -601,6 +706,8 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the P
 * Results from the [views](static/images/readme/validation/py/products_views.jpg) check.
 * Results from the [widgets](static/images/readme/validation/py/products_widgets.jpg) check.
 
+<br/>
+
 **Profiles**
 
 * Results from the [apps](static/images/readme/validation/py/profiles_apps.jpg) check.
@@ -608,6 +715,8 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the P
 * Results from the [models](static/images/readme/validation/py/profiles_models.jpg) check.
 * Results from the [urls](static/images/readme/validation/py/profiles_urls.jpg) check.
 * Results from the [views](static/images/readme/validation/py/profiles_views.jpg) check.
+
+<br/>
 
 **Wishlist**
 
@@ -623,17 +732,25 @@ And finally:
 
 * Results from the [manage.py](static/images/readme/validation/py/manage.jpg) check.
 
+<br/>
+
 ### **Manual Testing**
 
 To fully test my website, I used Google Chrome Developer Tools to ensure that the pages were responsive enough on all available screen sizes. Testing was performed on a variety of browsers (Chrome, Microsoft Edge, and Firefox) and devices (Gigabyte gaming laptop, iPhone SE, Android one+ 9 mobile, Fair Phone).
+
+<br/>
 
 #### **Links:**
 
 Tested each link on every page. Each link worked as expected. 
 
+<br/>
+
 #### **Buttons:**
 
 Tested each button on every page. Each button worked as expected. 
+
+<br/>
 
 #### **Forms:**
 
@@ -642,6 +759,8 @@ Checked that all forms behaved as expected in terms of:
    * Returning success messages when the user successfully submits a form.
    * Not allowing users to submit input types and lengths/amounts that aren't wanted.
 
+<br/>
+
 #### **Authentication:**
 
 The following was tested and found to be working as expected:
@@ -649,6 +768,8 @@ The following was tested and found to be working as expected:
 * Non-logged-in users cannot see or access the parts of the site that are off-limits to them, and vice versa.
 
 * Users cannot view private information about other users, such as user account details, wishlists, carts, or commissions. 
+
+<br/>
 
 #### **Database:**
 
@@ -661,9 +782,13 @@ The following was tested and found to be working as expected:
 * On deletion of the user, the data associated with that user is also deleted.
 * Calculations in the models to automatically assign variables to work as expected.
 
+<br/>
+
 #### **Sale Function**
 
 * If the user is looking at a product that is on sale, and the product is then taken off sale if the user adds it to their cart without refreshing the page, the product will revert to the original price.
+
+<br/>
 
 #### **Checkout**
 
@@ -672,11 +797,15 @@ The following was tested and found to be working as expected:
 * Stripe payment goes through without any problems.
 * The webhook is working so that if the user were to lose connection or close their browser before the transaction completes, the order still goes through and they are automatically emailed. 
 
+<br/>
+
 #### **Wishlist**
 
 * Adding and removing products from the wishlist work as expected.
 * The email is printed in the terminal as expected when a user’s wished-for item goes on sale. 
 * The user can control whether the above happens by turning their consent on or off on their wishlist page.
+
+<br/>
 
 #### **Products**
 
@@ -684,20 +813,38 @@ The following was tested and found to be working as expected:
 * They can be added from the product management page.
 * They can be edited or deleted by logged-in superusers from the products or product detail pages.
 
+<br/>
+
 #### **Commissions**
 
 * They can be added to the database via the commission’s form.
 * They appear on the 'My Commissions' page, in order of most recent.
 * The admin can change the status on the Django admin page, which will change the status on the 'My Commissions' page.
 
+<br/>
+
 #### **Search**
 
 * The search function works as expected.
+
+<br/>
 
 #### **Profile**
 
 * Shows the user’s editable details.
 * Shows the users order history
+
+<br/>
+
+### **User Testing**
+
+| User | Device | Problem | Screenshot |
+| :---:        |    :----:          |        :----:    | :---:     |
+| MI | Fair Phone | Can't see the number in the quantity box in the design page | [MI Screenshot](static/images/readme/no_quantity_number.png) |
+| CM | Android 1+9 | Price of product isn't shown in the order confirmation page | [CM Screenshot 1](static/images/readme/cm_no_price.png) |
+| CM | Android 1+9 | In checkout cart, the plus box wraps | [CM Screenshot 2](static/images/readme/cm_plus_wrap.png) |
+
+<br/>
 
 ### **Solved Bugs**
 
@@ -714,11 +861,14 @@ The following was tested and found to be working as expected:
 | 9 | When a user clicks on "My Wishlist", will take them to a rendered page | If a user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist, and does not happen if they have put something on their wishlist and then take it off again. This happened because sale_alert_consent is necessary for the wishlist view, but this was not set before the user put something in their wishlist. To fix this, I added in the show_wishlist view that a wishlist should be made if the user doesn't have one already, and that the user's sale_alert_consent should be set to false. A belt and braces approach, since creating the wishlist should mean that this field is automatically false. |
 | 10 | When manually adding the sale start and end date in the admin, no error should occur | Instead, it throws a validation error and requests that the user enter the discount percentage, even though there is one already there  | The code in the product model was wrong. This has now been fixed. |
 
+<br/>
+
 ### **Known Bugs**
 
 There are no known bugs.
 
 ---
+<br/>
 
 ## **Credits**
 
@@ -734,6 +884,8 @@ Thanks are given for the following posts and tutorials:
 * [Arie's code on Stack Overflow](https://stackoverflow.com/questions/16277997/field-labels-crispy-forms-django) was used to edit the field names on the commission form.
 * [Bipul Jain](https://stackoverflow.com/questions/52107184/suspiciousoperation-when-loading-image-in-django) for explaining how to fix a SeriousOperation error.
 
+<br/>
+
 ### **Code Used**
 
 * [Code Institute's 'Boutique Ado' walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) was used as the starting point for this project.
@@ -742,9 +894,13 @@ Thanks are given for the following posts and tutorials:
 * [Mahammadhusain Kadiwala's](https://stackoverflow.com/questions/73813646/django-models-to-calculate-discount) code was used as a basis for the sale information in the product model.
 * [Timmy O'Mahony's](https://stackoverflow.com/questions/6195424/how-to-insert-a-checkbox-in-a-django-form) code was used and edited for the wishlist sales alert checkbox.
 
+<br/>
+
 ### **Content**
 
 Content for the website was made by Rossanne Hamilton.
+
+<br/>
 
 ### **Media Used**
 
@@ -766,6 +922,8 @@ Content for the website was made by Rossanne Hamilton.
 * [Google Font's Big Shoulders Text](https://fonts.google.com/specimen/Big+Shoulders+Text?query=Patric+King) was used for the text body.
 * [9699186's image](https://pixabay.com/photos/frame-mockup-flatlay-plant-3681646/) on Pixabay was used for the background image of The Wounded Deer.
 * [Eva Bronzini's image](https://www.pexels.com/photo/photo-of-a-blank-picture-frame-7967320/) on Pixabay was used for the background image of The Lovers II.
+
+<br/>
 
 ### **Acknowledgements**
 
