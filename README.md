@@ -150,9 +150,12 @@ The website is made up of 15 pages:
 
 The index page has:
 
-  * A "Shop Now" button, which takes the user to the "All Products" page
+   <details>
+   <summary>A "Shop Now" button, which takes the user to the "All Products" page</summary>
 
-      ![Shop Now Button](static/images/readme/shop_now.jpg)
+   ![Shop Now Button](static/images/readme/shop_now.jpg)
+
+   </details>     
 
 <br/>
 
@@ -160,29 +163,53 @@ The index page has:
 
 The Products page has the following features:
 
-   * A list of products, which, when clicked, takes the user to the detail page of that specific product. If the product is on sale, the price is updated and the text is red, with additional text labeling it as on sale.
+   <details>
+   <summary>A list of products, which, when clicked, takes the user to the detail page of that specific product. If the product is on sale, the price is updated and the text is red, with additional text labeling it as on sale.</summary>
 
-      ![Products](static/images/readme/products.jpg)
+   ![Products](static/images/readme/products.jpg)
 
-   * If the user is a superuser, then at the bottom of each product are links to either edit or delete the product.
+   </details>
+   <br>
 
-      ![Edit or Delete](static/images/readme/edit_delete.jpg)
+   <details>
+   <summary>If the user is a superuser, then at the bottom of each product are links to either edit or delete the product.</summary>
 
-   * Text which lets the user know how many products there are in the category they are browsing. When the user is filtering products, this also shows a link to "Products Home"
+   ![Edit or Delete](static/images/readme/edit_delete.jpg)
 
-      ![Product Amount & Link](static/images/readme/product_amount.jpg)
+   </details>
+   <br>
 
-   * A dropdown box with the ability to sort by price (low to high), price (high to low), name (a-z), name (z-a), year of original (past-present), year of original (present - past). The year of the original denotes the year that the artwork was made that the piece was based on.
+   <details>
+   <summary>Text which lets the user know how many products there are in the category they are browsing. When the user is filtering products, this also shows a link to "Products Home"</summary>
 
-      ![Sort Dropdown](static/images/readme/sort_dropdown.jpg)
+   ![Product Amount & Link](static/images/readme/product_amount.jpg)
 
-   * Category boxes appear when you are seeing the product page in any view other than 'all products'. They show the user which categories they are currently viewing and can be clicked on to take the user to a specific category.
+   </details>
+   <br>
 
-      ![Category Boxes](static/images/readme/categories.jpg)
-   
-   * A scroll-up button on the bottom-right-hand-side of the page, which when clicked, will automatically scroll the page up to the top.
+   <details>
+   <summary>A dropdown box with the ability to sort by price (low to high), price (high to low), name (a-z), name (z-a), year of original (past-present), year of original (present - past). The year of the original denotes the year that the artwork was made that the piece was based on.</summary>
 
-      ![Scroll Up](static/images/readme/scroll.jpg)
+   ![Sort Dropdown](static/images/readme/sort_dropdown.jpg)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Category boxes appear when you are seeing the product page in any view other than 'all products'. They show the user which categories they are currently viewing and can be clicked on to take the user to a specific category.</summary>
+
+   ![Category Boxes](static/images/readme/categories.jpg)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>A scroll-up button on the bottom-right-hand-side of the page, which when clicked, will automatically scroll the page up to the top.</summary>
+
+   ![Scroll Up](static/images/readme/scroll.jpg)
+
+   </details>
+   <br>
 
 <br/>
 
@@ -190,55 +217,97 @@ The Products page has the following features:
 
 The Product Detail page has the following features:
 
-   * When clicking on the product image, it opens in a new tab for a clearer view.
+   <details>
+   <summary>When clicking on the product image, it opens in a new tab for a clearer view.</summary>
 
-      ![Product Image](static/images/readme/product.jpg)
+   ![Product Image](static/images/readme/product.jpg)
 
-   * If the product is on sale, the price is updated, and the text turns red. The red text also appears to the right to say that the product is on sale.
+   </details>
+   <br>
 
-      ![Sale information](static/images/readme/sale.jpg)
+   <details>
+   <summary>If the product is on sale, the price is updated, and the text turns red. The red text also appears to the right to say that the product is on sale.</summary>
 
-   * If the user is a superuser, two links appear giving the user the ability to edit or delete the product.
+   ![Sale information](static/images/readme/sale.jpg)
 
-      ![Edit and Delete](static/images/readme/edit_delete_detail.jpg)
+   </details>
+   <br>
 
-   * If the user would like more than one of the products, they can adjust the quantity. The maximum quantity is 3.
+   <details>
+   <summary>If the user is a superuser, two links appear giving the user the ability to edit or delete the product.</summary>
 
-      ![Quantity Adjuster](static/images/readme/quantity.jpg)
+   ![Edit and Delete](static/images/readme/edit_delete_detail.jpg)
 
-   * A keep shopping button that takes the user back to the products page to view all products.
+   </details>
+   <br>
 
-      ![Keep Shopping Button](static/images/readme/keep_shopping.jpg)
+   <details>
+   <summary>If the user would like more than one of the products, they can adjust the quantity. The maximum quantity is 3.</summary>
 
-   * A button that will add the desired quantity of the product to the user’s checkout cart.
+   ![Quantity Adjuster](static/images/readme/quantity.jpg)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>A keep shopping button that takes the user back to the products page to view all products.</summary>
+
+   ![Keep Shopping Button](static/images/readme/keep_shopping.jpg)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>A button that will add the desired quantity of the product to the user’s checkout cart.</summary>
+
+   ![Add to Bag Button](static/images/readme/add.jpg)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>A button that will add the product to the logged-in user’s wishlist. This button is only shown if the user is logged in.</summary>
+
+   ![Add to Wishlist Button](static/images/readme/add_wishlist.jpg)
    
-      ![Add to Bag Button](static/images/readme/add.jpg)
-
-   * A button that will add the product to the logged-in user’s wishlist. This button is only shown if the user is logged in.
-   
-      ![Add to Wishlist Button](static/images/readme/add_wishlist.jpg)
+   </details>
+   <br>
 
 <br/>
 
 ### **Commissions**
 
-The Commissions page has a form that the user can fill in to request a commission.
+   <details>
+   <summary>The Commissions page has a form that the user can fill in to request a commission.</summary>
+
+   ![Commission Form](static/images/readme/commission.jpg)
    
-      ![Commission Form](static/images/readme/commission.jpg)
+   </details>
+   <br>
+
+<br>
 
 ### **Commission Success**
 
-   * This page is shown when the user successfully submits a commission form. It includes links to their commission page, their wishlist, and the all-products page. It should be noted that the commission form is only available to logged-in users. 
+   <details>
+   <summary>This page is shown when the user successfully submits a commission form. It includes links to their commission page, their wishlist, and the all-products page. It should be noted that the commission form is only available to logged-in users. </summary>
 
-      ![Commission Success Message](static/images/readme/commission_success.jpg)
+   ![Commission Success Message](static/images/readme/commission_success.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
 ### **Product Management** 
 
-The Product Management page is only available to logged-in superusers and has a form that will allow the user to add a product.
+   <details>
+   <summary>The Product Management page is only available to logged-in superusers and has a form that will allow the user to add a product.</summary>
 
    ![Add Product Form](static/images/readme/add_product.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
@@ -246,21 +315,37 @@ The Product Management page is only available to logged-in superusers and has a 
 
 The My Profile page has the following features:
 
-   * A form where the user can update their personal information, which is then auto-filled on the checkout form.
+   <details>
+   <summary>A form where the user can update their personal information, which is then auto-filled on the checkout form.</summary>
 
-      ![User Information Form](static/images/readme/user_info.jpg)
+   ![User Information Form](static/images/readme/user_info.jpg)
+   
+   </details>
+   <br>
 
-   * A button that takes the user to their wishlist.
+   <details>
+   <summary>A button that takes the user to their wishlist.</summary>
 
-      ![View Wishlist Button](static/images/readme/view_wishlist.jpg)
+   ![View Wishlist Button](static/images/readme/view_wishlist.jpg)
+   
+   </details>
+   <br>
 
-   * A button that takes the user to their commissions.
+   <details>
+   <summary>A button that takes the user to their commissions.</summary>
 
-      ![View Commissions Button](static/images/readme/view_commissions.jpg)
+   ![View Commissions Button](static/images/readme/view_commissions.jpg)
+   
+   </details>
+   <br>
 
-   * A section that shows the user their order history.
+   <details>
+   <summary>A section that shows the user their order history.</summary>
 
-      ![Order History](static/images/readme/order_history.jpg)
+   ![Order History](static/images/readme/order_history.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
@@ -268,22 +353,40 @@ The My Profile page has the following features:
 
 The Wishlist page has the following features:
 
-   * A section that tells the user how many items they have on their wishlist.
+   <br>
 
-      ![Wishlist Amount](static/images/readme/wishlist_amount.jpg)
+   <details>
+   <summary>A section that tells the user how many items they have on their wishlist.</summary>
 
-   * A small form the user can submit consent to be automatically emailed when one of their wished-for items goes on sale. This changes to remove consent as an option if they have given consent previously.
+   ![Wishlist Amount](static/images/readme/wishlist_amount.jpg)
+   
+   </details>
+   <br>
 
-      ![With no sale consent](static/images/readme/sale_consent_off.jpg)
-      ![With sale consent](static/images/readme/sale_consent_on.jpg)
+   <details>
+   <summary>A small form the user can submit consent to be automatically emailed when one of their wished-for items goes on sale. This changes to remove consent as an option if they have given consent previously.</summary>
 
-   * A list of wishlist items that the user has saved. Each item is clickable and takes the user to the specific product detail page.
+   ![With no sale consent](static/images/readme/sale_consent_off.jpg)
+   ![With sale consent](static/images/readme/sale_consent_on.jpg)
+   
+   </details>
+   <br>
 
-      ![Wishlist Items](static/images/readme/wishlist_items.jpg)
+   <details>
+   <summary>A list of wishlist items that the user has saved. Each item is clickable and takes the user to the specific product detail page.</summary>
 
-   * A button underneath each item, allowing the user to remove it from their wishlist.
+   ![Wishlist Items](static/images/readme/wishlist_items.jpg)
+   
+   </details>
+   <br>
 
-      ![Remove From Wishlist Button](static/images/readme/remove_wishlist.jpg)
+   <details>
+   <summary>A button underneath each item, allowing the user to remove it from their wishlist.</summary>
+
+   ![Remove From Wishlist Button](static/images/readme/remove_wishlist.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
@@ -291,44 +394,64 @@ The Wishlist page has the following features:
 
 The My Commissions page has the following features:
 
-   * A section that shows the user how many pieces of art they have commissioned.
+   <details>
+   <summary>A section that shows the user how many pieces of art they have commissioned.</summary>
 
-      ![Commission Amount](static/images/readme/commission_amount.png)
+   ![Commission Amount](static/images/readme/commission_amount.png)
+   
+   </details>
+   <br>
 
-   * Each commission the user has requested has its own section. This includes a status that can be updated by the administrator on the Django Admin page to let the user know where they are in the commission process. These are ordered by the most recent date.
+   <details>
+   <summary>Each commission the user has requested has its own section. This includes a status that can be updated by the administrator on the Django Admin page to let the user know where they are in the commission process. These are ordered by the most recent date.</summary>
 
-      ![User's Commissions](static/images/readme/commissions.jpg)
+   ![User's Commissions](static/images/readme/commissions.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
 ### **Logout**
 
-The Logout page has a cancel button which takes the user back to the product page, and a sign-out button, which signs the user out.
+   <details>
+   <summary>The Logout page has a cancel button which takes the user back to the product page, and a sign-out button, which signs the user out.</summary>
 
    ![Sign Out](static/images/readme/sign_out.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
 ### **Register**
 
-The Sign Up page has the following features:
-
+   <details>
+   <summary>The Sign Up page has the following features:</summary>
+   
    * A link to take the user to the sign-in page if they already have an account. 
    * A form for the user to sign up if they don't already have an account. 
    * This page is only seen if the user is not signed in.
 
       ![Register](static/images/readme/register.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
 ### **Sign In** 
 
-The Sign In page has the following features:
-
+   <details>
+   <summary>The Sign In page has the following features:</summary>
+   
    * A login button that takes the user to the login page in case they already have an account.
    * A form for the user to input the necessary details to create an account.
 
       ![Sign In](static/images/readme/sign_in.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
@@ -336,15 +459,23 @@ The Sign In page has the following features:
 
 The Shopping bag page has the following features:
 
-   * The details of the products being bought, with an option to update the amount or remove each product. 
+   <details>
+   <summary>The details of the products being bought, with an option to update the amount or remove each product.</summary>
+   
+   ![Shopping Bag](static/images/readme/shopping_bag.jpg)
+   
+   </details>
+   <br>
 
-      ![Shopping Bag](static/images/readme/shopping_bag.jpg)
-
-   * The details of the total and delivery price, as well as information on how much extra the user should spend to get free postage.
-   * A button to return the user to the products page
-   * A button to continue to the checkout
-
-      ![Shopping Buttons](static/images/readme/shopping_buttons.jpg)
+   <details>
+   <summary> The details of the total and delivery price, as well as information on how much extra the user should spend to get free postage.
+   / A button to return the user to the products page.
+   / A button to continue to the checkout.</summary>
+   
+   ![Shopping Buttons](static/images/readme/shopping_buttons.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
@@ -352,48 +483,72 @@ The Shopping bag page has the following features:
 
 The Checkout page has the following features:
 
-   * A form for the user details needed to check out.
+   <details>
+   <summary>A form for the user details needed to check out.</summary>
+   
+   ![Checkout Form](static/images/readme/checkout_form.jpg)
+   
+   </details>
+   <br>
 
-      ![Checkout Form](static/images/readme/checkout_form.jpg)
-
-   * The order summary
-   * A button to send the user back to be able to adjust their bag
-   * A button to submit their order
-
-      ![Order Summary](static/images/readme/order_summary.jpg)
+   <details>
+   <summary>The order summary / A button to send the user back to be able to adjust their bag / A button to submit their order</summary>
+   
+   ![Order Summary](static/images/readme/order_summary.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
 ### **Checkout Success**
 
-The Checkout success page has the following features:
+The Checkout success page has the following feature:
 
-   * Information about the user order
-
-      ![Checkout Success](static/images/readme/checkout_success.jpg)
+   <details>
+   <summary>Information about the user order</summary>
+   
+   ![Checkout Success](static/images/readme/checkout_success.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
 ### **All pages have the following features**
 
-   * A logo that when clicked takes the user back to the index page.
+   <details>
+   <summary>A logo that when clicked takes the user back to the index page.</summary>
+   
+   ![Logo](static/images/readme/logo.jpg)
+   
+   </details>
+   <br>
 
-      ![Logo](static/images/readme/logo.jpg)
+   <details>
+   <summary>A search function</summary>
+   
+   ![Search bar](static/images/readme/search.jpg)
+   
+   </details>
+   <br>
 
-   * A search function
+   <details>
+   <summary>Links to three versions of the products page - all products/prints/posters, which themselves have dropdowns to further filter those pages. / A link to the commission’s page, which is only shown when the user is logged in.</summary>
+   
+   ![Menu links](static/images/readme/menu_links.jpg)
+   
+   </details>
+   <br>
 
-      ![Search bar](static/images/readme/search.jpg)
-
-   * Links to three versions of the products page - all products/prints/posters, which themselves have dropdowns to further filter those pages.
-
-   * A link to the commission’s page, which is only shown when the user is logged in.
-
-      ![Menu links](static/images/readme/menu_links.jpg)
-
-   * A drop-down menu for the user account. Which only shows 'log in' and 'register' if the user is not logged in, but shows 'product management', 'my profile', 'my wishlist', 'my commissions' and 'logout'.
-   * A link to the user’s shopping cart
-
-      ![My Account](static/images/readme/my_account.jpg)
+   <details>
+   <summary>A drop-down menu for the user account. Which only shows 'log in' and 'register' if the user is not logged in, but shows 'product management', 'my profile', 'my wishlist', 'my commissions' and 'logout'.
+   / A link to the user’s shopping cart</summary>
+   
+   ![My Account](static/images/readme/my_account.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
@@ -401,25 +556,45 @@ The Checkout success page has the following features:
 
 Many messages are included to alert the user that they have accomplished an action. Such as:
 
-   * When adding a product to their checkout bag.
+   <details>
+   <summary>When adding a product to their checkout bag.</summary>
+   
+   ![Add Product to Bag](static/images/readme/add_product_toast.jpg)
+   
+   </details>
+   <br>
 
-      ![Add Product to Bag](static/images/readme/add_product_toast.jpg)
+   <details>
+   <summary>Successfully placing an order.</summary>
+   
+   ![Order Success](static/images/readme/order_success_toast.jpg)
+   
+   </details>
+   <br>
 
-   * Successfully placing an order.
+   <details>
+   <summary>Adding an item to their wishlist.</summary>
+   
+   ![Add to wishlist toast](static/images/readme/add_wishlist_toast.jpg)
+   
+   </details>
+   <br>
 
-      ![Order Success](static/images/readme/order_success_toast.jpg)
+   <details>
+   <summary>Removing an item from their wishlist.</summary>
+   
+   ![Remove from wishlist toast](static/images/readme/remove_wishlist_toast.jpg)
+   
+   </details>
+   <br>
 
-   * Adding an item to their wishlist.
-
-      ![Add to wishlist toast](static/images/readme/add_wishlist_toast.jpg)
-
-   * Removing an item from their wishlist.
-
-      ![Remove from wishlist toast](static/images/readme/remove_wishlist_toast.jpg)
-
-   * Updating their consent preferences for being emailed when an item on their wishlist goes on sale.
-
-      ![Update Preferences](static/images/readme/preferences.jpg)
+   <details>
+   <summary>Updating their consent preferences for being emailed when an item on their wishlist goes on sale.</summary>
+   
+   ![Update Preferences](static/images/readme/preferences.jpg)
+   
+   </details>
+   <br>
 
 <br/>
 
