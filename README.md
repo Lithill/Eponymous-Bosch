@@ -94,9 +94,129 @@ AI is currently very much in the public eye, and Open AI's Dall-E 2 is no except
 ## **Design**
 <br/>
 
-### **Early Design Phases**
+### **Wireframes**
 
-Since the building of this website was based on the Ado Boutique walkthrough, there are no wireframes. This is because the layout has been kept the same, but reskinned via images and font.
+The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
+
+<details>
+<summary>Index</summary>
+
+![Index Wireframe](static/images/readme/wireframes/wire_index.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Products</summary>
+
+![Products Wireframe](static/images/readme/wireframes/wire_products.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Product Detail</summary>
+
+![Products Wireframe](static/images/readme/wireframes/wire_product_detail.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Commissions</summary>
+
+![Commissions Wireframe](static/images/readme/wireframes/wire_commissions.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Product Management</summary>
+
+![Product Management Wireframe](static/images/readme/wireframes/wire_product_management.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>My Profile</summary>
+
+![My Profile Wireframe](static/images/readme/wireframes/wire_profile.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Wishlist</summary>
+
+![Wishlist Wireframe](static/images/readme/wireframes/wire_wishlist.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>My Commissions</summary>
+
+![My Commissions Wireframe](static/images/readme/wireframes/wire_my_commissions.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Commission Success</summary>
+
+![Commission Success Wireframe](static/images/readme/wireframes/wire_commission_success.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Logout</summary>
+
+![Logout Wireframe](static/images/readme/wireframes/wire_sign_out.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Register</summary>
+
+![Register Wireframe](static/images/readme/wireframes/wire_sign_up.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Sign-in</summary>
+
+![Register Wireframe](static/images/readme/wireframes/wire_sign_in.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Shopping Bag</summary>
+
+![Shopping Bag Wireframe](static/images/readme/wireframes/wire_bag.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Checkout</summary>
+
+![Checkout Wireframe](static/images/readme/wireframes/wire_checkout.jpg)
+
+</details>
+<br>
+
+<details>
+<summary>Checkout Success</summary>
+
+![Checkout Success Wireframe](static/images/readme/wireframes/wire_commission_success.jpg)
+
+</details>
+<br>
 
 <br/>
 
