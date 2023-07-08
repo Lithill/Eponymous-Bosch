@@ -158,6 +158,10 @@ input[name='q']::placeholder {
     appearance: textfield;
 }
 
+.qty_input {
+    border-color: black;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
