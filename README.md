@@ -873,16 +873,13 @@ To clone the Eponymous Bosch repository:
 
 ## **Testing**
 
-Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along. Both manual and automated testing was employed. The difference between these two types of tests is that:
+Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along. Both manual testing and validation was employed.  
 
-* Manual testing is conducted by a person, who is seeing if they can break the product, or otherwise whether it behaves as expected for users.
-* Automatic testing is conducted by automation frameworks or another kind of tool or piece of software. 
-
-I tested the page and had 2 people also manually test it on their own devices. For automated testing, I used the W3C validator, CSS validator, Python Linter, JSHint validator, and Lighthouse. 
+I tested the page and had 3 people also manually test it on their own devices. For validation, I used the W3C validator, CSS validator, Python Linter, JSHint validator, and Lighthouse. 
 
 <br/>
 
-### **Automatic Testing**
+### **Validation**
 
 <br/>
 
@@ -1037,97 +1034,113 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 #### **Links:**
 
-Tested each link on every page. Each link worked as expected. 
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| That the user will be taken to the right page when clicking on links | Clicked on every link to make sure that it took the user to the right page | Passed |
 
 <br/>
 
 #### **Buttons:**
 
-Tested each button on every page. Each button worked as expected. 
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| That each button will do what the user expects it to | Clicked on every button to make sure that it worked as expected | Passed |
 
 <br/>
 
 #### **Forms:**
 
-Checked that all forms behaved as expected in terms of:
-   * Not submitting when required fields are left blank.
-   * Returning success messages when the user successfully submits a form.
-   * Not allowing users to submit input types and lengths/amounts that aren't wanted.
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| The form will not submit when required fields are left blank | Checked every form to see if it would be submitted if any of the required fields were left blank | Passed |
+| The user sees a success message when having successfully submitted a form | Successfully submitted all forms to check if they all had success messages | Passed |
+| The form will not submit when input types and lengths/amounts aren't appropriate | Tested every form field that takes a specific input type to see if it would submit with an undesired input type | Passed |
 
 <br/>
 
 #### **Authentication:**
 
-The following was tested and found to be working as expected:
-
-* Non-logged-in users cannot see or access the parts of the site that are off-limits to them, and vice versa.
-
-* Users cannot view private information about other users, such as user account details, wishlists, carts, or commissions. 
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| Non-logged-in users cannot see or access the parts of the site that are off-limits to them, and vice versa. | I logged in and out and on both occassions I checked to see what options were available to the user | Passed |
+| Users cannot view private information about other users, such as user account details, wishlists, carts, or commissions. |    I logged in as different users with different wishlists and commission requests, to check if either user could see the details of the other | Passed |
 
 <br/>
 
 #### **Database:**
 
-The following was tested and found to be working as expected:
-
-* User data is added and persists over time.
-* Order history, commissions, and wishlist are added and persist over time.
-* User is linked to their order history, wishlist, and commission data.
-* User data can be edited and deleted from the database.
-* On deletion of the user, the data associated with that user is also deleted.
-* Calculations in the models to automatically assign variables to work as expected.
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| User data is added and persists over time, including order history, commissions and wishlist. | Added multiple users with different data and checked that throughout logging in and out, and over the course of weeks, the data remained the same | Passed |
+| User is linked to their order history, wishlist, and commission data | I made multiple user accounts with different data, and all users can see their own data | Passed |
+| User data can be edited and deleted from the database. | I tested that when deleting a user and then reestablishing them, none of their previous data is visible in their account. I also edited data such as user delivery details, and deleted items off the wishlist | Passed |
+| Calculations in the models to automatically assign variables to work as expected. | All calculations the model made were independently verified by manipulating the data and checking the results. This focused mostly around sales | Passed |
 
 <br/>
 
 #### **Sale Function**
 
-* If the user is looking at a product that is on sale, and the product is then taken off sale if the user adds it to their cart without refreshing the page, the product will revert to the original price.
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| If the user is looking at a product that is on sale, and the product is then taken off sale if the user adds it to their cart without refreshing the page, the product will revert to the original price. | Opened the product detail page of a sale item. Took the item off sale. Without refreshing the product detail page, I added the item to my cart. Doing this showed that the item had reverted back to its pre-sale price. | Passed |
 
 <br/>
 
 #### **Checkout**
 
-* Adding, editing, and removing products from the bag work as expected. 
-* Users’ correct details auto-fill in the checkout form.
-* Stripe payment goes through without any problems.
-* The webhook is working so that if the user were to lose connection or close their browser before the transaction completes, the order still goes through and they are automatically emailed. 
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| Adding, editing, and removing products from the bag work as expected.  | I added, edited and removed products from the bag | Passed |
+| Users’ correct details auto-fill in the checkout form. | Checked that the same details from the users profile are the ones that are auto-filling the checkout form. I also checked that editing these details will change those on the form. | Passed |
+| Stripe payment goes through without any problems. | I made several orders, which all went through fine. I then checked the Stripe dashboard to make sure it was going through on that side too | Passed |
+| The webhook is works so that if the user were to lose connection or close their browser before the transaction completes, the order still goes through and they are automatically emailed. | I submited the checkout form but closed the tab before it finished loading. The user still got charged, sent an automatic email, and the order was logged on the system and in their order history | Passed |
 
 <br/>
 
 #### **Wishlist**
 
-* Adding and removing products from the wishlist work as expected.
-* The email is printed in the terminal as expected when a user’s wished-for item goes on sale. 
-* The user can control whether the above happens by turning their consent on or off on their wishlist page.
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| Adding and removing products from the wishlist work as expected. | I tested in different user accounts that I could add and remove products from the wishlist | Passed |
+| The email is sent as expected when a user’s wished-for item goes on sale.  | I tested on several user accounts with several different items by adding an item to users wishlists, checking some of their consent boxes, and seeing if only those who consented got an email for the item that just went on sale, if it was in their wishlist | Passed |
+| The user can control whether the above happens by turning their consent on or off on their wishlist page. | This was tested for in the test above | Passed |
 
 <br/>
 
 #### **Products**
 
-* The sorting and filtering functions work appropriately.
-* They can be added from the product management page.
-* They can be edited or deleted by logged-in superusers from the products or product detail pages.
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| The sorting and filtering functions work appropriately. | I clicked on each sort and filter function and checke to see if they displayed the right products and in the order expected | Passed |
+| They can be added from the product management page. | I created several products using the management page, and checked to see that they showed up in the admin and on the website in the appropriate places. | Passed |
+| They can be edited or deleted by logged-in superusers from the products or product detail pages. | I edited and deleted several products as a superuser in both the 'all products' and 'product detail' pages | Passed |
 
 <br/>
 
 #### **Commissions**
 
-* They can be added to the database via the commission’s form.
-* They appear on the 'My Commissions' page, in order of most recent.
-* The admin can change the status on the Django admin page, which will change the status on the 'My Commissions' page.
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| They can be added to the database via the commission’s form. | I submitted many commission forms, which then displayed on botht eh admin page and the user's 'my commissions' page | Passed`` |
+| They appear on the 'My Commissions' page, in order of when they were added, with the recently added being at the top. | I added several commissions to a few different users, and all of them had their commissions appear in the correct order | Passed |
+| The admin can change the status on the Django admin page, which will change the status on the 'My Commissions' page. | I changed the status on the admin page for several commissions, and each showed this change on the users 'My Commissions' pages. | Passed |
 
 <br/>
 
 #### **Search**
 
-* The search function works as expected.
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| The search function works as expected. | I searched for a wide variety of artwork based on different parts of their products pages, and this worked as expected. | Passed |
 
 <br/>
 
 #### **Profile**
 
-* Shows the user’s editable details.
-* Shows the users order history
+| Expected | Test Performed | Result |
+| :---:    |    :----:      | :---:  |
+| Shows the user’s editable details. | I checked on several users profiles that their details were editable. | Passed |
+| Shows the users order history | I checked on several users profiles that their orders were all visible in their order history after making a variety of orders through their accounts | Passed |
 
 <br/>
 
@@ -1138,6 +1151,8 @@ The following was tested and found to be working as expected:
 | MI | Fair Phone | Can't see the number in the quantity box in the design page | [MI Screenshot](static/images/readme/no_quantity_number.png) |
 | CM | Android 1+9 | Price of product isn't shown in the order confirmation page | [CM Screenshot 1](static/images/readme/cm_no_price.png) |
 | CM | Android 1+9 | In checkout cart, the plus box wraps | [CM Screenshot 2](static/images/readme/cm_plus_wrap.png) |
+| SHM | MacBook Air 2017 | Padding is needed on the 'verify email' page | [SHM Screenshot 1](static/images/readme/shm_padding.png) |
+| SHM | MacBook Air 2017 | The automatic emails do not say Eponymous Bosch | [SHM Screenshot 2](static/images/readme/shm_email.png) |
 
 <br/>
 
@@ -1225,5 +1240,5 @@ Content for the website was made by Rossanne Hamilton.
 I would like to acknowledge the following people who helped me along the way in completing my fourth milestone project:
 
 - My mentor Mitko Bachvarov for helpful feedback and sharing links for further learning.
-- Chris Mugridge and Maya Irish for user and device testing.
+- Chris Mugridge, Maya Irish and Skye Hillier-Milton for user testing and feedback.
 - Thomas Muat for helping me understand how the on_sale filter works in the nav bar.
