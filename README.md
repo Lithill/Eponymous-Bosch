@@ -1203,6 +1203,7 @@ Thanks are given for the following posts and tutorials:
 * [Harry Dhillon's Nourish and Lift](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/wishlist/views.py) code was used for the wishlist.
 * [Mahammadhusain Kadiwala's](https://stackoverflow.com/questions/73813646/django-models-to-calculate-discount) code was used as a basis for the sale information in the product model.
 * [Timmy O'Mahony's](https://stackoverflow.com/questions/6195424/how-to-insert-a-checkbox-in-a-django-form) code was used and edited for the wishlist sales alert checkbox.
+* [w3school's](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) code was used to hide the arrows on the quantity input boxes.
 
 <br/>
 
