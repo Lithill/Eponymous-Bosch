@@ -789,6 +789,9 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Font Awesome](https://fontawesome.com/) was used for the icons.
 * [Lucid](https://lucid.app/) was used to map the models.
 * [Amazon Web Services](https://aws.amazon.com/) was used to host the images for the Heroku-hosted site.
+* [Batch Compress](https://batchcompress.com/en) was used to compresss image files.
+* [Bulk Resize Photos](https://bulkresizephotos.com/) was used to resize image files and put them in a different file format.
+* [RespImageLint](https://ausi.github.io/respimagelint/) was used to see how the images needed to be changed to optimise the page.
 
 ---
 
@@ -1026,6 +1029,104 @@ And finally:
 
 <br/>
 
+#### **Lighthouse**
+
+Lighthouse in Google Dev Tools was used to check performance, accessibility, best practices and search engine optimisation.
+
+I had difficulty improving the mobile lighthouse scores for the deadline, although I understand that they are very imortant for the user experience. This is something that I will continue to work on after the work has been marked. 
+
+   <details>
+   <summary>Index Page results</summary>
+
+   The original results were improved by adding a meta tag with name and description to the base.html.
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/index_mobile.png)
+   
+   Desktop
+   
+   ![desktop](static/images/readme/validation/lighthouse/index_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Products Page results</summary>
+
+   The results were improved by making the bulk of the images webp, removing the ability to click on a product image and see it displayed larger, and resizing the image files.
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/products_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/products_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Product Detail Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/product_detail_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/product_detail_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Commissions Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/commission_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/commission_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Product Management Page results</summary>
+
+   Lighthouse warned that form elements do not have associated labels, so I set the form up as I had done for the commission form, which did not get this warning. However, this didn't help.
+
+   Mobile
+
+   ![mobile]()
+
+   Desktop
+
+   ![desktop]()
+
+   </details>
+   <br>
+
+
+
+* My Profile Page results from the [mobile]() and [desktop]() check.
+* Wishlist Page results from the [mobile]() and [desktop]() check.
+* My Commissions Page results from the [mobile]() and [desktop]() check.
+* Commission Success Page results from the [mobile]() and [desktop]() check.
+* Logout Page results from the [mobile]() and [desktop]() check.
+* Register Page results from the [mobile]() and [desktop]() check.
+* Sign-in Page results from the [mobile]() and [desktop]() check.
+* Shopping Bag Page results from the [mobile]() and [desktop]() check.
+* Checkout Page results from the [mobile]() and [desktop]() check.
+* Checkout Success Page results from the [mobile]() and [desktop]() check.
+
+
+<br>
+
 ### **Manual Testing**
 
 To fully test my website, I used Google Chrome Developer Tools to ensure that the pages were responsive enough on all available screen sizes. Testing was performed on a variety of browsers (Chrome, Microsoft Edge, and Firefox) and devices (Gigabyte gaming laptop, iPhone SE, Android one+ 9 mobile, Fair Phone).
@@ -1160,15 +1261,15 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 | Bug Number  | Expected behaviour | Actual behaviour | Solution |
 | ---:        |    :----:          |        :----:    | :---     |
-| 1       |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees everything on sale   |  This did not happen  | The model has a property called on_sale that determines the boolean value of on_sale in the Product model. This calculates if an item is on sale based on whether the admin enters a discount or not. So instead of looking for on_sale=True, the code looks for on_sale being greater than 0. So I changed the all_product view section to "if 'on_sale' in request.GET: products = products.filter(discount__gt=0)" |
-| 2       | Commissions shown on the my_commissions page should only be those of the user  | Currently showing all user's commissions  | Change part of the my_commissions view code from this -> commissions = Commission.objects.all() to this -> commissions = Commission.objects.filter(user=request.user) |
+| 1       |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees everything on sale   |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees all products, not just those on sale  | The model has a property called on_sale that determines the boolean value of on_sale in the Product model. This calculates if an item is on sale based on whether the admin enters a discount or not. So instead of looking for on_sale=True, the code looks for on_sale being greater than 0. So I changed the all_product view section to "if 'on_sale' in request.GET: products = products.filter(discount__gt=0)" |
+| 2       | Commissions shown on the my_commissions page should only be those of the user  | Currently showing every user's commissions  | Change part of the my_commissions view code from this -> commissions = Commission.objects.all(), to this -> commissions = Commission.objects.filter(user=request.user) |
 | 3 | When marking the discount percentage or a product as '0' in admin, the user should be able to turn off the sale |        Marking the discount percentage as '0' returned a form error, requesting the user enter a discount percentage | Added the discount condition to the Product model |
-| 4 | When checking out, after submitting the form, the user gets the error - "AttributeError at /checkout/ 'Product' object has no attribute 'price'" | Expected form to go through, user payment to be processed by Stripe, and the user is sent an automatic email confirmation | This was because the checkout model save function was not updated when product.price was changed to product.sell_price in the Product model. |
+| 4 | When checking out, after submitting the form, the form should go through, user payment to be processed by Stripe, and the user is sent an automatic email confirmation | When checking out, after submitting the form, the user gets the error - "AttributeError at /checkout/ 'Product' object has no attribute 'price'" | This was because the checkout model save function was not updated when product.price was changed to product.sell_price in the Product model. |
 | 5 | When asking to sort products by price in the navigation bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "Cannot resolve keyword 'sell_price' into field." | This issue arose because the field 'sell_price' was not defined in the Product model as a database field, but rather as a property with a getter method |
-| 6 | When asking to sort products by price in the dropdown bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "FieldError at /products/ Cannot resolve keyword 'sell' into field. Choices are: category, category_id, description, discount_percentage, id, image, image_url, imperial, metric, name, og_price, on_sale_end, on_sale_start, orderlineitem, orientation, orig_url, original_artist, product_wishlists, sell_price, sku, style, type, users_wishlist, wishlistitem, year" | This issue arose because the sortkey used had an underscore in it. Fixing the view to remove this made the page render again, and the sorting function work. |
+| 6 | When asking to sort products by price in the dropdown bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "FieldError at /products/ Cannot resolve keyword 'sell' into field. Choices are: category, category_id, description, discount_percentage, id, image, image_url, imperial, metric, name, og_price, on_sale_end, on_sale_start, orderlineitem, orientation, orig_url, original_artist, product_wishlists, sell_price, sku, style, type, users_wishlist, wishlistitem, year" | This issue arose because the sortkey used had an underscore in it. Fixing the view to remove this made the page render again, and the sorting function now works. |
 | 7 | User can add product via add_product page. | Instead, on form submission, this error is displayed - "TypeError at /products/add/ unsupported operand type(s) for *: 'decimal.Decimal' and 'NoneType'" | This was because I had removed the discount_percentage field, which made the sell_price incalculable. |
-| 8 | Heroku-hosted page renders when visited | Page doesn't render and shows this error - "SuspiciousOperation at / Attempted access to '/images/logo.webp' denied." | I changed the file path to correct this |
-| 9 | When a user clicks on "My Wishlist", will take them to a rendered page | If a user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist, and does not happen if they have put something on their wishlist and then take it off again. This happened because sale_alert_consent is necessary for the wishlist view, but this was not set before the user put something in their wishlist. To fix this, I added in the show_wishlist view that a wishlist should be made if the user doesn't have one already, and that the user's sale_alert_consent should be set to false. A belt and braces approach, since creating the wishlist should mean that this field is automatically false. |
+| 8 | The Heroku-hosted page renders when visited | The page doesn't render and shows this error - "SuspiciousOperation at / Attempted access to '/images/logo.webp' denied." | I changed the file path to correct this |
+| 9 | When a user clicks on "My Wishlist", it will take them to a rendered page | If a user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist, and does not happen if they have put something on their wishlist and then take it off again. This happened because sale_alert_consent is necessary for the wishlist view, but this was not set before the user put something in their wishlist. To fix this, I added in the show_wishlist view that a wishlist should be made if the user doesn't have one already, and that the user's sale_alert_consent should be set to false. A belt and braces approach, since creating the wishlist should mean that this field is automatically set to false. |
 | 10 | When manually adding the sale start and end date in the admin, no error should occur | Instead, it throws a validation error and requests that the user enter the discount percentage, even though there is one already there  | The code in the product model was wrong. This has now been fixed. |
 
 <br/>

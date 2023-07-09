@@ -7,8 +7,6 @@ from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
 
-# Create your views here.
-
 
 def all_products(request):
     """ A view to show individual product details """
@@ -58,11 +56,16 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
+    page_name = "Products"
+    page_description = "View all of the products here"
+
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'page_name': page_name,
+        'page_description': page_description
     }
 
     return render(request, 'products/products.html', context)
@@ -73,8 +76,13 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    page_name = "Product Detail"
+    page_description = "See the details of the product here"
+
     context = {
         'product': product,
+        'page_name': page_name,
+        'page_description': page_description
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -101,9 +109,14 @@ def add_product(request):
     else:
         form = ProductForm()
 
+    page_name = "Product Management"
+    page_description = "Add a product here"
+
     template = 'products/add_product.html'
     context = {
         'form': form,
+        'page_name': page_name,
+        'page_description': page_description,
     }
 
     return render(request, template, context)

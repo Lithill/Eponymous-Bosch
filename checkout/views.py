@@ -33,6 +33,8 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    page_name = "Checkout Page"
+    page_description = "Go here to buy the things in your cart"
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -126,6 +128,8 @@ def checkout(request):
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,
+        'page_name': page_name,
+        'page_description': page_description
     }
 
     return render(request, template, context)
@@ -135,6 +139,8 @@ def checkout_success(request, order_number):
     """
     Handle successful checkouts
     """
+    page_name = "Checkout Success"
+    page_description = "This page means you've made a purchase"
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
@@ -169,6 +175,8 @@ def checkout_success(request, order_number):
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
+        'page_name': page_name,
+        'page_description': page_description
     }
 
     return render(request, template, context)

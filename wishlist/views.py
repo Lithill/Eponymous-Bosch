@@ -22,8 +22,13 @@ def show_wishlist(request):
         wishlist.sale_alert_consent = False
         wishlist.save(update_fields=['sale_alert_consent'])
 
+    page_name = "Wishlist"
+    page_description = "See the items you've saved for later"
+
     context = {
         'wishlist': wishlist,
+        'page_name': page_name,
+        'page_description': page_description
     }
 
     return render(request, "wishlist.html", context)

@@ -6,8 +6,10 @@ from products.models import Product
 
 def view_bag(request):
     """ A view that renders the bag contents page """
-
-    return render(request, 'bag/bag.html')
+    page_name = "Your Cart"
+    page_description = "Your checkout bag"
+    context = {'page_name': page_name, 'page_description': page_description}
+    return render(request, 'bag/bag.html', context)
 
 
 def add_to_bag(request, item_id):

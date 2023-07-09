@@ -13,6 +13,8 @@ def contact(request):
 
 @login_required
 def commission(request, user_id):
+    page_name = "Commission Page"
+    page_description = "Request a commission here!"
     context = {}
 
     commission_form = CommissionForm(
@@ -29,9 +31,12 @@ def commission(request, user_id):
             return render(request, "contact/commission_success.html")
 
     context = {
-        'commission_form': commission_form
+        'commission_form': commission_form,
+        'page_name': page_name,
+        'page_description': page_description
     }
-    return render(request, "contact/commission.html", context)
+    return render(
+        request, "contact/commission.html", context)
 
 
 @login_required
@@ -39,19 +44,25 @@ def my_commissions(request):
     """
     A view to render the user's commissions
     """
+    page_name = "My Commissions"
+    page_description = "Go here to see your commission requests"
     commissions = None
     try:
         commissions = Commission.objects.filter(
             user=request.user).order_by('-last_modified')
     except Commission.DoesNotExist:
         pass
-
-    return render(
-        request, 'contact/my_commissions.html', {'commissions': commissions})
+    context = {
+        'page_name': page_name, 'page_description': page_description,
+        'commissions': commissions}
+    return render(request, 'contact/my_commissions.html', context)
 
 
 @login_required
 def commission_success(request):
+    page_name = "Commission Success"
+    page_description = "You have successfully requested a commission!"
 
+    context = {'page_name': page_name, 'page_description': page_description}
     template = 'contact/commission_success.html'
-    return render(request, template)
+    return render(request, template, context)
