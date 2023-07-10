@@ -792,6 +792,7 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Batch Compress](https://batchcompress.com/en) was used to compresss image files.
 * [Bulk Resize Photos](https://bulkresizephotos.com/) was used to resize image files and put them in a different file format.
 * [RespImageLint](https://ausi.github.io/respimagelint/) was used to see how the images needed to be changed to optimise the page.
+* [Favicon Generator](https://favicon.io/favicon-converter/) was used to use convert my favicon design into something useable.
 
 ---
 
