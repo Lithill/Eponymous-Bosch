@@ -1170,26 +1170,86 @@ I had difficulty improving the mobile lighthouse scores for the deadline, althou
    <details>
    <summary>Logout Page results</summary>
 
-   I had a lot of difficulty trying to improve the SEO ratings for this page. I tried adding a custom view and url to define the title and description, adding in if statements into the base.html to create default titles and descriptions for pages that do not have a title or description. I also tried adding custom css for the mobile view in both the html page itself, and the base.css file. Nothing seemed to work. This is something I will need to attempt to address again in the future. I have left in my simplest attempt as an example, although it does not work.
-
    Mobile
 
    ![mobile](static/images/readme/validation/lighthouse/logout_mobile.png)
 
    Desktop
 
-   ![desktop]()
+   ![desktop](static/images/readme/validation/lighthouse/logout_desktop.png)
 
    </details>
    <br>
 
+   <details>
+   <summary>Register Page results</summary>
 
-* Register Page results from the [mobile]() and [desktop]() check.
-* Sign-in Page results from the [mobile]() and [desktop]() check.
-* Shopping Bag Page results from the [mobile]() and [desktop]() check.
-* Checkout Page results from the [mobile]() and [desktop]() check.
-* Checkout Success Page results from the [mobile]() and [desktop]() check.
+   Mobile
 
+   ![mobile](static/images/readme/validation/lighthouse/register_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/register_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Sign-in Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/sign_in_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/sign_in_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Shopping Bag Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/bag_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/bag_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Checkout Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/checkout_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/logout_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Checkout Success Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/checkout_success_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/checkout_success_desktop.png)
+
+   </details>
+   <br>
 
 <br>
 
