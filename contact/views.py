@@ -27,7 +27,6 @@ def commission(request, user_id):
             commission = commission_form.save(commit=False)
             commission.user_id = user_id
             commission.save()
-            messages.success(request, "Commission created successfully!")
             return render(request, "contact/commission_success.html")
 
     context = {

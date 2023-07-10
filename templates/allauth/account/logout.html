@@ -2,7 +2,10 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% block extra_head %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{% block meta_description %}{% trans 'Log out from Eponymous Bosch' %}{% endblock %}">
+{% endblock %}
 
 {% block inner_content %}
   <hr>

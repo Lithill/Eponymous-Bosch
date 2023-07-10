@@ -22,10 +22,16 @@ def profile(request):
     orders = profile.orders.all()
 
     template = 'profiles/profile.html'
+
+    page_name = "My Profile"
+    page_description = "View your delivery information and order history here"
+
     context = {
         'form': form,
         'orders': orders,
-        'on_profile_page': True
+        'on_profile_page': True,
+        'page_name': page_name,
+        'page_description': page_description
     }
 
     return render(request, template, context)

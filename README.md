@@ -1096,13 +1096,85 @@ I had difficulty improving the mobile lighthouse scores for the deadline, althou
    <br>
 
    <details>
-   <summary>Product Management Page results</summary>
+   <summary>Add Product Page results</summary>
 
-   Lighthouse warned that form elements do not have associated labels, so I set the form up as I had done for the commission form, which did not get this warning. However, this didn't help.
+   Lighthouse warned that form elements do not have associated labels, so I created the form in the way the commission form was made, fixed the html validation issues and then entered the image_url field without using crispy forms.
 
    Mobile
 
-   ![mobile]()
+   ![mobile](static/images/readme/validation/lighthouse/add_product_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/add_product_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>My Profile Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/profile_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/profile_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Wishlist Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/wishlist_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/wishlist_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>My Commissions Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/my_commissions_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/my_commissions_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Commission Success Page results</summary>
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/commission_success_mobile.png)
+
+   Desktop
+
+   ![desktop](static/images/readme/validation/lighthouse/commission_success_desktop.png)
+
+   </details>
+   <br>
+
+   <details>
+   <summary>Logout Page results</summary>
+
+   I had a lot of difficulty trying to improve the SEO ratings for this page. I tried adding a custom view and url to define the title and description, adding in if statements into the base.html to create default titles and descriptions for pages that do not have a title or description. I also tried adding custom css for the mobile view in both the html page itself, and the base.css file. Nothing seemed to work. This is something I will need to attempt to address again in the future. I have left in my simplest attempt as an example, although it does not work.
+
+   Mobile
+
+   ![mobile](static/images/readme/validation/lighthouse/logout_mobile.png)
 
    Desktop
 
@@ -1112,12 +1184,6 @@ I had difficulty improving the mobile lighthouse scores for the deadline, althou
    <br>
 
 
-
-* My Profile Page results from the [mobile]() and [desktop]() check.
-* Wishlist Page results from the [mobile]() and [desktop]() check.
-* My Commissions Page results from the [mobile]() and [desktop]() check.
-* Commission Success Page results from the [mobile]() and [desktop]() check.
-* Logout Page results from the [mobile]() and [desktop]() check.
 * Register Page results from the [mobile]() and [desktop]() check.
 * Sign-in Page results from the [mobile]() and [desktop]() check.
 * Shopping Bag Page results from the [mobile]() and [desktop]() check.
