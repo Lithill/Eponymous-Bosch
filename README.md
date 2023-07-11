@@ -20,7 +20,6 @@ This website has been created to sell AI-generated art prints for a European tar
 9. [Testing](#testing)
 10. [Credits](#credits)
 
-
 ---
 <br/>
     
@@ -29,7 +28,7 @@ This website has been created to sell AI-generated art prints for a European tar
 
 ### **Initial Discussion**
 
-AI is currently very much in the public eye, and Open AI's Dall-E 2 is no exception to this. With this in mind, it was felt that it may be an interesting venture to use Dall-E 2 to reimagine various artwork and posters in the style of Hieronymus Bosch; a 15th Century Dutch/Netherlandish painter, most noted for his work 'The Garden of Earthly Delights'.
+AI is currently very much in the public eye, and Open AI's Dall-E 2 is no exception to this. It was felt that it may be an interesting venture to use Dall-E 2 to reimagine various artwork and posters in the style of Hieronymus Bosch; a 15th Century Dutch/Netherlandish painter, most noted for his work 'The Garden of Earthly Delights'.
 <br/><br/>
 
 ### **User Stories**
@@ -66,7 +65,7 @@ AI is currently very much in the public eye, and Open AI's Dall-E 2 is no except
 * Sort a specific category of product.
 * Sort multiple categories of products simultaneously.
 * Search for a product by name or description.
-* Easily see what I've searched for and the number of results.
+* Easily see what I have searched for and the number of results.
 * Sort based on what is currently on sale.
 
 <br/>
@@ -228,16 +227,13 @@ Due to the colourful nature of the artwork itself, a minimalist design and colou
 
 ### **Typography**
 
-Google Fonts was used to import the following fonts:
-
-*  is a serif font. This is used for the navigation bar and headings.
-*  is a sans-serif font. This is used for all other text. 
+Google Fonts was used to import Big Shoulders Text, which is a sans-serif font. This is used for all text other than the logo. 
 
 <br/>
 
 ### **Models**
 
-This map represents the current models in the relational database, apart from the models that were not changed from the Boutique Ado walkthrough and are not referenced by the new code. Those in yellow have not been modified since the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. ('Products' was heavily modified, Commission and Wishlit are new.):
+This map represents the current models in the relational database, apart from the models that were not changed from the Boutique Ado walkthrough and are not referenced by the new code. Those in yellow have not been modified since the Boutique Ado walkthrough. Those in green have either been heavily modified or are completely new. ('Products' was heavily modified, Commission and Wishlist are new.):
 
 ![Model Map](static/images/readme/model_map.jpeg)
 
@@ -284,7 +280,7 @@ The index page has:
 The Products page has the following features:
 
    <details>
-   <summary>A list of products, which, when clicked, takes the user to the detail page of that specific product. If the product is on sale, the price is updated and the text is red, with additional text labeling it as on sale.</summary>
+   <summary>A list of products, which, when clicked, takes the user to the detail page of that specific product. If the product is on sale, the price is updated and the text is red, with additional text labelinglabelling it as on sale.</summary>
 
    ![Products](static/images/readme/products.jpg)
 
@@ -436,7 +432,7 @@ The Product Detail page has the following features:
 The My Profile page has the following features:
 
    <details>
-   <summary>A form where the user can update their personal information, which is then auto-filled on the checkout form.</summary>
+   <summary>A form where the user can update their personal information, which is then auto filled on the checkout form.</summary>
 
    ![User Information Form](static/images/readme/user_info.jpg)
    
@@ -547,10 +543,10 @@ The My Commissions page has the following features:
 ### **Register**
 
    <details>
-   <summary>The Sign Up page has the following features:</summary>
+   <summary>The Sign-Up page has the following features:</summary>
    
    * A link to take the user to the sign-in page if they already have an account. 
-   * A form for the user to sign up if they don't already have an account. 
+   * A form for the user to sign up if they do not already have an account. 
    * This page is only seen if the user is not signed in.
 
       ![Register](static/images/readme/register.jpg)
@@ -663,7 +659,7 @@ The Checkout success page has the following feature:
 
    <details>
    <summary>A drop-down menu for the user account. Which only shows 'log in' and 'register' if the user is not logged in, but shows 'product management', 'my profile', 'my wishlist', 'my commissions' and 'logout'.
-   / A link to the user’s shopping cart</summary>
+   / A link to the user’s shopping trolley</summary>
    
    ![My Account](static/images/readme/my_account.jpg)
    
@@ -724,11 +720,11 @@ The discounted price of a product is automatically calculated based on the user�
 
 * Changes the selling price of the product, based on the percentage added
 * Changes the 'on sale' variable to 'True', which in turn changes the HTML in the product and product detail pages
-* If the user neglects to enter a sale start and end date, these are automatically added. The sale start date in this case will be the current date, and the end sale date will be a week from the current date
+* If the user neglects to enter a sale start and end date, these are automatically added. The sale start date in this case will be the current date, and the end sale date will be a week from the current date.
 * If the user adds dates but no discount, they are shown a customised validation error explaining this
 * If the user adds a sale end date that is earlier than the start sale date, they are shown a customised validation error
 * If the user ends the sale early by changing the discount percentage to zero without changing the sale start and end dates, the dates are automatically removed
-* When the sale ends, the dates are automatically removed, as is the discount. Therefore resetting the product to the original price and setting 'on sale' to False
+* When the sale ends, the dates are automatically removed, as is the discount. Therefore, resetting the product to the original price and setting 'on sale' to False
 
 <br/>
 
@@ -767,7 +763,7 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 
 ### **Frameworks, Libraries & Programs Used**
 
-* [Google Fonts](https://fonts.google.com/) was used to import Merriweather and Arimo.
+* [Google Fonts](https://fonts.google.com/) was used to import Big Shoulders Text.
 * [Git](https://git-scm.com/) was used for version control by using the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/) was used to store the projects' code, and to handle version control.
 * [Paint.Net](https://www.getpaint.net/download.html) was used to edit and crop images.
@@ -789,7 +785,7 @@ HTML5, CSS3, Python, and JavaScript were used to create this website.
 * [Font Awesome](https://fontawesome.com/) was used for the icons.
 * [Lucid](https://lucid.app/) was used to map the models.
 * [Amazon Web Services](https://aws.amazon.com/) was used to host the images for the Heroku-hosted site.
-* [Batch Compress](https://batchcompress.com/en) was used to compresss image files.
+* [Batch Compress](https://batchcompress.com/en) was used to compressscompress image files.
 * [Bulk Resize Photos](https://bulkresizephotos.com/) was used to resize image files and put them in a different file format.
 * [RespImageLint](https://ausi.github.io/respimagelint/) was used to see how the images needed to be changed to optimise the page.
 * [Favicon Generator](https://favicon.io/favicon-converter/) was used to use convert my favicon design into something useable.
@@ -839,7 +835,7 @@ This project was deployed to Heroku using the following steps:
 12. As we already have all our changes pushed to GitHub, we will use the Manual Deploy section and click Deploy Branch. This will start the build process. 
 13. Now, we have our project in place, and we have an empty database ready for use. As you may remember from our local development, we still need to add our tables to our database. To do this, we can click the “More” button and select “Run console.”
 14. Type python3 into the console and click Run
-15. In the terminal that opens, write "from # import db" and then press enter.
+15. In the terminal that opens, write "from eponymous_bosch import db" and then press enter.
 16. In the terminal, write "db.create_all()" and then press enter.
 17. Exit the Python terminal, by typing exit() and hitting enter, and close the console. Our Heroku database should now have the tables and columns created from our models.py file.
 18. The app should be up and running now, so click the “Open app” button
@@ -886,7 +882,6 @@ I tested the page and had 3 people also manually test it on their own devices. F
 ### **Validation**
 
 
-
 #### **W3C Validator**
 
 The [W3C HTML Validator](https://validator.w3.org/) was used to validate the HTML on all pages of the website. 
@@ -906,12 +901,13 @@ The [W3C HTML Validator](https://validator.w3.org/) was used to validate the HTM
 * Results from the [log in](templates/allauth/account/login.html) page check.
 * Results from the [email confirm](static/images/readme/validation/html/email_confirm.jpg) page check.
 * Results from the [wishlist](static/images/readme/validation/html/wishlist.jpg) page check.
+* Results from the [product management](static/images/readme/validation/html/product_management.jpg) page check.
 
 <br/>
 
 #### **CSS Validator**
 
-The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS in the style.css file.
+The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
 
 * Results from the [checkout](static/images/readme/validation/css/checkout_css.jpg) css.
 * Results from the [profile](static/images/readme/validation/css/profile_css.jpg) css.
@@ -1034,7 +1030,7 @@ And finally:
 
 Lighthouse in Google Dev Tools was used to check performance, accessibility, best practices and search engine optimisation.
 
-I had difficulty improving the mobile lighthouse scores for the deadline, although I understand that they are very imortant for the user experience. This is something that I will continue to work on after the work has been marked. 
+I had difficulty improving the mobile lighthouse scores for the deadline, although I understand that they are particularly important for the user experience. This is something that I will continue to work on after the work has been marked. 
 
    <details>
    <summary>Index Page results</summary>
@@ -1282,7 +1278,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 | :---:    |    :----:      | :---:  |
 | The form will not submit when required fields are left blank | Checked every form to see if it would be submitted if any of the required fields were left blank | Passed |
 | The user sees a success message when having successfully submitted a form | Successfully submitted all forms to check if they all had success messages | Passed |
-| The form will not submit when input types and lengths/amounts aren't appropriate | Tested every form field that takes a specific input type to see if it would submit with an undesired input type | Passed |
+| The form will not submit when input types and lengths/amounts are not appropriate | Tested every form field that takes a specific input type to see if it would submit with an undesired input type | Passed |
 
 <br/>
 
@@ -1290,8 +1286,8 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 | Expected | Test Performed | Result |
 | :---:    |    :----:      | :---:  |
-| Non-logged-in users cannot see or access the parts of the site that are off-limits to them, and vice versa. | I logged in and out and on both occassions I checked to see what options were available to the user | Passed |
-| Users cannot view private information about other users, such as user account details, wishlists, carts, or commissions. |    I logged in as different users with different wishlists and commission requests, to check if either user could see the details of the other | Passed |
+| Non-logged-in users cannot see or access the parts of the site that are off-limits to them, and vice versa. | I logged in and out and, on both occasions, I checked to see what options were available to the user | Passed |
+| Users cannot view confidential information about other users, such as user account details, wish lists, carts, or commissions. |    I logged in as different users with different wish lists and commission requests, to check if either user could see the details of the other | Passed |
 
 <br/>
 
@@ -1302,7 +1298,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 | User data is added and persists over time, including order history, commissions and wishlist. | Added multiple users with different data and checked that throughout logging in and out, and over the course of weeks, the data remained the same | Passed |
 | User is linked to their order history, wishlist, and commission data | I made multiple user accounts with different data, and all users can see their own data | Passed |
 | User data can be edited and deleted from the database. | I tested that when deleting a user and then reestablishing them, none of their previous data is visible in their account. I also edited data such as user delivery details, and deleted items off the wishlist | Passed |
-| Calculations in the models to automatically assign variables to work as expected. | All calculations the model made were independently verified by manipulating the data and checking the results. This focused mostly around sales | Passed |
+| Calculations in the models to automatically assign variables to work as expected. | All calculations the model made were independently verified by manipulating the data and checking the results. This focused mostly on sales | Passed |
 
 <br/>
 
@@ -1310,7 +1306,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 | Expected | Test Performed | Result |
 | :---:    |    :----:      | :---:  |
-| If the user is looking at a product that is on sale, and the product is then taken off sale if the user adds it to their cart without refreshing the page, the product will revert to the original price. | Opened the product detail page of a sale item. Took the item off sale. Without refreshing the product detail page, I added the item to my cart. Doing this showed that the item had reverted back to its pre-sale price. | Passed |
+| If the user is looking at a product that is on sale, and the product is then taken off sale if the user adds it to their cart without refreshing the page, the product will revert to the original price. | Opened the product detail page of a sale item. Took the item off sale. Without refreshing the product detail page, I added the item to my cart. Doing this showed that the item had reverted to its pre-sale price. | Passed |
 
 <br/>
 
@@ -1319,9 +1315,9 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 | Expected | Test Performed | Result |
 | :---:    |    :----:      | :---:  |
 | Adding, editing, and removing products from the bag work as expected.  | I added, edited and removed products from the bag | Passed |
-| Users’ correct details auto-fill in the checkout form. | Checked that the same details from the users profile are the ones that are auto-filling the checkout form. I also checked that editing these details will change those on the form. | Passed |
+| Users’ correct details auto-fill in the checkout form. | Checked that the same details from the user’s profile are the ones that are auto filling the checkout form. I also checked that editing these details will change those on the form. | Passed |
 | Stripe payment goes through without any problems. | I made several orders, which all went through fine. I then checked the Stripe dashboard to make sure it was going through on that side too | Passed |
-| The webhook is works so that if the user were to lose connection or close their browser before the transaction completes, the order still goes through and they are automatically emailed. | I submited the checkout form but closed the tab before it finished loading. The user still got charged, sent an automatic email, and the order was logged on the system and in their order history | Passed |
+| The webhook is works so that if the user were to lose connection or close their browser before the transaction completes, the order still goes through, and they are automatically emailed. | I submitted the checkout form but closed the tab before it finished loading. The user still got charged, sent an automatic email, and the order was logged on the system and in their order history | Passed |
 
 <br/>
 
@@ -1330,7 +1326,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 | Expected | Test Performed | Result |
 | :---:    |    :----:      | :---:  |
 | Adding and removing products from the wishlist work as expected. | I tested in different user accounts that I could add and remove products from the wishlist | Passed |
-| The email is sent as expected when a user’s wished-for item goes on sale.  | I tested on several user accounts with several different items by adding an item to users wishlists, checking some of their consent boxes, and seeing if only those who consented got an email for the item that just went on sale, if it was in their wishlist | Passed |
+| The email is sent as expected when a user’s wished-for item goes on sale.  | I tested on several user accounts with several different items by adding an item to users wish lists, checking some of their consent boxes, and seeing if only those who consented got an email for the item that just went on sale, if it was in their wishlist | Passed |
 | The user can control whether the above happens by turning their consent on or off on their wishlist page. | This was tested for in the test above | Passed |
 
 <br/>
@@ -1339,7 +1335,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 | Expected | Test Performed | Result |
 | :---:    |    :----:      | :---:  |
-| The sorting and filtering functions work appropriately. | I clicked on each sort and filter function and checke to see if they displayed the right products and in the order expected | Passed |
+| The sorting and filtering functions work appropriately. | I clicked on each sort and filter function and check to see if they displayed the right products and, in the order, expected | Passed |
 | They can be added from the product management page. | I created several products using the management page, and checked to see that they showed up in the admin and on the website in the appropriate places. | Passed |
 | They can be edited or deleted by logged-in superusers from the products or product detail pages. | I edited and deleted several products as a superuser in both the 'all products' and 'product detail' pages | Passed |
 
@@ -1349,7 +1345,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 | Expected | Test Performed | Result |
 | :---:    |    :----:      | :---:  |
-| They can be added to the database via the commission’s form. | I submitted many commission forms, which then displayed on botht eh admin page and the user's 'my commissions' page | Passed`` |
+| They can be added to the database via the commission’s form. | I submitted many commission forms, which then displayed on both the admin page and the user's 'my commissions' page | Passed`` |
 | They appear on the 'My Commissions' page, in order of when they were added, with the recently added being at the top. | I added several commissions to a few different users, and all of them had their commissions appear in the correct order | Passed |
 | The admin can change the status on the Django admin page, which will change the status on the 'My Commissions' page. | I changed the status on the admin page for several commissions, and each showed this change on the users 'My Commissions' pages. | Passed |
 
@@ -1359,7 +1355,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 | Expected | Test Performed | Result |
 | :---:    |    :----:      | :---:  |
-| The search function works as expected. | I searched for a wide variety of artwork based on different parts of their products pages, and this worked as expected. | Passed |
+| The search function works as expected. | I searched for a wide variety of artwork based on various parts of their products pages, and this worked as expected. | Passed |
 
 <br/>
 
@@ -1367,8 +1363,8 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 | Expected | Test Performed | Result |
 | :---:    |    :----:      | :---:  |
-| Shows the user’s editable details. | I checked on several users profiles that their details were editable. | Passed |
-| Shows the users order history | I checked on several users profiles that their orders were all visible in their order history after making a variety of orders through their accounts | Passed |
+| Shows the user’s editable details. | I checked on several users’ profiles that their details were editable. | Passed |
+| Shows the users order history | I checked on several users’ profiles that their orders were all visible in their order history after making a variety of orders through their accounts | Passed |
 
 <br/>
 
@@ -1377,7 +1373,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 | User | Device | Problem | Screenshot |
 | :---:        |    :----:          |        :----:    | :---:     |
 | MI | Fair Phone | Can't see the number in the quantity box in the design page | [MI Screenshot](static/images/readme/no_quantity_number.png) |
-| CM | Android 1+9 | Price of product isn't shown in the order confirmation page | [CM Screenshot 1](static/images/readme/cm_no_price.png) |
+| CM | Android 1+9 | Price of product is not shown in the order confirmation page | [CM Screenshot 1](static/images/readme/cm_no_price.png) |
 | CM | Android 1+9 | In checkout cart, the plus box wraps | [CM Screenshot 2](static/images/readme/cm_plus_wrap.png) |
 | SHM | MacBook Air 2017 | Padding is needed on the 'verify email' page | [SHM Screenshot 1](static/images/readme/shm_padding.png) |
 | SHM | MacBook Air 2017 | The automatic emails do not say Eponymous Bosch | [SHM Screenshot 2](static/images/readme/shm_email.png) |
@@ -1388,15 +1384,15 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 
 | Bug Number  | Expected behaviour | Actual behaviour | Solution |
 | ---:        |    :----:          |        :----:    | :---     |
-| 1       |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees everything on sale   |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees all products, not just those on sale  | The model has a property called on_sale that determines the boolean value of on_sale in the Product model. This calculates if an item is on sale based on whether the admin enters a discount or not. So instead of looking for on_sale=True, the code looks for on_sale being greater than 0. So I changed the all_product view section to "if 'on_sale' in request.GET: products = products.filter(discount__gt=0)" |
-| 2       | Commissions shown on the my_commissions page should only be those of the user  | Currently showing every user's commissions  | Change part of the my_commissions view code from this -> commissions = Commission.objects.all(), to this -> commissions = Commission.objects.filter(user=request.user) |
+| 1       |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees everything on sale   |  When clicking on the On Sale dropdown under All Products in the nav bar, the user sees all products, not just those on sale  | The model has a property called on_sale that determines the Boolean value of on_sale in the Product model. This calculates if an item is on sale based on whether the admin enters a discount or not. So instead of looking for on_sale=True, the code looks for on_sale being greater than 0. So, I changed the all_product view section to "if 'on_sale' in request.GET: products = products.filter(discount__gt=0)" |
+| 2       | Commissions shown on the my_commissions page should only be those of the user  | Currently showing every user's commission  | Change part of the my_commissions view code from this -> commissions = Commission.objects.all(), to this -> commissions = Commission.objects.filter(user=request.user) |
 | 3 | When marking the discount percentage or a product as '0' in admin, the user should be able to turn off the sale |        Marking the discount percentage as '0' returned a form error, requesting the user enter a discount percentage | Added the discount condition to the Product model |
 | 4 | When checking out, after submitting the form, the form should go through, user payment to be processed by Stripe, and the user is sent an automatic email confirmation | When checking out, after submitting the form, the user gets the error - "AttributeError at /checkout/ 'Product' object has no attribute 'price'" | This was because the checkout model save function was not updated when product.price was changed to product.sell_price in the Product model. |
-| 5 | When asking to sort products by price in the navigation bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "Cannot resolve keyword 'sell_price' into field." | This issue arose because the field 'sell_price' was not defined in the Product model as a database field, but rather as a property with a getter method |
-| 6 | When asking to sort products by price in the dropdown bar, products should then be sorted by price | Instead the page wouldn't render, and threw the error "FieldError at /products/ Cannot resolve keyword 'sell' into field. Choices are: category, category_id, description, discount_percentage, id, image, image_url, imperial, metric, name, og_price, on_sale_end, on_sale_start, orderlineitem, orientation, orig_url, original_artist, product_wishlists, sell_price, sku, style, type, users_wishlist, wishlistitem, year" | This issue arose because the sortkey used had an underscore in it. Fixing the view to remove this made the page render again, and the sorting function now works. |
+| 5 | When asking to sort products by price in the navigation bar, products should then be sorted by price | Instead the page would not render and threw the error "Cannot resolve keyword 'sell_price' into field." | This issue arose because the field 'sell_price' was not defined in the Product model as a database field, but rather as a property with a getter method |
+| 6 | When asking to sort products by price in the dropdown bar, products should then be sorted by price | Instead the page would not render and threw the error "FieldError at /products/ Cannot resolve keyword 'sell' into field. Choices are: category, category_id, description, discount_percentage, id, image, image_url, imperial, metric, name, og_price, on_sale_end, on_sale_start, orderlineitem, orientation, orig_url, original_artist, product_wishlists, sell_price, sku, style, type, users_wishlist, wishlistitem, year" | This issue arose because the sort key used had an underscore in it. Fixing the view to remove this made the page render again, and the sorting function now works. |
 | 7 | User can add product via add_product page. | Instead, on form submission, this error is displayed - "TypeError at /products/add/ unsupported operand type(s) for *: 'decimal.Decimal' and 'NoneType'" | This was because I had removed the discount_percentage field, which made the sell_price incalculable. |
-| 8 | The Heroku-hosted page renders when visited | The page doesn't render and shows this error - "SuspiciousOperation at / Attempted access to '/images/logo.webp' denied." | I changed the file path to correct this |
-| 9 | When a user clicks on "My Wishlist", it will take them to a rendered page | If a user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist, and does not happen if they have put something on their wishlist and then take it off again. This happened because sale_alert_consent is necessary for the wishlist view, but this was not set before the user put something in their wishlist. To fix this, I added in the show_wishlist view that a wishlist should be made if the user doesn't have one already, and that the user's sale_alert_consent should be set to false. A belt and braces approach, since creating the wishlist should mean that this field is automatically set to false. |
+| 8 | The Heroku-hosted page renders when visited | The page does not render and shows this error - "SuspiciousOperation at / Attempted access to '/images/logo.webp' denied." | I changed the file path to correct this |
+| 9 | When a user clicks on "My Wishlist", it would take them to a rendered page | If a user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist and does not happen if they have put something on their wishlist and then take it off again. This happened because sale_alert_consent is necessary for the wishlist view, but this was not set before the user put something in their wishlist. To fix this, I added in the show_wishlist view that a wishlist should be made if the user does not have one already, and that the user's sale_alert_consent should be set to false. A belt and braces approach, since creating the wishlist should mean that this field is automatically set to false. |
 | 10 | When manually adding the sale start and end date in the admin, no error should occur | Instead, it throws a validation error and requests that the user enter the discount percentage, even though there is one already there  | The code in the product model was wrong. This has now been fixed. |
 
 <br/>
@@ -1443,7 +1439,7 @@ Content for the website was made by Rossanne Hamilton.
 
 ### **Media Used**
 
-* [StockSnap's image](https://pixabay.com/photos/wall-picture-frame-display-interior-2558279/) on Pixabay was used for the background image of Starry Night and Water Lillies. 
+* [StockSnap's image](https://pixabay.com/photos/wall-picture-frame-display-interior-2558279/) on Pixabay was used for the background image of Starry Night and Water Lilies. 
 * [Uroburos's image](https://pixabay.com/photos/image-painting-art-gallery-painter-1053852/) on Pixabay was used for the background image of the Mona Lisa. 
 * [Uroburos's image](https://pixabay.com/photos/image-painting-piece-the-museum-1053849/) on Pixabay was used for the background image of The Scream. 
 * [Counselling's image](https://pixabay.com/photos/oil-painting-picture-frame-492639/) on Pixabay was used for the background image of Ophelia. 
@@ -1469,5 +1465,5 @@ Content for the website was made by Rossanne Hamilton.
 I would like to acknowledge the following people who helped me along the way in completing my fourth milestone project:
 
 - My mentor Mitko Bachvarov for helpful feedback and sharing links for further learning.
-- Chris Mugridge, Maya Irish and Skye Hillier-Milton for user testing and feedback.
+- Chris Mugridge, Maya Irish and Skye Hillier-Milton for user testing, encouragement and feedback.
 - Thomas Muat for helping me understand how the on_sale filter works in the nav bar.
