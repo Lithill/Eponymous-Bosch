@@ -100,7 +100,13 @@ The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
 <details>
 <summary>Index</summary>
 
-![Index Wireframe](static/images/readme/wireframes/wire_index.jpg)
+Desktop
+
+![Desktop Index Wireframe](static/images/readme/wireframes/wire_index.jpg)
+
+Mobile
+
+![Mobile Index Wireframe](static/images/readme/wireframes/wire_mobile_index.jpg)
 
 </details>
 <br>
@@ -108,7 +114,13 @@ The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
 <details>
 <summary>Products</summary>
 
-![Products Wireframe](static/images/readme/wireframes/wire_products.jpg)
+Desktop
+
+![Desktop Products Wireframe](static/images/readme/wireframes/wire_products.jpg)
+
+Mobile
+
+![Mobile Products Wireframe](static/images/readme/wireframes/wire_mobile_products.jpg)
 
 </details>
 <br>
@@ -116,7 +128,13 @@ The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
 <details>
 <summary>Product Detail</summary>
 
-![Products Wireframe](static/images/readme/wireframes/wire_product_detail.jpg)
+Desktop
+
+![Desktop Products Wireframe](static/images/readme/wireframes/wire_product_detail.jpg)
+
+Mobile
+
+![Mobile Products Wireframe](static/images/readme/wireframes/wire_mobile_products.jpg)
 
 </details>
 <br>
@@ -124,7 +142,13 @@ The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
 <details>
 <summary>Commissions</summary>
 
-![Commissions Wireframe](static/images/readme/wireframes/wire_commissions.jpg)
+Desktop
+
+![Desktop Commissions Wireframe](static/images/readme/wireframes/wire_commissions.jpg)
+
+Mobile
+
+![Mobile Commissions Wireframe](static/images/readme/wireframes/wire_mobile_commission.jpg)
 
 </details>
 <br>
@@ -132,7 +156,13 @@ The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
 <details>
 <summary>Product Management</summary>
 
-![Product Management Wireframe](static/images/readme/wireframes/wire_product_management.jpg)
+Desktop
+
+![Desktop Product Management Wireframe](static/images/readme/wireframes/wire_product_management.jpg)
+
+Mobile
+
+![Mobile Product Management Wireframe](static/images/readme/wireframes/wire_mobile_product_management.jpg)
 
 </details>
 <br>
@@ -140,7 +170,13 @@ The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
 <details>
 <summary>My Profile</summary>
 
-![My Profile Wireframe](static/images/readme/wireframes/wire_profile.jpg)
+Desktop
+
+![Desktop My Profile Wireframe](static/images/readme/wireframes/wire_profile.jpg)
+
+Mobile
+
+![Mobile My Profile Wireframe](static/images/readme/wireframes/wire_mobile_profile.jpg)
 
 </details>
 <br>
@@ -148,7 +184,13 @@ The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
 <details>
 <summary>Wishlist</summary>
 
-![Wishlist Wireframe](static/images/readme/wireframes/wire_wishlist.jpg)
+Desktop
+
+![Desktop Wishlist Wireframe](static/images/readme/wireframes/wire_wishlist.jpg)
+
+Mobile
+
+![Mobile Wishlist Wireframe](static/images/readme/wireframes/wire_mobile_wishlist.jpg)
 
 </details>
 <br>
@@ -156,7 +198,13 @@ The wireframes are mostly adapted versions of the Boutique Ado walkthrough.
 <details>
 <summary>My Commissions</summary>
 
-![My Commissions Wireframe](static/images/readme/wireframes/wire_my_commissions.jpg)
+Desktop
+
+![Desktop My Commissions Wireframe](static/images/readme/wireframes/wire_my_commissions.jpg)
+
+Mobile
+
+![Mobile My Commissions Wireframe]()
 
 </details>
 <br>
