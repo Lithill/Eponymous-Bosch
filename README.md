@@ -885,7 +885,7 @@ I tested the page and had 3 people also manually test it on their own devices. F
 
 ### **Validation**
 
-<br/>
+
 
 #### **W3C Validator**
 

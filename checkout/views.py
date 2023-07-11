@@ -10,6 +10,7 @@ from products.models import Product
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
+from django.core.mail import send_mail
 
 import stripe
 import json
@@ -168,6 +169,17 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
+
+    send_mail(
+        "Thank you for your order",
+        f"Thank you for your order from Eponymous Bosch. \
+        It will be delivered to you soon. But if you have any \
+        problems, please contact us, quoting your order number. \
+        {order_number}",
+        "sales@eponymousbosch.com",
+        [order.email],
+        fail_silently=False,
+    )
 
     if 'bag' in request.session:
         del request.session['bag']
