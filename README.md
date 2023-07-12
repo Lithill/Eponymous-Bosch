@@ -204,7 +204,7 @@ Desktop
 
 Mobile
 
-![Mobile My Commissions Wireframe]()
+![Mobile My Commissions Wireframe](static/images/readme/wireframes/wire_mobile_my_commissions.jpg)
 
 </details>
 <br>
@@ -212,7 +212,13 @@ Mobile
 <details>
 <summary>Commission Success</summary>
 
-![Commission Success Wireframe](static/images/readme/wireframes/wire_commission_success.jpg)
+Desktop
+
+![Desktop Commission Success Wireframe](static/images/readme/wireframes/wire_commission_success.jpg)
+
+Mobile
+
+![Mobile Commission Success Wireframe](static/images/readme/wireframes/wire_mobile_commission_success.jpg)
 
 </details>
 <br>
@@ -220,7 +226,13 @@ Mobile
 <details>
 <summary>Logout</summary>
 
-![Logout Wireframe](static/images/readme/wireframes/wire_sign_out.jpg)
+Desktop
+
+![Desktop Logout Wireframe](static/images/readme/wireframes/wire_sign_out.jpg)
+
+Mobile
+
+![Mobile Logout Wireframe](static/images/readme/wireframes/wire_mobile_logout.jpg)
 
 </details>
 <br>
@@ -228,7 +240,13 @@ Mobile
 <details>
 <summary>Register</summary>
 
-![Register Wireframe](static/images/readme/wireframes/wire_sign_up.jpg)
+Desktop
+
+![Desktop Register Wireframe](static/images/readme/wireframes/wire_sign_up.jpg)
+
+Mobile
+
+![Mobile Register Wireframe](static/images/readme/wireframes/wire_mobile_register.jpg)
 
 </details>
 <br>
@@ -236,7 +254,13 @@ Mobile
 <details>
 <summary>Sign-in</summary>
 
-![Register Wireframe](static/images/readme/wireframes/wire_sign_in.jpg)
+Desktop
+
+![Desktop Register Wireframe](static/images/readme/wireframes/wire_sign_in.jpg)
+
+Mobile
+
+![Mobile Register Wireframe](static/images/readme/wireframes/wire_mobile_login.jpg)
 
 </details>
 <br>
@@ -244,7 +268,13 @@ Mobile
 <details>
 <summary>Shopping Bag</summary>
 
-![Shopping Bag Wireframe](static/images/readme/wireframes/wire_bag.jpg)
+Desktop
+
+![Desktop Shopping Bag Wireframe](static/images/readme/wireframes/wire_bag.jpg)
+
+Mobile
+
+![Mobile Register Wireframe](static/images/readme/wireframes/wire_mobile_bag.jpg)
 
 </details>
 <br>
@@ -252,7 +282,13 @@ Mobile
 <details>
 <summary>Checkout</summary>
 
-![Checkout Wireframe](static/images/readme/wireframes/wire_checkout.jpg)
+Desktop
+
+![Desktop Checkout Wireframe](static/images/readme/wireframes/wire_checkout.jpg)
+
+Mobile
+
+![Mobile Checkout Wireframe](static/images/readme/wireframes/wire_mobile_checkout.jpg)
 
 </details>
 <br>
@@ -260,7 +296,13 @@ Mobile
 <details>
 <summary>Checkout Success</summary>
 
-![Checkout Success Wireframe](static/images/readme/wireframes/wire_commission_success.jpg)
+Desktop
+
+![Desktop Checkout Success Wireframe](static/images/readme/wireframes/wire_commission_success.jpg)
+
+Mobile
+
+![Mobile Checkout Success Wireframe](static/images/readme/wireframes/wire_mobile_checkout_success.jpg)
 
 </details>
 <br>

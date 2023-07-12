@@ -43,7 +43,8 @@ def adjust_bag(request, item_id):
     if quantity and quantity.isdigit() and int(quantity) > 0:
         bag = request.session.get('bag', {})
         bag[item_id] = int(quantity)
-        messages.success(request, f'Changed quantity of {product.name} in your bag')
+        messages.success(
+            request, f'Changed quantity of {product.name} in your bag')
     else:
         bag = request.session.get('bag', {})
         bag.pop(item_id, None)
