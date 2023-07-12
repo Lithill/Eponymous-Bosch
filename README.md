@@ -1,3 +1,5 @@
+<div style="background-color: #F7F7F7; color: black;">
+
 # **Eponymous Bosch**
 
 This website has been created to sell AI-generated art prints for a European target group. Therefore, metric sizes have been focused on when the user requests a commission. It has been designed with a range of different screen sizes in mind. 
@@ -1559,3 +1561,4 @@ I would like to acknowledge the following people who helped me along the way in 
 - My mentor Mitko Bachvarov for helpful feedback and sharing links for further learning.
 - Chris Mugridge, Maya Irish, Skye Hillier-Milton, and Roman Rakic for user testing, encouragement, and feedback.
 - Thomas Muat for helping me understand how the on_sale filter works in the nav bar.
+</div>
