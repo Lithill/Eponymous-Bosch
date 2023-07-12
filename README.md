@@ -1443,6 +1443,7 @@ To fully test my website, I used Google Chrome Developer Tools to ensure that th
 | 9 | When a user clicks on "My Wishlist", it would take them to a rendered page | If a user tried to access their wishlist when they have no wishlist items, the page does not render, and shows the error "NoReverseMatch at /wishlist/. Reverse for 'sale_alert_consent' with arguments '('',)' not found. 1 pattern(s) tried: ['wishlist/sale_alert_consent/(?P<user_id>[0-9]+)/\\Z']". | This happens before a user puts anything on their wishlist and does not happen if they have put something on their wishlist and then take it off again. This happened because sale_alert_consent is necessary for the wishlist view, but this was not set before the user put something in their wishlist. To fix this, I added in the show_wishlist view that a wishlist should be made if the user does not have one already, and that the user's sale_alert_consent should be set to false. A belt and braces approach, since creating the wishlist should mean that this field is automatically set to false. |
 | 10 | When manually adding the sale start and end date in the admin, no error should occur | Instead, it throws a validation error and requests that the user enter the discount percentage, even though there is one already there  | The code in the product model was wrong. This has now been fixed. |
 | 11 | When registering as a new user, the form should validate, and take the user to the 'confirm email' page | When submitting the signup form, the user sees "Forbidden (403) CSRF verification failed. Request aborted" | Changing the development variable in the github environment to be exclusive to this project, and turning both this variable and the one in Heroku to False, seemed to fix this bug. |
+| 12 | On the product detail page, if the user deletes the product quantity value, and then click "add to bag", a validation warning should pop up to say that they need to enter a value. | Instead, the user sees a "server 500" error | I added 'required' to the input boxes, and adjusted the views so that it didn't assume there was an integer value |
 
 <br/>
 
@@ -1514,5 +1515,5 @@ Content for the website was made by Rossanne Hamilton.
 I would like to acknowledge the following people who helped me along the way in completing my fourth milestone project:
 
 - My mentor Mitko Bachvarov for helpful feedback and sharing links for further learning.
-- Chris Mugridge, Maya Irish and Skye Hillier-Milton for user testing, encouragement and feedback.
+- Chris Mugridge, Maya Irish, Skye Hillier-Milton, and Roman Rakic for user testing, encouragement, and feedback.
 - Thomas Muat for helping me understand how the on_sale filter works in the nav bar.

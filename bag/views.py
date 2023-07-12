@@ -37,16 +37,16 @@ def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
-    bag = request.session.get('bag', {})
+    quantity = request.POST.get('quantity')
 
-    if quantity > 0:
-        bag[item_id] = quantity
-        messages.success(
-            request, f'Changed quantity of {product.name} in your bag'
-        )
+    # Allows the user to delete the number from the quantity box
+    if quantity and quantity.isdigit() and int(quantity) > 0:
+        bag = request.session.get('bag', {})
+        bag[item_id] = int(quantity)
+        messages.success(request, f'Changed quantity of {product.name} in your bag')
     else:
-        bag.pop(item_id)
+        bag = request.session.get('bag', {})
+        bag.pop(item_id, None)
         messages.success(request, f'Removed {product.name} from your bag')
 
     request.session['bag'] = bag
